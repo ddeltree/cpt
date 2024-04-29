@@ -1,12 +1,4 @@
 ---
-import type { string } from 'astro/zod'
-
-// This is the Astro component for the footer.
-// The `---` denotes the beginning and end of the frontmatter,
-// which is where you put your component's metadata and props.
-
-// In this case, we don't need any props, so we'll leave the frontmatter empty.
-
 interface Props {
     image_ufal?: string
 }
@@ -17,7 +9,7 @@ const {image_ufal = "/images/brasao-branco.png"} = Astro.props;
 <footer class="bg-gray-800 text-white p-8 ">
     <div class="container mx-auto flex justify-between ">
         <div class="flex items-center">
-            <img src={image_ufal} alt="Logo UFAL" class="mr-4 h-20"/> <!-- Imagem da UFAL -->
+            <img src={image_ufal} alt="Logo UFAL" class="mr-4 h-20"/>
             <div>
                 <h2 class="text-2xl font-bold">UNIVERSIDADE<br/> FEDERAL DE ALAGOAS</h2>
             </div>
@@ -25,10 +17,10 @@ const {image_ufal = "/images/brasao-branco.png"} = Astro.props;
         <div >
             <p>ENDEREÇO</p>
             <address class="text-gray-400">
-                Av. Manoel Severino Barbosa<br />
-                Bom Sucesso<br />
-                Arapiraca - AL<br />
-                CEP: 57309-005
+                <p>Av. Manoel Severino Barbosa</p>
+                <p>Bom Sucesso</p>
+                <p>Arapiraca - AL</p>
+                <p>CEP: 57309-005</p>
             </address>
         </div>
         <div>
