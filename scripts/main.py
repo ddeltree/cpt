@@ -11,8 +11,9 @@ if PUBLIC.exists():
 if MD_DIR.exists():
     shutil.rmtree(MD_DIR)
 
-IMAGES, FILES = PUBLIC / "images", PUBLIC / "file"
-for p in [PUBLIC, IMAGES, FILES]:
+IMG_EXT = list(map(lambda e: f".{e}", ["png", "jpg", "jpeg", "gif", "webp", "svg"]))
+IMG_DIR, FILES_DIR = PUBLIC / "images", PUBLIC / "file"
+for p in [PUBLIC, IMG_DIR, FILES_DIR]:
     p.mkdir(exist_ok=True)
 
 PROJECT_DIR = Path.home() / "httrack-websites/ufal/"
@@ -40,28 +41,28 @@ def to_md():
         page.unlink()
 
 
-def move_dir_content(directory: Path, target_dir: Path):
-    for file in directory.rglob("*"):
-        if file.is_dir():
-            continue
-        target_file = target_dir / file.name
-        if target_file.exists():
-            target_file = target_dir / directory.parent.name
-        shutil.move(file, target_file)
-
-
 def populate_public():
     PLONE = "++plone++ufalprofile"
     for i, p in enumerate(MD_DIR.rglob(PLONE)):
         if i == 0:
             shutil.move(p / "favicons", "public")
         shutil.rmtree(p)
+    move_dir_content()
     for directory in MD_DIR.rglob("@@download"):
-        move_dir_content(directory, FILES)
         shutil.rmtree(directory)
     for directory in MD_DIR.rglob("@@images"):
-        move_dir_content(directory, IMAGES)
         shutil.rmtree(directory)
+
+
+def move_dir_content():
+    for file in MD_DIR.rglob("*"):
+        if file.is_dir() or file.suffix == ".md":
+            continue
+        target_dir = IMG_DIR if file.suffix in IMG_EXT else FILES_DIR
+        target_file = target_dir / file.name
+        if target_file.exists():
+            target_file = target_dir / file.parent.parent.name
+        shutil.move(file, target_file)
 
 
 to_md()
