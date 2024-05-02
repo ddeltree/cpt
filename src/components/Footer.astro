@@ -1,4 +1,5 @@
 ---
+
 interface Props {
     image_ufal?: string
 }
@@ -8,19 +9,21 @@ const {image_ufal = "/images/brasao-branco.png"} = Astro.props;
 
 <footer class="bg-gray-800 text-white p-8 ">
     <div class="container mx-auto flex justify-between ">
-        <div class="flex items-center">
-            <img src={image_ufal} alt="Logo UFAL" class="mr-4 h-20"/>
-            <div>
-                <h2 class="text-2xl font-bold">UNIVERSIDADE<br/> FEDERAL DE ALAGOAS</h2>
+        <div>
+            <div class="flex items-center">
+                <img src={image_ufal} alt="Logo UFAL" class="mr-4 h-20"/> <!-- Imagem da UFAL -->
+                <div>
+                    <h2 class="text-2xl font-bold">UNIVERSIDADE<br/> FEDERAL DE ALAGOAS</h2>
+                </div>
             </div>
         </div>
         <div >
             <p>ENDEREÇO</p>
             <address class="text-gray-400">
-                <p>Av. Manoel Severino Barbosa</p>
-                <p>Bom Sucesso</p>
-                <p>Arapiraca - AL</p>
-                <p>CEP: 57309-005</p>
+                Av. Manoel Severino Barbosa<br />
+                Bom Sucesso<br />
+                Arapiraca - AL<br />
+                CEP: 57309-005
             </address>
         </div>
         <div>
@@ -34,12 +37,9 @@ const {image_ufal = "/images/brasao-branco.png"} = Astro.props;
     </div>
     <div  >
         <ul class="container mx-auto flex">
-            <li class="mr-4"><a href="">facebook</a></li>
-            <li class="mr-4"><a href="">twitter</a></li>
-            <li><a href="">insta</a></li>
+            <li class="mr-4"><a href=""><img src="/emojis/social/facebook.png" alt="" width="17" height="17"></a> </li>
+            <li class="mr-4"><a href=""><img src="/emojis/social/instagram.png" alt="" width="17" height="17"></a></li>
+            <li><a href=""><a href=""><img src="/emojis/social/twitter.png" alt="" width="17" height="17"></a></li>
         </ul>
     </div>
 </footer>
-
-
-
