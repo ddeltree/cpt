@@ -1,0 +1,32 @@
+
+
+
+Documentos para o aluno
+=======================
+
+
+
+
+
+
+
+
+[Modelo de TCC Tradicional (LaTeX)](modelos/ufal_cc_tcc_tradicional-2022-modelo.zip/view.html)
+
+
+[Modelo de Proposta de TCC](modelos/modelo-projeto-de-tcc-para-cadastro-atualizado.odt/view.html)
+
+
+[Modelo TCC tradicional SIBI/UFAL (.doc)](https://sibi.ufal.br/portal/?page_id=1770)
+
+
+[Termo de aceite de orientação de TCC](modelos/modelo-30-termo-de-aceite-orientacao-de-tcc.pdf/view.html)
+
+
+
+
+
+
+
+
+

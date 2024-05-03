@@ -1,0 +1,33 @@
+
+
+
+2021.2
+======
+
+
+
+
+
+
+
+**Cronograma das atividades do TCC - 2021.2**
+
+
+
+
+| 1. Período de cadastro de projeto de TCC | 04/04/2022 a 08/04/2022 |
+| --- | --- |
+| 2. Publicação de projetos homologados | 11/04/2022 |
+| 2.1 Período para recorrer do resultado da homologação | 12/04/2022 a 13/04/2022 |
+| 2.2 Publicação de resultado dos recursos | 14/04/2022 |
+| 3. Prazo de mudança de orientação | 31/05/2022 |
+| 4. Período de agendamento de defesa | 27/06/2022 a 01/07/2022 |
+| 5. Período de defesa | 04/07/2022 a 15/07/2022 |
+
+
+
+
+
+
+
+

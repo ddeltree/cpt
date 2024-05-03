@@ -1,0 +1,26 @@
+
+
+
+Projeto Pedagógico 2018
+=======================
+
+
+
+
+
+
+
+
+[Projeto Pedagógico do curso (PPC)](projeto-pedagogico-2018/ppc-2018.pdf/view.html)
+
+
+[Conteúdo programático das disciplinas](https://docs.google.com/document/d/1KBvEgPFn3E1TT5LExmCDBXeY-7DjhF9jsfi2nqLALuE/edit)
+
+
+
+
+
+
+
+
+

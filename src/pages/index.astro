@@ -1,9 +1,17 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from '../layouts/Layout.astro';
+
+const cols =await getCollection('www')
 ---
+
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<p>Hello!</p>
+		{cols.map(x => 
+			<a href={x.slug}>
+				<p>{x.id}</p>
+			</a>
+		)}
 	</main>
 </Layout>

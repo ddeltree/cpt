@@ -1,0 +1,21 @@
+
+
+
+Agenda do curso
+===============
+
+
+
+
+
+
+
+Você pode consultar o calendário acadêmico [aqui](https://ufal.br/estudante/graduacao/calendario-academico)
+
+
+
+
+
+
+
+

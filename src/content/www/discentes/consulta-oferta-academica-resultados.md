@@ -1,0 +1,23 @@
+
+
+
+Relatórios
+==========
+
+
+
+
+
+
+
+
+[Consulta oferta acadêmica 2022.2](https://docs.google.com/document/d/1BQ8NLKLyO7q1dEahYmqARNew7YxnSFACd8LzbcxXHCk/edit?usp=sharing)
+
+
+
+
+
+
+
+
+

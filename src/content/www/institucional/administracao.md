@@ -1,0 +1,44 @@
+
+
+
+Colegiado e Coordenações
+========================
+
+
+
+
+
+
+
+
+
+
+| Colegiado do Curso | Contato | Localização |
+| --- | --- | --- |
+| **Professores** |  |  |
+| Coordenador  - Patrick Henrique Brito | patrick@arapiraca.ufal.br | Bloco das Coordenações, Sala 04 |
+| Vice-coordenador - Rodolfo Carneiro Cavalcante | rodolfo.cavalcante@arapiraca.ufal.br |  |
+| Membro - Alexandre Paes dos Santos | alexandre.santos@arapiraca.ufal.br |  |
+| Membro - Raquel da Silva Cabral | raquel.cabral@arapiraca.ufal.br |  |
+| Membro - Ricardo Alexandre Afonso | ricardo.afonso@arapiraca.ufal.br |  |
+| **Técnicos** |  |  |
+|  |  |  |
+|  |  |  |
+| **Discentes** |  |  |
+| Titular - Kauã Fellipe Pereira Bispo | kaua.bispo@arapiraca.ufal.br |  |
+| Suplente - Josué Messias Junior | josue.junior@arapiraca.ufal.br |  |
+| TCC, Monitoria e Estágio |  |  |
+| Coordenador de Trabalho de Conclusão de Curso (TCC) -Ricardo Alexandre Afonso | ricardo.afonso@arapiraca.ufal.br | Bloco C, Sala |
+| Coordenador de Monitoria e Estágio - Tércio de Moraes | tercio.moraes@arapiraca.ufal.br | Bloco C, Sala 6 |
+| Coordenador de Extensão - Raquel da Silva Cabral | raquel.cabral@arapiraca.ufal.br | Bloco C, Sala |
+| Laboratórios de Ensino |  |  |
+| Coordenador dos Laboratórios de Ensino (LECC 1, LECC 2 e LECC 3) - Alexandre de Andrade Barbosa | alexandre.barbosa@arapiraca.ufal.br | Bloco C, Sala 5 |
+
+
+
+
+
+
+
+
+

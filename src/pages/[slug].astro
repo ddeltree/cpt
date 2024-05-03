@@ -1,0 +1,24 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection, type CollectionEntry } from "astro:content";
+
+export const getStaticPaths = (async () => {
+  const mds = await getCollection('www');
+  return mds.map(md => ({
+    params: {
+      slug: md.slug
+    },
+    props: {
+      md
+    }
+  }))
+}) satisfies GetStaticPaths;
+
+type Props = {
+  md: CollectionEntry<'www'>
+}
+
+const {md} = Astro.props;
+---
+
+{md.slug}
