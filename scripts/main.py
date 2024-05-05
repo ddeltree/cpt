@@ -7,19 +7,8 @@ import re
 from re import Match
 
 MD_DIR = Path("md")
-PUBLIC = Path("public")
-
-if PUBLIC.exists():
-    shutil.rmtree(PUBLIC)
 if MD_DIR.exists():
     shutil.rmtree(MD_DIR)
-
-IMG_SUFFIXES = list(
-    map(lambda e: f".{e}", ["png", "jpg", "jpeg", "gif", "webp", "svg"])
-)
-IMG_DIR, FILES_DIR = PUBLIC / "images", PUBLIC / "file"
-for p in [PUBLIC, IMG_DIR, FILES_DIR]:
-    p.mkdir(exist_ok=True)
 
 PROJECT_DIR = Path.home() / "httrack-websites/ufal/"
 SITE_NAME = "arapiraca.ufal.br/graduacao"
@@ -29,8 +18,11 @@ shutil.copytree(SITE_DIR, MD_DIR)
 
 
 def to_md():
-    for page in MD_DIR.rglob("*.html"):
+    for page in MD_DIR.rglob("*"):
         if page.is_dir():
+            continue
+        if page.suffix != ".html":
+            page.unlink()
             continue
         html = page.read_text("utf-8")
         soup = BeautifulSoup(html, features="html.parser")
@@ -44,30 +36,17 @@ def to_md():
         mdf = page.parent / (page.stem + ".md")
         mdf.write_text(markdown, "utf-8")
         page.unlink()
+    clean_directories()
 
 
-def populate_public():
-    PLONE = "++plone++ufalprofile"
-    for i, p in enumerate(MD_DIR.rglob(PLONE)):
-        if i == 0:
-            shutil.move(p / "favicons", "public")
-        shutil.rmtree(p)
-    move_dir_content()
-    for directory in MD_DIR.rglob("@@download"):
-        shutil.rmtree(directory)
-    for directory in MD_DIR.rglob("@@images"):
-        shutil.rmtree(directory)
-
-
-def move_dir_content():
-    for file in MD_DIR.rglob("*"):
-        if file.is_dir() or file.suffix == ".md":
-            continue
-        target_dir = IMG_DIR if file.suffix in IMG_SUFFIXES else FILES_DIR
-        target_file = target_dir / file.name
-        if target_file.exists():
-            target_file = target_dir / (file.parent.parent.name + file.suffix)
-        shutil.move(file, target_file)
+def clean_directories():
+    for glob in [
+        "++plone++ufalprofile",
+        "@@download",
+        "@@images",
+    ]:
+        for directory in MD_DIR.rglob(glob):
+            shutil.rmtree(directory)
 
 
 def update_links():
@@ -78,8 +57,8 @@ def update_links():
         def parse(x: Match):
             d = x.groupdict()
             desc, link, alt = d["desc"], d["link"], d["alt"]
-            path = md.parent / unquote(link)
-            path = Path("/images") / path.name
+            # TODO apenas urls relativas
+            path = "https://arapiraca.ufal.br/graduacao/" / Path(link)
             return f'![{desc}]({path} "{alt}")'
 
         if re.search(XP, text):
@@ -88,5 +67,7 @@ def update_links():
 
 
 to_md()
-# update_links()
-populate_public()
+clean_directories()
+update_links()
+# TODO mover para src/pages
+# TODO adicionar layout (frontmatter)
