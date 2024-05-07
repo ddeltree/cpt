@@ -10,9 +10,10 @@ MD_DIR = Path("md")
 if MD_DIR.exists():
     shutil.rmtree(MD_DIR)
 
+
+SITE_URL = "https://arapiraca.ufal.br/graduacao/"
 PROJECT_DIR = Path.home() / "httrack-websites/ufal/"
 SITE_NAME = "arapiraca.ufal.br/graduacao"
-
 SITE_DIR = PROJECT_DIR / SITE_NAME
 shutil.copytree(SITE_DIR, MD_DIR)
 
@@ -49,18 +50,19 @@ def clean_directories():
             shutil.rmtree(directory)
 
 
+def parse(x: Match):
+    d = x.groupdict()
+    desc, link, alt = d["desc"], d["link"], d["alt"]
+    url = str(link)
+    if not link.startswith("http"):
+        url = str(SITE_URL / Path(url))
+    return f'![{desc}]({url} "{alt}")'
+
+
 def update_links():
     XP = r"!\[(?P<desc>.*?)\]\((?P<link>.+?)(?:[ ]\"(?P<alt>.+?)\")?\)"
     for md in MD_DIR.rglob("*.md"):
         text = md.read_text("utf-8")
-
-        def parse(x: Match):
-            d = x.groupdict()
-            desc, link, alt = d["desc"], d["link"], d["alt"]
-            # TODO apenas urls relativas
-            path = "https://arapiraca.ufal.br/graduacao/" / Path(link)
-            return f'![{desc}]({path} "{alt}")'
-
         if re.search(XP, text):
             text = re.sub(XP, parse, text)
         md.write_text(text, "utf-8")
