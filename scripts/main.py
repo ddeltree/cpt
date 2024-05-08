@@ -1,7 +1,6 @@
 from pathlib import Path
 from markdownify import markdownify as md
 from bs4 import BeautifulSoup
-from urllib.parse import unquote
 import shutil
 import re
 from re import Match
@@ -18,7 +17,7 @@ SITE_DIR = PROJECT_DIR / SITE_NAME
 shutil.copytree(SITE_DIR, MD_DIR)
 
 
-def to_md():
+def pages_to_mdx():
     for page in MD_DIR.rglob("*"):
         if page.is_dir():
             continue
@@ -33,11 +32,10 @@ def to_md():
             continue
         for header in content.select("header>div"):
             header.clear()
-        markdown = md(str(content))
-        mdf = page.parent / (page.stem + ".md")
+        markdown = "---\nlayout: '@/layouts/Layout.astro'\n---\n\n" + md(str(content))
+        mdf = page.parent / (page.stem + ".mdx")
         mdf.write_text(markdown, "utf-8")
         page.unlink()
-    clean_directories()
 
 
 def clean_directories():
@@ -50,7 +48,7 @@ def clean_directories():
             shutil.rmtree(directory)
 
 
-def parse(x: Match):
+def relative_to_url(x: Match):
     d = x.groupdict()
     desc, link, alt = d["desc"], d["link"], d["alt"]
     url = str(link)
@@ -59,17 +57,19 @@ def parse(x: Match):
     return f'![{desc}]({url} "{alt}")'
 
 
-def update_links():
+def update_relative_links():
     XP = r"!\[(?P<desc>.*?)\]\((?P<link>.+?)(?:[ ]\"(?P<alt>.+?)\")?\)"
-    for md in MD_DIR.rglob("*.md"):
+    for md in MD_DIR.rglob("*.mdx"):
         text = md.read_text("utf-8")
         if re.search(XP, text):
-            text = re.sub(XP, parse, text)
+            text = re.sub(XP, relative_to_url, text)
         md.write_text(text, "utf-8")
 
 
-to_md()
+pages_to_mdx()
 clean_directories()
-update_links()
-# TODO mover para src/pages
-# TODO adicionar layout (frontmatter)
+update_relative_links()
+
+# TODO mover para src/pages/
+# o arquivo ciencia-da-computacao.md é o index
+# o diretório ciencia-da-computacao/ terá seu conteúdo movido a src/pages/
