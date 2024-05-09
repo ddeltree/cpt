@@ -17,7 +17,7 @@ SITE_DIR = PROJECT_DIR / SITE_NAME
 shutil.copytree(SITE_DIR, MD_DIR)
 
 
-def pages_to_mdx():
+def pages_to_md():
     for page in MD_DIR.rglob("*"):
         if page.is_dir():
             continue
@@ -32,8 +32,8 @@ def pages_to_mdx():
             continue
         for header in content.select("header>div"):
             header.clear()
-        markdown = "---\nlayout: '@/layouts/Layout.astro'\n---\n\n" + md(str(content))
-        mdf = page.parent / (page.stem + ".mdx")
+        markdown = "---\nlayout: '@/layouts/MdLayout.astro'\n---\n\n" + md(str(content))
+        mdf = page.parent / (page.stem + ".md")
         mdf.write_text(markdown, "utf-8")
         page.unlink()
 
@@ -59,14 +59,14 @@ def relative_to_url(x: Match):
 
 def update_relative_links():
     XP = r"!\[(?P<desc>.*?)\]\((?P<link>.+?)(?:[ ]\"(?P<alt>.+?)\")?\)"
-    for md in MD_DIR.rglob("*.mdx"):
+    for md in MD_DIR.rglob("*.md"):
         text = md.read_text("utf-8")
         if re.search(XP, text):
             text = re.sub(XP, relative_to_url, text)
         md.write_text(text, "utf-8")
 
 
-pages_to_mdx()
+pages_to_md()
 clean_directories()
 update_relative_links()
 
