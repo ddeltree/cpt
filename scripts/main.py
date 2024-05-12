@@ -33,7 +33,7 @@ def pages_to_md():
         for header in content.select("header>div"):
             header.clear()
         markdown = "---\nlayout: '@/layouts/MdLayout.astro'\n---\n\n" + md(str(content))
-        mdf = page.parent / (page.stem + ".md")
+        mdf = page.parent / (page.stem + ".mdx")
         mdf.write_text(markdown, "utf-8")
         page.unlink()
 
@@ -64,18 +64,21 @@ def get_relative_link_parser(md: Path):
 
 def update_relative_links():
     XP = r"!\[(?P<desc>.*?)\]\((?P<link>.+?)(?:[ ]\"(?P<alt>.+?)\")?\)"
-    for md in MD_DIR.rglob("*.md"):
+    for md in MD_DIR.rglob("*.mdx"):
         text = md.read_text("utf-8")
         if re.search(XP, text):
             parser = get_relative_link_parser(md)
             text = re.sub(XP, parser, text)
+        link = r"<(?P<url>http.+?)>"  # Dá erro no formato MDX
+        if re.search(link, text):
+            text = re.sub(link, lambda x: x.group("url"), text)
         text = text.replace("](ciencia-da-computacao/", "](")
         md.write_text(text, "utf-8")
 
 
 def flatten_dirs():
-    index_md = MD_DIR / "ciencia-da-computacao.md"
-    index_md.rename(MD_DIR / "index.md")
+    index_md = MD_DIR / "ciencia-da-computacao.mdx"
+    index_md.rename(MD_DIR / "index.mdx")
     cc_dir = MD_DIR / "ciencia-da-computacao"
     for path in cc_dir.iterdir():
         shutil.move(path, MD_DIR)

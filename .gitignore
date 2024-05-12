@@ -27,4 +27,4 @@ pnpm-debug.log*
 /scripts/md
 /scripts/public
 
-/src/pages/**/*.md
+/src/pages/**/*.md*
