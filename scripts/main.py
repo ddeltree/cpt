@@ -58,7 +58,7 @@ def parse_relative_link(x: Match, md: Path):
     if not url.startswith("http"):
         link2 = (md.parent / url).resolve().relative_to(MD_DIR)
         url = urljoin(SITE_URL, str(link2))
-    return f'<Image src="{url}" alt="{alt}" inferSize />'
+    return f'<Image src="{url}" alt="{alt}" inferSize />\n'
 
 
 def get_relative_link_parser(md: Path):
@@ -72,7 +72,7 @@ def update_relative_links():
     for md in MD_DIR.rglob("*.mdx"):
         text = md.read_text("utf-8")
         if re.search(LINK, text):
-            text = re.sub(LINK, lambda x: f'\\<{x.group("link")}\\>', text)
+            text = re.sub(LINK, lambda x: x.group("link"), text)
         if re.search(XP, text):
             parser = get_relative_link_parser(md)
             text = re.sub(XP, parser, text)
