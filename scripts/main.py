@@ -5,7 +5,7 @@ import shutil
 import re
 from re import Match
 
-MD_DIR = Path("md")
+MD_DIR = Path("md").absolute()
 if MD_DIR.exists():
     shutil.rmtree(MD_DIR)
 
@@ -48,13 +48,18 @@ def clean_directories():
             shutil.rmtree(directory)
 
 
-def relative_to_url(x: Match):
+def parse_relative_link(x: Match, md: Path):
     d = x.groupdict()
     desc, link, alt = d["desc"], d["link"], d["alt"]
     url = str(link)
-    if not link.startswith("http"):
-        url = str(SITE_URL / Path(url))
+    if not url.startswith("http"):
+        link2 = (md.parent / url).resolve().relative_to(MD_DIR)
+        url = str(SITE_URL / link2)
     return f'![{desc}]({url} "{alt}")'
+
+
+def get_relative_link_parser(md: Path):
+    return lambda x: parse_relative_link(x, md)
 
 
 def update_relative_links():
@@ -62,7 +67,8 @@ def update_relative_links():
     for md in MD_DIR.rglob("*.md"):
         text = md.read_text("utf-8")
         if re.search(XP, text):
-            text = re.sub(XP, relative_to_url, text)
+            parser = get_relative_link_parser(md)
+            text = re.sub(XP, parser, text)
         text = text.replace("](ciencia-da-computacao/", "](")
         md.write_text(text, "utf-8")
 
@@ -77,6 +83,6 @@ def flatten_dirs():
 
 
 pages_to_md()
-flatten_dirs()
-clean_directories()
 update_relative_links()
+clean_directories()
+flatten_dirs()
