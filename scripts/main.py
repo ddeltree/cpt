@@ -63,13 +63,20 @@ def update_relative_links():
         text = md.read_text("utf-8")
         if re.search(XP, text):
             text = re.sub(XP, relative_to_url, text)
+        text = text.replace("](ciencia-da-computacao/", "](")
         md.write_text(text, "utf-8")
 
 
+def flatten_dirs():
+    index_md = MD_DIR / "ciencia-da-computacao.md"
+    index_md.rename(MD_DIR / "index.md")
+    cc_dir = MD_DIR / "ciencia-da-computacao"
+    for path in cc_dir.iterdir():
+        shutil.move(path, MD_DIR)
+    cc_dir.rmdir()
+
+
 pages_to_md()
+flatten_dirs()
 clean_directories()
 update_relative_links()
-
-# TODO mover para src/pages/
-# o arquivo ciencia-da-computacao.md é o index
-# o diretório ciencia-da-computacao/ terá seu conteúdo movido a src/pages/
