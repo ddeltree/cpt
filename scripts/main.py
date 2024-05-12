@@ -4,6 +4,8 @@ from bs4 import BeautifulSoup
 import shutil
 import re
 from re import Match
+from urllib.parse import urljoin
+
 
 MD_DIR = Path("md").absolute()
 if MD_DIR.exists():
@@ -32,7 +34,8 @@ def pages_to_md():
             continue
         for header in content.select("header>div"):
             header.clear()
-        markdown = "---\nlayout: '@/layouts/MdLayout.astro'\n---\n\n" + md(str(content))
+        markdown = "---\nlayout: '@/layouts/MdLayout.astro'\n---\n\nimport { Image } from 'astro:assets';\n\n"
+        markdown += md(str(content))
         mdf = page.parent / (page.stem + ".mdx")
         mdf.write_text(markdown, "utf-8")
         page.unlink()
@@ -54,8 +57,8 @@ def parse_relative_link(x: Match, md: Path):
     url = str(link)
     if not url.startswith("http"):
         link2 = (md.parent / url).resolve().relative_to(MD_DIR)
-        url = str(SITE_URL / link2)
-    return f'![{desc}]({url} "{alt}")'
+        url = urljoin(SITE_URL, str(link2))
+    return f'<Image src="{url}" alt="{alt}" inferSize />'
 
 
 def get_relative_link_parser(md: Path):
@@ -64,14 +67,14 @@ def get_relative_link_parser(md: Path):
 
 def update_relative_links():
     XP = r"!\[(?P<desc>.*?)\]\((?P<link>.+?)(?:[ ]\"(?P<alt>.+?)\")?\)"
+    LINK = r"<(?P<link>.+?)>"  # Dá erro no formato MDX
     for md in MD_DIR.rglob("*.mdx"):
         text = md.read_text("utf-8")
+        if re.search(LINK, text):
+            text = re.sub(LINK, lambda x: f'\\<{x.group("link")}\\>', text)
         if re.search(XP, text):
             parser = get_relative_link_parser(md)
             text = re.sub(XP, parser, text)
-        link = r"<(?P<url>http.+?)>"  # Dá erro no formato MDX
-        if re.search(link, text):
-            text = re.sub(link, lambda x: x.group("url"), text)
         text = text.replace("](ciencia-da-computacao/", "](")
         md.write_text(text, "utf-8")
 
