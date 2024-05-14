@@ -58,6 +58,8 @@ def parse_relative_link(x: Match, md: Path):
     if not url.startswith("http"):
         link2 = (md.parent / url).resolve().relative_to(MD_DIR)
         url = urljoin(SITE_URL, str(link2))
+    elif re.search(r"https://arapiraca.ufal.br/(?:graduacao/)?resolveuid", url):
+        return ""  # url 404
     return f'<Image src="{url}" alt="{alt}" inferSize />\n'
 
 
