@@ -60,7 +60,7 @@ def parse_relative_link(x: Match, md: Path):
         url = urljoin(SITE_URL, str(link2))
     elif re.search(r"https://arapiraca.ufal.br/(?:graduacao/)?resolveuid", url):
         return ""  # url 404
-    return f'<Image src="{url}" alt="{alt}" inferSize />\n'
+    return f'<Image src="{url}" alt="{alt}" inferSize />'
 
 
 def get_relative_link_parser(md: Path):
@@ -68,19 +68,19 @@ def get_relative_link_parser(md: Path):
 
 
 def update_relative_links():
-    XP = r"!\[(?P<desc>.*?)\]\((?P<link>.+?)(?:[ ]\"(?P<alt>.+?)\")?\)"
+    IMG = r"!\[(?P<desc>.*?)\]\((?P<link>.+?)(?:[ ]\"(?P<alt>.+?)\")?\)"
     LINK = r"<(?P<link>.+?)>"  # Dá erro no formato MDX
-    HTML = r"\[(?P<desc>.*?)\]\((?P<link>.+?)\.html(?:[ ]\"(?P<alt>.+?)\")?\)"
+    HTML_LINK = r"\[(?P<desc>.*?)\]\((?P<link>.+?)\.html(?:[ ]\"(?P<alt>.+?)\")?\)"
     for md in MD_DIR.rglob("*.mdx"):
         text = md.read_text("utf-8")
         if re.search(LINK, text):
             text = re.sub(LINK, lambda x: x.group("link"), text)
-        if re.search(XP, text):
+        if re.search(IMG, text):
             parser = get_relative_link_parser(md)
-            text = re.sub(XP, parser, text)
-        if re.search(HTML, text):
+            text = re.sub(IMG, parser, text)
+        if re.search(HTML_LINK, text):
             text = re.sub(
-                HTML, lambda x: f'[{x.group("desc")}]({x.group("link")})', text
+                HTML_LINK, lambda x: f'[{x.group("desc")}]({x.group("link")})', text
             )
         text = text.replace("](ciencia-da-computacao/", "](")
         md.write_text(text, "utf-8")
