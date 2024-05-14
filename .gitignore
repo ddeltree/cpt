@@ -26,5 +26,3 @@ pnpm-debug.log*
 # markdown temporário coletado
 /scripts/md
 /scripts/public
-
-/src/pages/**/*.md*
