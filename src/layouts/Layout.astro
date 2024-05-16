@@ -1,8 +1,10 @@
 ---
-import Footer from '../components/Footer.astro'
 import ViewTransitions from 'astro/components/ViewTransitions.astro';
 import Header from '@/components/Header.astro';
-import SubHeader from '@/components/SubHeader.astro';
+import Footer from '@/components/Footer.astro'
+// Supports weights 100-900
+import '@fontsource-variable/inter';
+import '@/style/main.css'
 
 interface Props {
 	title: string;
@@ -25,7 +27,6 @@ const { title } = Astro.props;
 	<body class="flex flex-col min-h-screen">
 		<Header />
 		<slot />
-		<SubHeader/>
-		<Header/>
+		<Footer/>
 	</body>
 </html>

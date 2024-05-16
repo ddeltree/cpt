@@ -1,39 +1,56 @@
 ---
-
+import { Image } from 'astro:assets'
+import SubHeader from '@/components/SubHeader.astro';
+import headerBg from '../images/header-bg.png'
 ---
-<header class="bg-blue-600 text-white relative" style="font-size: 14px;">
-  <div class="bg-cover bg-center flex items-center justify-center absolute inset-0" style="background-image: url('https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/@@download-capa'); z-index: -1; height: 22rem;">
-    <nav class="flex flex-col items-center justify-end h-full">
-      <ul class="flex bg-blue-600">
-        <a href=""><li class="p-4">Alunos</li></a>
-        <a href=""><li class="p-4">Disciplinas</li></a>
-        <a href=""><li class="p-4">Docentes</li></a>
-        <a href=""><li class="p-4">Documentos</li></a>
-        <a href=""><li class="p-4">Institucional</li></a>
-        <a href=""><li class="p-4">Ofertas Acadêmicas</li></a>
-        <a href=""><li class="p-4">Pesquisa e Inovação</li></a>
-        <a href=""><li class="p-4">Extensão</li></a>
-      </ul>
-    </nav>
-  </div>
+<SubHeader/>
+<header class="relative flex items-start justify-center h-72 overflow-hidden">
+  <Image src={headerBg}  alt="cabeçalho com o símbolo do curso" />
   
-  <div class="h-16 flex items-center justify-between" >
-    <ul class="flex items-center">
-      <li class="mr-3">Página Inicial</li>
-      <li class="mr-3">Institucional</li>
-      <li class="mr-3">Unidades de Ensino</li>
-      <li class="mr-3">Graduação</li>
-      <li class="mr-3">Pós-Graduação</li>
-      <li class="mr-3">Pesquisa</li>
-      <li>Extensão</li>
-    </ul>
-    <div class="flex justify-center">
-      <form action="" class="w-full max-w-md rounded-full bg-gray-100 bg-opacity-50 relative">
-        <input type="text" class="w-full p-2 pl-10 text-sm text-gray-700 bg-transparent border-none focus:outline-none placeholder-gray-700" placeholder="Buscar no Site">
-        <span class="absolute inset-y-0 right-0 flex items-center pr-4">
+  <div class="flex flex-col items-center justify-center absolute max-w-6xl h-full w-full">
+    <div class="flex items-center justify-between w-full pt-2 px-8 absolute top-0 text-blue-50" >
+      <ul class="flex-1 flex items-center space-x-4 font-semibold text-shadow">
+        <li>página inicial</li>
+        <li>institucional</li>
+        <li>unidades de ensino</li>
+        <li>graduação</li>
+        <li>pós-graduação</li>
+        <li>pesquisa</li>
+        <li>extensão</li>
+      </ul>
+      <form class="relative flex items-center">
+        <input type="text" class="px-4 py-1 pr-8 text-sm rounded-full bg-slate-800 focus:outline-none placeholder-slate-400" placeholder="Buscar no Site">
+        <span class="absolute right-1.5 grayscale text-xs">
           🕵️
         </span>
-      </form>
+      </form> 
     </div>
+
+    <p class="pl-16 absolute top-[50%] left-0 text-5xl text-shadow-lg font-inter font-bold text-blue-50">Ciência da Computação</p>
+
+    <nav class="flex flex-col items-center justify-end absolute bottom-0 bg-slate-900 w-full rounded-t-full text-slate-50">
+      <ul class="flex space-x-10 p-3">
+        <a href=""><li>alunos</li></a>
+        <a href=""><li>disciplinas</li></a>
+        <a href=""><li>docentes</li></a>
+        <a href=""><li>documentos</li></a>
+        <a href=""><li>institucional</li></a>
+        <a href=""><li>ofertas acadêmicas</li></a>
+        <a href=""><li>pesquisa e inovação</li></a>
+        <a href=""><li>extensão</li></a>
+      </ul> 
+    </nav>
   </div>
 </header>
+
+<style>
+  .text-shadow {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, .4);
+  }
+  .text-shadow-lg {
+    text-shadow: 2px 2px 16px rgba(0, 0, 0, 1);
+  }
+  li::first-letter{
+    text-transform: capitalize;
+  }
+</style>
