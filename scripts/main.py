@@ -86,19 +86,38 @@ def update_relative_links():
             text = re.sub(
                 HTML_LINK, lambda x: f'[{x.group("desc")}]({x.group("link")})', text
             )
-        text = text.replace("](ciencia-da-computacao/", "](cpt/")
+        text = text.replace("](ciencia-da-computacao/", "](/cpt/")
         md.write_text(text, "utf-8")
 
 
 def create_index_mdx():
-    # abc/         abc/
-    # abc.mdx  -->   |- index.mdx
+    # cpt/         cpt/
+    # cpt.mdx  -->   |- index.mdx
+    (MD_DIR / "ciencia-da-computacao").rename(MD_DIR / "cpt")
+    (MD_DIR / "ciencia-da-computacao.mdx").rename(MD_DIR / "cpt.mdx")
+    RXP = r"\[(?P<desc>.*?)\]\((?P<link>.+?)\)"
     for md in MD_DIR.rglob("*.mdx"):
         parent = md.parent / md.stem
+        text = md.read_text("utf-8")
+        rmlen = len(md.stem) + 1
+        offset = 0
+        for m in re.finditer(RXP, text):
+            original_link = m.group("link")
+            if not original_link.startswith(md.stem):
+                continue
+            link = original_link[rmlen:]
+            full_link = "/" + str(parent.relative_to(MD_DIR) / link)
+            i, j = m.span("link")
+            text = text[: i - offset] + full_link + text[j - offset :]
+            offset += rmlen - (len(full_link) - len(link))
+        md.write_text(text, "utf-8")
         if parent.exists():
             md.rename(parent / "index.mdx")
+
+
+def flatten_root():
     # remover a raiz "ciencia-da-computacao"
-    cc_dir = MD_DIR / "ciencia-da-computacao"
+    cc_dir = MD_DIR / "cpt"
     for path in cc_dir.iterdir():
         shutil.move(path, MD_DIR)
     cc_dir.rmdir()
@@ -108,3 +127,4 @@ pages_to_md()
 update_relative_links()
 clean_directories()
 create_index_mdx()
+flatten_root()
