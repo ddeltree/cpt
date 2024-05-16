@@ -60,6 +60,10 @@ def parse_relative_link(x: Match, md: Path):
         url = urljoin(SITE_URL, str(link2))
     elif re.search(r"https://arapiraca.ufal.br/(?:graduacao/)?resolveuid", url):
         return ""  # url 404
+    elif url.startswith(
+        "https://drive.google.com/file/d/11hKWuL7r7y9A1U5ZtBH60BVZgJA0cb8W"
+    ):
+        return ""  # 404
     return f'<Image src="{url}" alt="{alt}" inferSize />'
 
 
@@ -82,13 +86,18 @@ def update_relative_links():
             text = re.sub(
                 HTML_LINK, lambda x: f'[{x.group("desc")}]({x.group("link")})', text
             )
-        text = text.replace("](ciencia-da-computacao/", "](")
+        text = text.replace("](ciencia-da-computacao/", "](cpt/")
         md.write_text(text, "utf-8")
 
 
-def flatten_dirs():
-    index_md = MD_DIR / "ciencia-da-computacao.mdx"
-    index_md.rename(MD_DIR / "index.mdx")
+def create_index_mdx():
+    # abc/         abc/
+    # abc.mdx  -->   |- index.mdx
+    for md in MD_DIR.rglob("*.mdx"):
+        parent = md.parent / md.stem
+        if parent.exists():
+            md.rename(parent / "index.mdx")
+    # remover a raiz "ciencia-da-computacao"
     cc_dir = MD_DIR / "ciencia-da-computacao"
     for path in cc_dir.iterdir():
         shutil.move(path, MD_DIR)
@@ -98,4 +107,4 @@ def flatten_dirs():
 pages_to_md()
 update_relative_links()
 clean_directories()
-flatten_dirs()
+create_index_mdx()
