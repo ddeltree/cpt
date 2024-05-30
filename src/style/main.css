@@ -1,0 +1,19 @@
+:root {
+  --sidebar-width: 10rem;
+}
+
+#rightside-content {
+  margin-left: var(--sidebar-width);
+}
+#sidebar-content {
+  width: var(--sidebar-width);
+  display: block;
+}
+#sidebar-toggle:checked + label + #sidebar-content {
+  display: none;
+}
+
+#sidebar-toggle:checked + label + #sidebar-content,
+#sidebar:has(> #sidebar-toggle:checked) + #rightside-content {
+  --sidebar-width: 3rem;
+}
