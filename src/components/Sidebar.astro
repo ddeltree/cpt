@@ -1,6 +1,10 @@
+---
+import Collapsible from "./Collapsible.astro";
+---
+
 <nav
   id="sidebar"
-  class="px-1 fixed bg-slate-300 left-0 top-0 bottom-0 z-10 min-w-12"
+  class="fixed bg-slate-300 left-0 top-0 bottom-0 z-10"
   transition:persist
 >
   <input id="sidebar-toggle" type="checkbox" class="hidden" />
@@ -9,10 +13,57 @@
     class="block text-left text-lg select-none cursor-pointer">&#8801;</label
   >
   <div id="sidebar-content" class="p-4 min-h-full w-44">
-    <!-- TODO componente para entradas que colapsam -->
-    <ul>
-      <li><a>Item 1</a></li>
-      <li><a>Item 2</a></li>
-    </ul>
+    <Collapsible>
+      <span slot="label">First</span>
+      <ul>
+        <li>
+          <Collapsible>
+            <span slot="label">A</span>
+            <ul>
+              <li>I</li>
+              <li>II</li>
+              <li>III</li>
+            </ul>
+          </Collapsible>
+        </li>
+        <li>B</li>
+        <li>C</li>
+      </ul>
+    </Collapsible>
+    <Collapsible>
+      <span slot="label">Second</span>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+      </ul>
+    </Collapsible>
   </div>
 </nav>
+
+<style is:global>
+  :root {
+    --collapsed-width: 3rem;
+    --expanded-width: 10rem;
+    --sidebar-width: var(--expanded-width);
+  }
+
+  #sidebar {
+    min-width: var(--collapsed-width);
+  }
+
+  #rightside-content {
+    margin-left: var(--sidebar-width);
+  }
+  #sidebar-content {
+    width: var(--sidebar-width);
+    display: block;
+  }
+  #sidebar-toggle:checked + label + #sidebar-content {
+    display: none;
+  }
+
+  #sidebar-toggle:checked + label + #sidebar-content,
+  #sidebar:has(> #sidebar-toggle:checked) + #rightside-content {
+    --sidebar-width: var(--collapsed-width);
+  }
+</style>
