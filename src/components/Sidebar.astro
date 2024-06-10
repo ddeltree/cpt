@@ -2,12 +2,12 @@
 import Collapsible from "./Collapsible.astro";
 ---
 
+<input id="sidebar-toggle" type="checkbox" class="hidden" />
 <nav
   id="sidebar"
   class="fixed bg-slate-300 left-0 top-0 bottom-0 z-10"
   transition:persist
 >
-  <input id="sidebar-toggle" type="checkbox" class="hidden" />
   <label
     for="sidebar-toggle"
     class="block text-left text-lg select-none cursor-pointer">&#8801;</label
@@ -58,12 +58,11 @@ import Collapsible from "./Collapsible.astro";
     width: var(--sidebar-width);
     display: block;
   }
-  #sidebar-toggle:checked + label + #sidebar-content {
+  #sidebar-toggle:checked + #sidebar > #sidebar-content {
     display: none;
   }
 
-  #sidebar-toggle:checked + label + #sidebar-content,
-  #sidebar:has(> #sidebar-toggle:checked) + #rightside-content {
+  #sidebar-toggle:checked ~ #rightside-content {
     --sidebar-width: var(--collapsed-width);
   }
 </style>
