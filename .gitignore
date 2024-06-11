@@ -26,4 +26,6 @@ pnpm-debug.log*
 # markdown temporário coletado
 /scripts/md
 /scripts/public
+/scripts/sitemap.yaml
+/scripts/map.txt
 /package-lock.json
