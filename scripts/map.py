@@ -24,7 +24,6 @@ def iter_directories():
 
 def iter_files():
     iter_tree(MD, to_iter=lambda x: TPath(x), should_stack=should_stack)
-    iter_tree(MD, to_iter=lambda x: TPath(x), should_stack=should_stack2)
 
 
 def should_stack(file: Path):
@@ -32,35 +31,30 @@ def should_stack(file: Path):
         file = file.parent if file.stem == "index" else file.parent / file.stem
         file = file.relative_to(MD)
         add_file_entry(file)
-    return file.is_dir()
-
-
-def should_stack2(file: Path):
-    if file.is_dir() and len(list(file.iterdir())) < 2:
-        file = file.relative_to(MD)
-        ref = YAML
-        keys = str(file).split("/")
-        for i, key in enumerate(keys):
-            is_last = i == len(keys) - 1
-            ref[key] = ref.get(key, dict())
-            if is_last:
-                ref[key] = str(file)
-            ref = ref[key]
-    return file.is_dir()
+    if not file.is_dir():
+        return False
+    length = len([*file.iterdir()])
+    if length == 0:
+        add_entry(([x for x in file.parents])[::-1][1:] + [file], str(file))
+    return True
 
 
 def add_file_entry(file: Path):
+    # TODO refatorar add_entry() para ser uma função universal
     if str(file) == ".":
         return
     ref = YAML
     keys = str(file).split("/")
     for i, key in enumerate(keys):
-        ref[key] = ref.get(key, dict() if not i == len(keys) - 1 else str(file))
+        ref[key] = ref.get(key, dict() if i != len(keys) - 1 else str(file))
         ref = ref[key]
 
 
 def iter_tree(
-    root, to_iter=lambda x: iter(x), should_stack=lambda: False, on_pop=lambda x: ...
+    root,
+    to_iter=lambda x: iter(x),
+    should_stack=lambda x: False,
+    on_pop=lambda x: ...,
 ):
     stack = [to_iter(root)]
     while stack:
@@ -73,14 +67,16 @@ def iter_tree(
             stack.pop()
 
 
-def add_entry(dir_stack):
+def add_entry(dir_stack, value=None):
     ref = YAML
-    for i, directory in enumerate(dir_stack):
-        key = str(directory.relative_to(MD).name)
+    for i in range(len(dir_stack) - 1):
+        key = str(dir_stack[i].relative_to(MD).name)
         if not key:
             continue
         ref[key] = ref.get(key, dict())
         ref = ref[key]
+    key = str(dir_stack[-1].relative_to(MD).name)
+    ref[key] = ref.get(key, dict()) if not value else value
 
 
 YAML = dict()
