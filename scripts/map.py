@@ -1,88 +1,67 @@
+from typing import Tuple
+import yaml, subprocess
 from pathlib import Path
-import yaml
 
 
-class TPath(type(Path())):
-    def __init__(self, path: Path):
-        self.state = path.iterdir() if path.is_dir() else None
-
-    def __iter__(self):
-        return self
-
-    def __next__(self):
-        return next(self.state) if self.state else None
+find_out = subprocess.check_output(["find", "md"], encoding="utf-8")
+paths = [f_around for f_around in find_out.split("\n") if f_around]
 
 
-def iter_directories():
-    iter_tree(
-        MD,
-        to_iter=lambda x: TPath(x),
-        should_stack=lambda x: x.is_dir(),
-        on_pop=lambda x: add_entry([y for y in x]),
-    )
+def rem_suffix(path: str):
+    path = path[3:-4] if path.endswith(".mdx") else path[3:]
+    return path
 
 
-def iter_files():
-    iter_tree(MD, to_iter=lambda x: TPath(x), should_stack=should_stack)
+paths = list(
+    map(rem_suffix, sorted(filter(lambda x: "index.mdx" not in x and x != "md", paths)))
+)
 
-
-def should_stack(file: Path):
-    if file.is_file():
-        file = file.parent if file.stem == "index" else file.parent / file.stem
-        file = file.relative_to(MD)
-        add_file_entry(file)
-    if not file.is_dir():
-        return False
-    length = len([*file.iterdir()])
-    if length == 0:
-        add_entry(([x for x in file.parents])[::-1][1:] + [file], str(file))
-    return True
-
-
-def add_file_entry(file: Path):
-    # TODO refatorar add_entry() para ser uma função universal
-    if str(file) == ".":
-        return
-    ref = YAML
-    keys = str(file).split("/")
-    for i, key in enumerate(keys):
-        ref[key] = ref.get(key, dict() if i != len(keys) - 1 else str(file))
+yml: dict[str, dict] = dict()
+for path in paths:
+    ref = yml
+    keys = path.split("/")
+    for key in keys:
+        value = ref.get(key, dict())
+        ref[key] = value
         ref = ref[key]
 
 
 def iter_tree(
     root,
-    to_iter=lambda x: iter(x),
-    should_stack=lambda x: False,
-    on_pop=lambda x: ...,
+    to_iter=lambda child: iter(child),
+    should_stack=lambda child: False,
+    on_pop=lambda stack: ...,
 ):
     stack = [to_iter(root)]
     while stack:
         node = stack[-1]
         child = next(node, None)
-        if child and should_stack(child):
+        if child != None and should_stack(child):
             stack.append(to_iter(child))
         elif not child:
             on_pop(stack)
             stack.pop()
 
 
-def add_entry(dir_stack, value=None):
-    ref = YAML
-    for i in range(len(dir_stack) - 1):
-        key = str(dir_stack[i].relative_to(MD).name)
-        if not key:
-            continue
-        ref[key] = ref.get(key, dict())
-        ref = ref[key]
-    key = str(dir_stack[-1].relative_to(MD).name)
-    ref[key] = ref.get(key, dict()) if not value else value
+def make_iterator(entry: Tuple[str | None, dict, dict | None] | dict):
+    path, parent, _ = entry if not isinstance(entry, dict) else (None, entry, None)
+    for key, value in parent.items():
+        new_path = f"{path}/{key}" if path else key
+        yield (new_path, value, parent)
 
 
-YAML = dict()
-MD = Path("md")
+def should_stack(child: Tuple[str, dict, dict]):
+    path, value, parent = child
+    if len(value.keys()) == 0:
+        parent[path.split("/")[-1]] = path
+    return True
 
-iter_directories()
-iter_files()
 
-Path("sitemap.yaml").write_text(yaml.dump(YAML), "utf-8")
+iter_tree(
+    root=yml,
+    to_iter=make_iterator,
+    should_stack=should_stack,
+    on_pop=lambda x: ...,
+)
+
+Path("sitemap.yaml").write_text(yaml.dump(yml))
