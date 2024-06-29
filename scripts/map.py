@@ -1,20 +1,18 @@
 from typing import Tuple
-import yaml, subprocess
 from pathlib import Path
+import yaml
 
 
-find_out = subprocess.check_output(["find", "md"], encoding="utf-8")
-paths = [f_around for f_around in find_out.split("\n") if f_around]
-
-
-def rem_suffix(path: str):
-    path = path[3:-4] if path.endswith(".mdx") else path[3:]
-    return path
-
-
-paths = list(
-    map(rem_suffix, sorted(filter(lambda x: "index.mdx" not in x and x != "md", paths)))
+paths = map(
+    lambda p: p[3:-4] if p.endswith(".mdx") else p[3:],
+    sorted(
+        filter(
+            lambda x: "index.mdx" not in x and x != "md",
+            (str(x) for x in Path("md").rglob("*")),
+        )
+    ),
 )
+
 
 yml: dict[str, dict] = dict()
 for path in paths:
