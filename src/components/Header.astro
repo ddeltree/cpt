@@ -1,54 +1,38 @@
----
-import { Image } from 'astro:assets'
-import headerBg from '../images/header-bg.png'
----
-<header class="relative flex items-start justify-center h-72 overflow-hidden">
-  <Image src={headerBg}  alt="cabeçalho com o símbolo do curso" />
-  
-  <div class="flex flex-col items-center justify-center absolute max-w-6xl h-full w-full">
-    <div class="flex items-center justify-between w-full pt-2 px-8 absolute top-0 text-blue-50" >
-      <ul class="flex-1 flex items-center space-x-4 font-semibold text-shadow">
-        <li>página inicial</li>
-        <li>institucional</li>
-        <li>unidades de ensino</li>
-        <li>graduação</li>
-        <li>pós-graduação</li>
-        <li>pesquisa</li>
-        <li>extensão</li>
-      </ul>
-      <form class="relative flex items-center">
-        <input type="text" class="px-4 py-1 pr-8 text-sm rounded-full bg-slate-800 focus:outline-none placeholder-slate-400" placeholder="Buscar no Site">
-        <span class="absolute right-1.5 grayscale text-xs">
-          🕵️
-        </span>
-      </form> 
+<header
+  class="top-0 w-full fixed overflow-hidden
+  flex items-center justify-center
+  py-1 px-8 gap-8
+  font-bold
+  bg-zinc-900 text-zinc-50"
+>
+  <div class="flex items-center justify-center w-full gap-10">
+    <div class="flex justify-center items-center gap-2">
+      <img
+        src="/cpt/images/brasao-branco.png"
+        alt="Logo da Universidade Federal de Alagoas - UFAL"
+        width="16"
+      />
+      <p class="uppercase">Ufal</p>
     </div>
-
-    <p class="pl-16 absolute top-[50%] left-0 text-5xl text-shadow-lg font-inter font-bold text-blue-50">Ciência da Computação</p>
-
-    <nav class="flex flex-col items-center justify-end absolute bottom-0 bg-slate-900 w-full rounded-t-full text-slate-50">
-      <ul class="flex space-x-10 p-3">
-        <a href=""><li>alunos</li></a>
-        <a href=""><li>disciplinas</li></a>
-        <a href=""><li>docentes</li></a>
-        <a href=""><li>documentos</li></a>
-        <a href=""><li>institucional</li></a>
-        <a href=""><li>ofertas acadêmicas</li></a>
-        <a href=""><li>pesquisa e inovação</li></a>
-        <a href=""><li>extensão</li></a>
-      </ul> 
+    <p class="flex-1 text-blue-300 font-extrabold text-lg">
+      Ciência da Computação
+    </p>
+    <nav class="flex flex-1 justify-end items-center gap-4 max-w-7xl h-full">
     </nav>
   </div>
 </header>
 
+<style is:global>
+  :root {
+    --header-height: 3.2rem;
+  }
+  #rightside-content {
+    padding-top: var(--header-height);
+  }
+</style>
+
 <style>
-  .text-shadow {
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, .4);
-  }
-  .text-shadow-lg {
-    text-shadow: 2px 2px 16px rgba(0, 0, 0, 1);
-  }
-  li::first-letter{
-    text-transform: capitalize;
+  header {
+    height: var(--header-height);
   }
 </style>

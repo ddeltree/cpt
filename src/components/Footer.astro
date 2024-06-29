@@ -1,36 +1,73 @@
-<footer class="bg-gray-800 text-white p-8 ">
-    <div class="container mx-auto flex justify-between ">
-        <div>
-            <div class="flex items-center">
-                <img src="/cpt/images/brasao-branco.png" alt="Logo UFAL" class="mr-4 h-20"/> <!-- Imagem da UFAL -->
-                <div>
-                    <h2 class="text-2xl font-bold"><p class="uppercase">universidade</p><p class="uppercase">federal de alagoas</p></h2>
-                </div>
-            </div>
-        </div>
-        <div >
-            <p class="uppercase">endereço</p>
-            <address class="text-gray-400">
-                <p>Av. Manoel Severino Barbosa</p>
-                <p>Bom Sucesso </p> 
-                <p>Arapiraca - AL </p>
-                <p>CEP: 57309-005 </p>
-            </address>
-        </div>
-        <div>
-            <p class="uppercase">e-mail</p>
-            <p class="text-gray-400">.</p>
-        </div>
-        <div>
-            <p class="uppercase">telefone</p>
-            <p class="text-gray-400">(82) 3482-1800</p>
-        </div>
+<footer class="bg-zinc-900 text-zinc-50 p-8">
+  <div class="flex justify-evenly">
+    <div class="flex items-center">
+      <img
+        src="/cpt/images/brasao-branco.png"
+        alt="Logo UFAL"
+        class="mr-4 h-20"
+      />
+      <h2 class="text-2xl uppercase font-bold text-balance">
+        universidade federal de alagoas
+      </h2>
     </div>
-    <div  >
-        <ul class="container mx-auto flex">
-            <li class="mr-4"><a href=""><img src="/cpt/emojis/social/facebook.svg" alt="" class="w-4 h-4"></a> </li>
-            <li class="mr-4"><a href=""><img src="/cpt/emojis/social/instagram.svg" alt="" class="w-4 h-4"></a></li>
-            <li><a href="mr-4"><a href=""><img src="/cpt/emojis/social/twitter.svg" alt="" class="w-4 h-4"></a></li>
-        </ul>
+    <div>
+      <p class="uppercase">endereço</p>
+      <address class="text-zinc-400">
+        <p>Av. Manoel Severino Barbosa</p>
+        <p>Bom Sucesso</p>
+        <p>Arapiraca - AL</p>
+        <p>CEP: 57309-005</p>
+      </address>
     </div>
+    <div>
+      <p class="uppercase">e-mail</p>
+      <p class="text-zinc-400">.</p>
+    </div>
+    <div>
+      <p class="uppercase">telefone</p>
+      <p class="text-zinc-400">(82) 3482-1800</p>
+    </div>
+  </div>
+  <div>
+    <ul class="container mx-auto flex">
+      <li class="mr-4">
+        <a href=""
+          ><img
+            src="/cpt/emojis/social/facebook.svg"
+            alt=""
+            class="w-4 h-4"
+          /></a
+        >
+      </li>
+      <li class="mr-4">
+        <a href=""
+          ><img
+            src="/cpt/emojis/social/instagram.svg"
+            alt=""
+            class="w-4 h-4"
+          /></a
+        >
+      </li>
+      <li>
+        <a href="mr-4"
+          ><a href=""
+            ><img
+              src="/cpt/emojis/social/twitter.svg"
+              alt=""
+              class="w-4 h-4"
+            /></a
+          ></a
+        >
+      </li>
+    </ul>
+  </div>
 </footer>
+
+<style is:global>
+  :root {
+    --footer-height: 16rem;
+  }
+  footer {
+    height: var(--footer-height);
+  }
+</style>

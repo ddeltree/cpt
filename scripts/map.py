@@ -13,7 +13,6 @@ paths = map(
     ),
 )
 
-
 yml: dict[str, dict] = dict()
 for path in paths:
     ref = yml
@@ -41,7 +40,7 @@ def iter_tree(
             stack.pop()
 
 
-def make_iterator(entry: Tuple[str | None, dict, dict | None] | dict):
+def make_iterator(entry: Tuple[str, dict, dict] | dict):
     path, parent, _ = entry if not isinstance(entry, dict) else (None, entry, None)
     for key, value in parent.items():
         new_path = f"{path}/{key}" if path else key

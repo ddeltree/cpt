@@ -1,11 +1,11 @@
 ---
-import Collapsible from "./Collapsible.astro";
+import Collapsible from './Collapsible.astro'
 ---
 
 <input id="sidebar-toggle" type="checkbox" class="hidden" />
 <nav
   id="sidebar"
-  class="fixed bg-slate-300 left-0 top-0 bottom-0 z-10"
+  class="fixed bg-zinc-300 border border-r-2 border-zinc-900 left-0 bottom-0 z-10"
   transition:persist
 >
   <label
@@ -48,6 +48,7 @@ import Collapsible from "./Collapsible.astro";
   }
 
   #sidebar {
+    top: var(--header-height);
     min-width: var(--collapsed-width);
   }
 
