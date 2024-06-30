@@ -29,9 +29,7 @@ const { title } = Astro.props
   <body class="flex flex-col min-h-screen">
     <Header />
     <Sidebar />
-    <div id="rightside-content">
-      <slot />
-    </div>
+    <slot />
     <Footer />
   </body>
 </html>
