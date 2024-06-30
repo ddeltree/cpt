@@ -1,0 +1,311 @@
+{
+  "discentes": {
+    "cadastro-de-atividades-complementares": "discentes/cadastro-de-atividades-complementares",
+    "centro-academico": "discentes/centro-academico",
+    "colacao-de-grau-diploma": "discentes/colacao-de-grau-diploma",
+    "consulta-oferta-academica-resultados": "discentes/consulta-oferta-academica-resultados",
+    "copy_of_solicitacao-de-documentos": "discentes/copy_of_solicitacao-de-documentos",
+    "dicas-cartaz.png": {
+      "view": "discentes/dicas-cartaz.png/view"
+    },
+    "egressos": {
+      "em-que-estao-trabalhando.pdf": {
+        "view": "discentes/egressos/em-que-estao-trabalhando.pdf/view"
+      }
+    },
+    "faq": "discentes/faq",
+    "formularios-alunos": {
+      "formularios-para-ajuste-de-matricula": "discentes/formularios-alunos/formularios-para-ajuste-de-matricula"
+    },
+    "matricula": {
+      "copy_of_instrucoes-para-sua-matricula": "discentes/matricula/copy_of_instrucoes-para-sua-matricula",
+      "instrucoes-para-sua-matricula": "discentes/matricula/instrucoes-para-sua-matricula"
+    },
+    "representantes-de-turma": "discentes/representantes-de-turma",
+    "solicitacao-de-documentos": "discentes/solicitacao-de-documentos"
+  },
+  "disciplinas-1": "disciplinas-1",
+  "docentes-1": "docentes-1",
+  "documentos": {
+    "agenda": "documentos/agenda",
+    "agenda-dos-leccs": "documentos/agenda-dos-leccs",
+    "atas-do-colegiado-e-nde": {
+      "colegiado": {
+        "2021": {
+          "ata-02-colegiado-170821-assinada.pdf": {
+            "view": "documentos/atas-do-colegiado-e-nde/colegiado/2021/ata-02-colegiado-170821-assinada.pdf/view"
+          },
+          "ata-assinada.pdf": {
+            "view": "documentos/atas-do-colegiado-e-nde/colegiado/2021/ata-assinada.pdf/view"
+          },
+          "ata_05_2021_assinada.pdf": {
+            "view": "documentos/atas-do-colegiado-e-nde/colegiado/2021/ata_05_2021_assinada.pdf/view"
+          },
+          "ata_06_2021.pdf": {
+            "view": "documentos/atas-do-colegiado-e-nde/colegiado/2021/ata_06_2021.pdf/view"
+          },
+          "ata_colegiado_04_com_plano_assinada.pdf": {
+            "view": "documentos/atas-do-colegiado-e-nde/colegiado/2021/ata_colegiado_04_com_plano_assinada.pdf/view"
+          }
+        },
+        "2022": {
+          "ata_01_2022.pdf": {
+            "view": "documentos/atas-do-colegiado-e-nde/colegiado/2022/ata_01_2022.pdf/view"
+          },
+          "copy2_of_ata_01_2022.pdf": {
+            "view": "documentos/atas-do-colegiado-e-nde/colegiado/2022/copy2_of_ata_01_2022.pdf/view"
+          },
+          "copy3_of_ata_01_2022.pdf": {
+            "view": "documentos/atas-do-colegiado-e-nde/colegiado/2022/copy3_of_ata_01_2022.pdf/view"
+          },
+          "copy4_of_ata_01_2022.pdf": {
+            "view": "documentos/atas-do-colegiado-e-nde/colegiado/2022/copy4_of_ata_01_2022.pdf/view"
+          },
+          "copy5_of_ata_01_2022.pdf": {
+            "view": "documentos/atas-do-colegiado-e-nde/colegiado/2022/copy5_of_ata_01_2022.pdf/view"
+          },
+          "copy6_of_ata_01_2022.pdf": {
+            "view": "documentos/atas-do-colegiado-e-nde/colegiado/2022/copy6_of_ata_01_2022.pdf/view"
+          },
+          "copy_of_ata_01_2022.pdf": {
+            "view": "documentos/atas-do-colegiado-e-nde/colegiado/2022/copy_of_ata_01_2022.pdf/view"
+          }
+        },
+        "2023": {
+          "ata_01_2023.pdf": {
+            "view": "documentos/atas-do-colegiado-e-nde/colegiado/2023/ata_01_2023.pdf/view"
+          }
+        }
+      },
+      "nde": {
+        "ata-nde-05-ok.pdf": {
+          "view": "documentos/atas-do-colegiado-e-nde/nde/ata-nde-05-ok.pdf/view"
+        },
+        "ata01.pdf": {
+          "view": "documentos/atas-do-colegiado-e-nde/nde/ata01.pdf/view"
+        },
+        "ata02.pdf": {
+          "view": "documentos/atas-do-colegiado-e-nde/nde/ata02.pdf/view"
+        },
+        "ata03.pdf": {
+          "view": "documentos/atas-do-colegiado-e-nde/nde/ata03.pdf/view"
+        },
+        "ata04-alunos.pdf": {
+          "view": "documentos/atas-do-colegiado-e-nde/nde/ata04-alunos.pdf/view"
+        }
+      }
+    },
+    "imagens": {
+      "afonso.png": "documentos/imagens/afonso.png",
+      "elthon.png": "documentos/imagens/elthon.png",
+      "email-sign.png": "documentos/imagens/email-sign.png",
+      "instagram-logo.png": "documentos/imagens/instagram-logo.png",
+      "instrucoes-para-a-matricula.svg": "documentos/imagens/instrucoes-para-a-matricula.svg",
+      "internet.png": "documentos/imagens/internet.png",
+      "lattes-1.png": "documentos/imagens/lattes-1.png",
+      "linkedin.png": "documentos/imagens/linkedin.png",
+      "logo-02-ada.png": "documentos/imagens/logo-02-ada.png",
+      "logo-cc-arapiraca.png": "documentos/imagens/logo-cc-arapiraca.png",
+      "paes.png": "documentos/imagens/paes.png",
+      "patrick.png": "documentos/imagens/patrick.png",
+      "post-pagina-bienal.png": "documentos/imagens/post-pagina-bienal.png",
+      "raquel.png": "documentos/imagens/raquel.png",
+      "rodolfo.png": "documentos/imagens/rodolfo.png",
+      "romulo.png": "documentos/imagens/romulo.png",
+      "selo-guia-estadao-2022.png": "documentos/imagens/selo-guia-estadao-2022.png",
+      "story-do-instagram-recepcao-2023-1.svg": "documentos/imagens/story-do-instagram-recepcao-2023-1.svg",
+      "tacito-4.png": "documentos/imagens/tacito-4.png",
+      "tercio.png": "documentos/imagens/tercio.png",
+      "thiago.png": "documentos/imagens/thiago.png",
+      "xambs.png": "documentos/imagens/xambs.png"
+    },
+    "logo-do-curso": {
+      "logo-cc-arapiraca-1.png": {
+        "view": "documentos/logo-do-curso/logo-cc-arapiraca-1.png/view"
+      },
+      "logo-cc-arapiraca-2.png": {
+        "view": "documentos/logo-do-curso/logo-cc-arapiraca-2.png/view"
+      },
+      "logo-cc-arapiraca.png": {
+        "view": "documentos/logo-do-curso/logo-cc-arapiraca.png/view"
+      },
+      "logo-cc-branca.png": {
+        "view": "documentos/logo-do-curso/logo-cc-branca.png/view"
+      },
+      "logo-cc-simbolo-branco-fundo-azul.png": {
+        "view": "documentos/logo-do-curso/logo-cc-simbolo-branco-fundo-azul.png/view"
+      },
+      "logo-cc-simbolo-branco.png": {
+        "view": "documentos/logo-do-curso/logo-cc-simbolo-branco.png/view"
+      },
+      "logo-cc-simbolo.png": {
+        "view": "documentos/logo-do-curso/logo-cc-simbolo.png/view"
+      }
+    },
+    "manual_estagio.pdf": {
+      "view": "documentos/manual_estagio.pdf/view"
+    },
+    "portarias": {
+      "colegiado-do-curso-de-ciencia-da-computacao": {
+        "view": "documentos/portarias/colegiado-do-curso-de-ciencia-da-computacao/view"
+      },
+      "portaria-nucleo-docente-estruturante-nde": {
+        "view": "documentos/portarias/portaria-nucleo-docente-estruturante-nde/view"
+      }
+    },
+    "projeto-pedagogico": {
+      "PPC_CC_V012019.pdf": "documentos/projeto-pedagogico/PPC_CC_V012019.pdf",
+      "projeto-pedagogico-2011": {
+        "ppc-computacao-2011.pdf": {
+          "view": "documentos/projeto-pedagogico/projeto-pedagogico-2011/ppc-computacao-2011.pdf/view"
+        }
+      },
+      "projeto-pedagogico-2018": {
+        "ppc-2018.pdf": {
+          "view": "documentos/projeto-pedagogico/projeto-pedagogico-2018/ppc-2018.pdf/view"
+        }
+      }
+    },
+    "tcc": {
+      "cronogramas": {
+        "2023": "documentos/tcc/cronogramas/2023",
+        "2023.2": {
+          "calendario-tcc-2023": "documentos/tcc/cronogramas/2023.2/calendario-tcc-2023"
+        },
+        "copy_of_cronograma": "documentos/tcc/cronogramas/copy_of_cronograma",
+        "cronogramas-anteriores": {
+          "copy2_of_cronograma": "documentos/tcc/cronogramas/cronogramas-anteriores/copy2_of_cronograma",
+          "cronograma": "documentos/tcc/cronogramas/cronogramas-anteriores/cronograma",
+          "tcc_cronograma_2022-01.png": "documentos/tcc/cronogramas/cronogramas-anteriores/tcc_cronograma_2022-01.png"
+        },
+        "tcc-cronograma-2022-02.png": "documentos/tcc/cronogramas/tcc-cronograma-2022-02.png"
+      },
+      "documentos-para-o-orientador": {
+        "ata_e_parecer_de_defesa-modelo_artigo_aceito.od": "documentos/tcc/documentos-para-o-orientador/ata_e_parecer_de_defesa-modelo_artigo_aceito.od",
+        "ata_e_parecer_de_defesa-modelo_artigo_aceito.odt": {
+          "view": "documentos/tcc/documentos-para-o-orientador/ata_e_parecer_de_defesa-modelo_artigo_aceito.odt/view"
+        },
+        "ata_e_parecer_de_defesa-modelo_artigo_apresenta": "documentos/tcc/documentos-para-o-orientador/ata_e_parecer_de_defesa-modelo_artigo_apresenta",
+        "ata_e_parecer_de_defesa-modelo_artigo_apresentado.odt": {
+          "view": "documentos/tcc/documentos-para-o-orientador/ata_e_parecer_de_defesa-modelo_artigo_apresentado.odt/view"
+        },
+        "ata_e_parecer_de_defesa-modelo_tcc_tradicional": "documentos/tcc/documentos-para-o-orientador/ata_e_parecer_de_defesa-modelo_tcc_tradicional",
+        "ata_e_parecer_de_defesa-modelo_tcc_tradicional.odt": {
+          "view": "documentos/tcc/documentos-para-o-orientador/ata_e_parecer_de_defesa-modelo_tcc_tradicional.odt/view"
+        },
+        "certidao-de-banca-de-tcc-doc.docx": {
+          "view": "documentos/tcc/documentos-para-o-orientador/certidao-de-banca-de-tcc-doc.docx/view"
+        },
+        "certidao-de-banca-de-tcc-odt.odt": {
+          "view": "documentos/tcc/documentos-para-o-orientador/certidao-de-banca-de-tcc-odt.odt/view"
+        },
+        "certidao-orientacaotcc-doc.docx": {
+          "view": "documentos/tcc/documentos-para-o-orientador/certidao-orientacaotcc-doc.docx/view"
+        },
+        "certidao-orientacaotcc-odt.odt": {
+          "view": "documentos/tcc/documentos-para-o-orientador/certidao-orientacaotcc-odt.odt/view"
+        },
+        "modelo-ata_e_parecer_de_defesa-pibic-new.odt": {
+          "view": "documentos/tcc/documentos-para-o-orientador/modelo-ata_e_parecer_de_defesa-pibic-new.odt/view"
+        }
+      },
+      "fluxograma_tcc.png": {
+        "view": "documentos/tcc/fluxograma_tcc.png/view"
+      },
+      "modelos": {
+        "modelo-30-termo-de-aceite-orientacao-de-tcc.pdf": {
+          "view": "documentos/tcc/modelos/modelo-30-termo-de-aceite-orientacao-de-tcc.pdf/view"
+        },
+        "modelo-projeto-de-tcc-para-cadastro-atualizado.odt": {
+          "view": "documentos/tcc/modelos/modelo-projeto-de-tcc-para-cadastro-atualizado.odt/view"
+        },
+        "ufal_cc_tcc_tradicional-2022-modelo.zip": {
+          "view": "documentos/tcc/modelos/ufal_cc_tcc_tradicional-2022-modelo.zip/view"
+        }
+      },
+      "procedimentos-e-tramites-do-tcc-pibic-pibiti-artigo": "documentos/tcc/procedimentos-e-tramites-do-tcc-pibic-pibiti-artigo",
+      "regimento.pdf": {
+        "view": "documentos/tcc/regimento.pdf/view"
+      },
+      "tcc_orientacao_normativa_2016.pdf": {
+        "view": "documentos/tcc/tcc_orientacao_normativa_2016.pdf/view"
+      },
+      "temas-para-o-seu-tcc": "documentos/tcc/temas-para-o-seu-tcc"
+    }
+  },
+  "extensao": {
+    "atividades-curriculares-de-extensao": "extensao/atividades-curriculares-de-extensao"
+  },
+  "horarios": {
+    "2017": {
+      "oferta-2017.1": {
+        "view": "horarios/2017/oferta-2017.1/view"
+      },
+      "oferta-academica-2017.2": {
+        "view": "horarios/2017/oferta-academica-2017.2/view"
+      }
+    },
+    "2018": {
+      "oferta-academica-2018.1": {
+        "view": "horarios/2018/oferta-academica-2018.1/view"
+      },
+      "oferta-academica-2018.2": {
+        "view": "horarios/2018/oferta-academica-2018.2/view"
+      }
+    },
+    "2021": {
+      "2021": "horarios/2021/2021",
+      "horario_2021": "horarios/2021/horario_2021"
+    },
+    "2022": {
+      "horario_2021": "horarios/2022/horario_2021",
+      "horario_2022": "horarios/2022/horario_2022"
+    },
+    "2023": {
+      "copy_of_horario_2023": "horarios/2023/copy_of_horario_2023",
+      "horario_2023": "horarios/2023/horario_2023"
+    },
+    "copy_of_2018": {
+      "grade-de-horarios": "horarios/copy_of_2018/grade-de-horarios"
+    }
+  },
+  "institucional": {
+    "administracao": "institucional/administracao",
+    "avaliacao-do-curso": {
+      "apresentacao_avaliacao_2020-1.pdf": {
+        "view": "institucional/avaliacao-do-curso/apresentacao_avaliacao_2020-1.pdf/view"
+      }
+    },
+    "enade": {
+      "enade-2021": {
+        "concluintes-enade-2021.pdf": {
+          "view": "institucional/enade/enade-2021/concluintes-enade-2021.pdf/view"
+        },
+        "cronograma_resumido.png": {
+          "view": "institucional/enade/enade-2021/cronograma_resumido.png/view"
+        },
+        "enade-2021-relatorio-de-regularidade-concluinte": "institucional/enade/enade-2021/enade-2021-relatorio-de-regularidade-concluinte",
+        "enade-2021-relatorio-de-regularidade-concluintes.pdf": {
+          "view": "institucional/enade/enade-2021/enade-2021-relatorio-de-regularidade-concluintes.pdf/view"
+        }
+      }
+    },
+    "eventos": "institucional/eventos",
+    "informes": {
+      "aracomp-2023": "institucional/informes/aracomp-2023",
+      "curso-de-ciencia-da-computacao-em-arapiraca-recebe-4-estrela-no-guia-estadao": "institucional/informes/curso-de-ciencia-da-computacao-em-arapiraca-recebe-4-estrela-no-guia-estadao",
+      "informes": {
+        "rss": "institucional/informes/informes/rss"
+      },
+      "katie-na-bienal": "institucional/informes/katie-na-bienal",
+      "recepcao-dos-calouros-2023-1-ciencia-da-computacao": "institucional/informes/recepcao-dos-calouros-2023-1-ciencia-da-computacao"
+    },
+    "infraestrutura": "institucional/infraestrutura",
+    "monitoria": "institucional/monitoria",
+    "nucleo-docente-estruturante-nde": "institucional/nucleo-docente-estruturante-nde"
+  },
+  "projetos-de-pesquisa": {
+    "alunos-pibic-e-pibiti": "projetos-de-pesquisa/alunos-pibic-e-pibiti",
+    "grupos-de-pesquisa": "projetos-de-pesquisa/grupos-de-pesquisa"
+  }
+}

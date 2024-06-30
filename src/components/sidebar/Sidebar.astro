@@ -1,5 +1,5 @@
 ---
-import Collapsible from './Collapsible.astro'
+import Sitemap from './Sitemap.tsx'
 ---
 
 <input id="sidebar-toggle" type="checkbox" class="hidden" transition:persist />
@@ -14,30 +14,7 @@ import Collapsible from './Collapsible.astro'
     class="block text-left text-lg select-none cursor-pointer">&#8801;</label
   >
   <div id="sidebar-content" class="p-4 min-h-full w-44">
-    <Collapsible>
-      <span slot="label">First</span>
-      <ul>
-        <li>
-          <Collapsible>
-            <span slot="label">A</span>
-            <ul>
-              <li>I</li>
-              <li>II</li>
-              <li>III</li>
-            </ul>
-          </Collapsible>
-        </li>
-        <li>B</li>
-        <li>C</li>
-      </ul>
-    </Collapsible>
-    <Collapsible>
-      <span slot="label">Second</span>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-      </ul>
-    </Collapsible>
+    <Sitemap />
   </div>
 </nav>
 
