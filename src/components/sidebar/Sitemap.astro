@@ -1,10 +1,10 @@
 ---
 import sitemap from '../../../public/sitemap.json'
-import Teste from './Teste.astro'
+import CollapsibleTree from './CollapsibleTree.astro'
 ---
 
 {
   Object.entries(sitemap).map(([title, value]) => (
-    <Teste title={title} {value} />
+    <CollapsibleTree title={title} {value} />
   ))
 }
