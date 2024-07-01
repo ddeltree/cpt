@@ -1,0 +1,10 @@
+---
+import sitemap from '../../../public/sitemap.json'
+import Teste from './Teste.astro'
+---
+
+{
+  Object.entries(sitemap).map(([title, value]) => (
+    <Teste title={title} {value} />
+  ))
+}
