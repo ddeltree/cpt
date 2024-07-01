@@ -6,14 +6,20 @@ interface Props {
 }
 const { title, value } = Astro.props
 const isTree = typeof value === 'object'
+
+const prettyTitle = title
+  .replace(/-\d+$/, '')
+  .replaceAll('-', ' ')
+  .replaceAll('_', ' ')
+  .replace(/\.\w{3}$/, '')
 ---
 
-<Collapsible>
-  <span slot="label">{title}</span>
+<Collapsible {isTree} class="max-w-full break-words capitalize my-1">
+  <p slot="label" class="py-1 px-2 hover:bg-blue-500">{prettyTitle}</p>
   {
     isTree
-      ? Object.entries(value).map(([key, child]) => (
-          <Astro.self title={key} value={child as any} />
+      ? Object.entries(value).map(([title, value]) => (
+          <Astro.self {title} value={value as any} />
         ))
       : undefined
   }

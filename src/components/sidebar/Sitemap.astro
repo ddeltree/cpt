@@ -3,8 +3,10 @@ import sitemap from '../../../public/sitemap.json'
 import CollapsibleTree from './CollapsibleTree.astro'
 ---
 
-{
-  Object.entries(sitemap).map(([title, value]) => (
-    <CollapsibleTree title={title} {value} />
-  ))
-}
+<div class="root select-none max-h-96 overflow-y-auto z-50">
+  {
+    Object.entries(sitemap).map(([title, value]) => (
+      <CollapsibleTree {title} {value} />
+    ))
+  }
+</div>

@@ -1,17 +1,27 @@
 ---
 import { getCountId } from '@/utils/collapsibleCountStore'
+
+interface Props {
+  isTree: boolean
+  class?: string
+}
+let { isTree, class: className } = Astro.props
+
 const count = getCountId()
 ---
 
-<div class="collapsible">
+<div class:list={['collapsible', className]}>
   <input type="checkbox" id={count} class="collapsible-checkbox hidden" />
   <label for={count}>
     <div>
-      <span>&gt;</span>
       <slot name="label" />
     </div>
   </label>
-  <div class="collapsible-content px-2">
+  <div
+    class="collapsible-content
+      ml-2 px-2
+      border-l-[1px] border-zinc-100"
+  >
     <slot />
   </div>
 </div>
