@@ -1,26 +1,44 @@
 ---
 import Collapsible from './Collapsible.astro'
+import { Icon } from 'astro-icon/components'
+
 interface Props {
   title: string
   value: Record<string, unknown> | string
 }
-const { title, value } = Astro.props
+let { title, value } = Astro.props
 const isTree = typeof value === 'object'
 
-const prettyTitle = title
+title = title
   .replace(/-\d+$/, '')
   .replaceAll('-', ' ')
   .replaceAll('_', ' ')
   .replace(/\.\w{3}$/, '')
+value = isTree ? value : {}
 ---
 
-<Collapsible {isTree} class="max-w-full break-words capitalize my-1">
-  <p slot="label" class="py-1 px-2 hover:bg-blue-500">{prettyTitle}</p>
+<Collapsible
+  {isTree}
+  class:list={['max-w-full break-words capitalize my-1', isTree ? 'tree' : '']}
+>
+  <p
+    slot="label"
+    class="flex items-center py-1 pl-2 cursor-pointer hover:bg-blue-500"
+  >
+    <span>{title}</span>
+    <span class="tree-icon hidden flex-1 justify-end">
+      <Icon name="ic:sharp-arrow-drop-down" class="text-2xl inline" />
+    </span>
+  </p>
   {
-    isTree
-      ? Object.entries(value).map(([title, value]) => (
-          <Astro.self {title} value={value as any} />
-        ))
-      : undefined
+    Object.entries(value).map(([title, value]) => (
+      <Astro.self {title} value={value as any} />
+    ))
   }
 </Collapsible>
+
+<style is:global>
+  .tree > label .tree-icon {
+    display: flex !important;
+  }
+</style>
