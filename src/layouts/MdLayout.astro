@@ -1,9 +1,11 @@
 ---
 import Layout from './Layout.astro'
 import Main from '../components/Main.astro'
+
+const { frontmatter } = Astro.props
 ---
 
-<Layout title="Markdown">
+<Layout title={frontmatter.title}>
   <Main>
     <slot />
   </Main>

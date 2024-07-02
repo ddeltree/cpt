@@ -28,13 +28,22 @@ def pages_to_md():
             continue
         html = page.read_text("utf-8")
         soup = BeautifulSoup(html, features="html.parser")
+        title = soup.find("title").get_text()
         content = soup.select_one("#content")
         if not content:
             page.unlink()
             continue
         for header in content.select("header>div"):
             header.clear()
-        markdown = "---\nlayout: '@/layouts/MdLayout.astro'\n---\n\nimport { Image } from 'astro:assets';\n\n"
+        markdown = "\n".join(
+            [
+                "---",
+                "layout: '@/layouts/MdLayout.astro'",
+                f"title: '{title}'",
+                "---",
+                "import { Image } from 'astro:assets';\n",
+            ]
+        )
         markdown += md(str(content))
         mdf = page.parent / (page.stem + ".mdx")
         mdf.write_text(markdown, "utf-8")
