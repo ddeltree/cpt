@@ -5,9 +5,14 @@ import { Icon } from 'astro-icon/components'
 interface Props {
   title: string
   value: Record<string, unknown> | string
+  keys?: string[]
 }
-let { title, value } = Astro.props
+let { title, value, keys } = Astro.props
+
 const isTree = typeof value === 'object'
+keys ??= ['/cpt']
+keys.push(title)
+const link = keys.join('/')
 
 title = title
   .replace(/-\d+$/, '')
@@ -21,18 +26,20 @@ value = isTree ? value : {}
   {isTree}
   class:list={['max-w-full break-words capitalize my-1', isTree ? 'tree' : '']}
 >
-  <p
-    slot="label"
-    class="flex items-center py-2 pl-2 pr-1 cursor-pointer hover:bg-blue-500"
-  >
-    <span>{title}</span>
+  <p slot="label" class="flex items-center py-2 pl-2 pr-1 hover:bg-blue-300">
+    <span class="hover:text-blue-950">
+      <a href={link} class="cursor-pointer hover:underline">{title}</a>
+    </span>
     <span class="tree-icon hidden flex-1 justify-end text-2xl">
-      <Icon name="ic:sharp-arrow-drop-down" class="transition-all" />
+      <Icon
+        name="ic:sharp-arrow-drop-down"
+        class="transition-all cursor-pointer"
+      />
     </span>
   </p>
   {
     Object.entries(value).map(([title, value]) => (
-      <Astro.self {title} value={value as any} />
+      <Astro.self {title} value={value as any} keys={[...keys]} />
     ))
   }
 </Collapsible>
