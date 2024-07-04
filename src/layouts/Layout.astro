@@ -28,8 +28,8 @@ const { title } = Astro.props
   </head>
   <body class="flex flex-col min-h-screen font-inter">
     <Header />
-    <Sidebar />
     <div id="content" class="flex">
+      <Sidebar />
       <slot />
     </div>
     <Footer />

@@ -9,10 +9,9 @@ resetCounters()
 <input id="sidebar-toggle" type="checkbox" class="hidden" transition:persist />
 <nav
   id="sidebar"
-  class="fixed text-zinc-950 bg-zinc-300
+  class="text-zinc-950 bg-zinc-300
   border-r-2 border-zinc-900
-  left-0 bottom-0 z-10
-  text-sm font-medium"
+  text-sm font-medium flex-shrink-0"
   transition:persist
 >
   <label
@@ -24,7 +23,7 @@ resetCounters()
     <Icon name="ic:sharp-menu" />
   </label>
 
-  <div id="sidebar-content" class="pl-4 py-1 min-h-full w-44">
+  <div id="sidebar-content" class="pl-4 py-1 min-h-full">
     <Sitemap />
   </div>
 </nav>
@@ -37,14 +36,9 @@ resetCounters()
   }
 
   #sidebar {
-    top: var(--header-height);
     min-width: var(--collapsed-width);
-    min-height: calc(100vh - var(--header-height));
   }
 
-  #content {
-    margin-left: var(--sidebar-width);
-  }
   #sidebar-content {
     width: var(--sidebar-width);
     display: block;
