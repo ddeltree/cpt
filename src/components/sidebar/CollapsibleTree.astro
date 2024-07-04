@@ -1,6 +1,7 @@
 ---
 import Collapsible from './Collapsible.astro'
 import { Icon } from 'astro-icon/components'
+import { getSidebarLinkCountId } from '@/utils/sidebarCountStore'
 
 interface Props {
   title: string
@@ -13,6 +14,7 @@ const isTree = typeof value === 'object'
 keys ??= ['/cpt']
 keys.push(title)
 const link = keys.join('/')
+const linkId = getSidebarLinkCountId()
 
 title = title
   .replace(/-\d+$/, '')
@@ -23,12 +25,17 @@ value = isTree ? value : {}
 ---
 
 <Collapsible
-  {isTree}
   class:list={['max-w-full break-words capitalize my-1', isTree ? 'tree' : '']}
 >
   <p slot="label" class="flex items-center py-2 pl-2 pr-1 hover:bg-blue-300">
     <span class="hover:text-blue-950">
-      <a href={link} class="cursor-pointer hover:underline">{title}</a>
+      <a
+        id={linkId}
+        href={link + '#' + linkId}
+        class="cursor-pointer target:font-black hover:underline"
+      >
+        {title}
+      </a>
     </span>
     <span class="tree-icon hidden flex-1 justify-end text-2xl">
       <Icon

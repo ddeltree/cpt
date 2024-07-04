@@ -1,11 +1,10 @@
 ---
-import { getCountId } from '@/utils/collapsibleCountStore'
+import { getCountId } from '@/utils/sidebarCountStore'
 
 interface Props {
-  isTree: boolean
   class?: string
 }
-let { isTree, class: className } = Astro.props
+let { class: className } = Astro.props
 
 const count = getCountId()
 ---

@@ -1,13 +1,15 @@
 ---
 import Sitemap from './Sitemap.astro'
 import { Icon } from 'astro-icon/components'
+import { resetCounters } from '@/utils/sidebarCountStore'
+
+resetCounters()
 ---
 
 <input id="sidebar-toggle" type="checkbox" class="hidden" transition:persist />
 <nav
   id="sidebar"
-  class="fixed
-  text-zinc-950 bg-zinc-300
+  class="fixed text-zinc-950 bg-zinc-300
   border-r-2 border-zinc-900
   left-0 bottom-0 z-10
   text-sm font-medium"
