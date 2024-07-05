@@ -40,7 +40,7 @@ value = isTree ? value : {}
     <span class="tree-icon hidden flex-1 justify-end text-2xl">
       <Icon
         name="ic:sharp-arrow-drop-down"
-        class="transition-all cursor-pointer"
+        class="transition-transform cursor-pointer -rotate-90 text-zinc-600"
       />
     </span>
   </p>
@@ -55,8 +55,8 @@ value = isTree ? value : {}
   .tree > label .tree-icon {
     display: flex !important;
   }
-  .tree > .collapsible-checkbox:checked ~ label .tree-icon {
-    @apply -scale-y-100;
+  .tree > .collapsible-checkbox:checked ~ label .tree-icon > * {
+    @apply rotate-0;
   }
   .tree > .collapsible-checkbox:checked ~ label > * > * {
     @apply bg-zinc-100;

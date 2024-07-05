@@ -28,10 +28,17 @@ const { title } = Astro.props
   </head>
   <body class="flex flex-col min-h-screen font-inter">
     <Header />
-    <div id="content" class="flex">
+    <div class="flex bg-zinc-100">
       <Sidebar />
       <slot />
     </div>
     <Footer />
+    <style is:global>
+      #sidebar-container {
+        scrollbar-color: #a1a1aa transparent;
+        scrollbar-width: thin;
+        scrollbar-gutter: stable;
+      }
+    </style>
   </body>
 </html>
