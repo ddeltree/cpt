@@ -1,14 +1,11 @@
 ---
-import twitter from 'public/emojis/social/twitter.svg'
+import twitter from '@/content/images/twitter.svg'
+import facebook from '@/content/images/facebook.svg'
+import instagram from '@/content/images/instagram.svg'
 import { Image } from 'astro:assets'
-const links = [
-  '/cpt/emojis/social/twitter.svg',
-  '/cpt/emojis/social/instagram.svg',
-  '/cpt/emojis/social/facebook.svg',
-]
 ---
 
-<footer class="bg-zinc-900 text-zinc-50 p-16">
+<footer class="bg-zinc-900 text-zinc-50 p-16 space-y-4">
   <div class="flex gap-x-4">
     <a href="https://arapiraca.ufal.br" class="flex items-center max-w-md">
       <img
@@ -36,40 +33,15 @@ const links = [
       </div>
     </div>
   </div>
-  <!-- <ul class="mx-auto flex">
-    <li class="mr-4">
-      <a href=""
-        ><img src="/cpt/emojis/social/facebook.svg" alt="" class="w-4 h-4" /></a
-      >
-    </li>
-    <li class="mr-4">
-      <a href=""
-        ><img
-          src="/cpt/emojis/social/instagram.svg"
-          alt=""
-          class="w-4 h-4"
-        /></a
-      >
-    </li>
-    <li>
-      <a href="mr-4"
-        ><a href=""
-          ><img
-            src="/cpt/emojis/social/twitter.svg"
-            alt=""
-            class="w-4 h-4"
-          /></a
-        ></a
-      >
-    </li>
-  </ul> -->
+  <div class="flex justify-end [&>*]:w-5 invert opacity-60 space-x-5">
+    <a href="https://www.instagram.com/ufaloficial" target="_blank">
+      <Image src={instagram} alt="instagram" />
+    </a>
+    <a href="https://www.facebook.com/ufaloficial" target="_blank">
+      <Image src={facebook} alt="facebook" />
+    </a>
+    <a href="https://www.twitter.com/ufaloficial" target="_blank">
+      <Image src={twitter} alt="twitter (x)" />
+    </a>
+  </div>
 </footer>
-
-<style is:global>
-  :root {
-    --footer-height: 16rem;
-  }
-  footer {
-    height: var(--footer-height);
-  }
-</style>
