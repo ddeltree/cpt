@@ -1,66 +1,68 @@
-<footer class="bg-zinc-900 text-zinc-50 p-8 z-20">
-  <div class="flex justify-evenly">
-    <div class="flex items-center">
+---
+import twitter from 'public/emojis/social/twitter.svg'
+import { Image } from 'astro:assets'
+const links = [
+  '/cpt/emojis/social/twitter.svg',
+  '/cpt/emojis/social/instagram.svg',
+  '/cpt/emojis/social/facebook.svg',
+]
+---
+
+<footer class="bg-zinc-900 text-zinc-50 p-16">
+  <div class="flex gap-x-4">
+    <a href="https://arapiraca.ufal.br" class="flex items-center max-w-md">
       <img
         src="/cpt/images/brasao-branco.png"
         alt="Logo UFAL"
         class="mr-4 h-20"
       />
-      <h2 class="text-2xl uppercase font-bold text-balance">
+      <p class="text-2xl uppercase font-bold text-balance">
         universidade federal de alagoas
-      </h2>
-    </div>
-    <div>
-      <p class="uppercase">endereço</p>
-      <address class="text-zinc-400">
-        <p>Av. Manoel Severino Barbosa</p>
-        <p>Bom Sucesso</p>
-        <p>Arapiraca - AL</p>
-        <p>CEP: 57309-005</p>
-      </address>
-    </div>
-    <div>
-      <p class="uppercase">e-mail</p>
-      <p class="text-zinc-400">.</p>
-    </div>
-    <div>
-      <p class="uppercase">telefone</p>
-      <p class="text-zinc-400">(82) 3482-1800</p>
+      </p>
+    </a>
+    <div class="flex gap-24">
+      <div class="space-y-1">
+        <p class="capitalize font-medium">endereço</p>
+        <ul class="text-zinc-400 space-y-1 text-sm">
+          <li>Av. Manoel Severino Barbosa</li>
+          <li>Bom Sucesso</li>
+          <li>Arapiraca - AL</li>
+          <li>CEP: 57309-005</li>
+        </ul>
+      </div>
+      <div class="space-y-1">
+        <p class="capitalize font-medium">telefone</p>
+        <p class="text-zinc-400 space-y-1 text-sm">(82) 3482-1800</p>
+      </div>
     </div>
   </div>
-  <div>
-    <ul class="container mx-auto flex">
-      <li class="mr-4">
-        <a href=""
+  <!-- <ul class="mx-auto flex">
+    <li class="mr-4">
+      <a href=""
+        ><img src="/cpt/emojis/social/facebook.svg" alt="" class="w-4 h-4" /></a
+      >
+    </li>
+    <li class="mr-4">
+      <a href=""
+        ><img
+          src="/cpt/emojis/social/instagram.svg"
+          alt=""
+          class="w-4 h-4"
+        /></a
+      >
+    </li>
+    <li>
+      <a href="mr-4"
+        ><a href=""
           ><img
-            src="/cpt/emojis/social/facebook.svg"
+            src="/cpt/emojis/social/twitter.svg"
             alt=""
             class="w-4 h-4"
           /></a
-        >
-      </li>
-      <li class="mr-4">
-        <a href=""
-          ><img
-            src="/cpt/emojis/social/instagram.svg"
-            alt=""
-            class="w-4 h-4"
-          /></a
-        >
-      </li>
-      <li>
-        <a href="mr-4"
-          ><a href=""
-            ><img
-              src="/cpt/emojis/social/twitter.svg"
-              alt=""
-              class="w-4 h-4"
-            /></a
-          ></a
-        >
-      </li>
-    </ul>
-  </div>
+        ></a
+      >
+    </li>
+  </ul> -->
 </footer>
 
 <style is:global>
