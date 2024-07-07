@@ -61,16 +61,36 @@ import { Icon } from 'astro-icon/components'
     width: var(--sidebar-width);
     display: block;
   }
-  #sidebar-toggle:checked + #sidebar-container > #sidebar > #sidebar-content {
+  #sidebar-toggle:not(:checked)
+    + #sidebar-container
+    > #sidebar
+    > #sidebar-content {
     display: none;
   }
 
-  #sidebar-toggle:checked ~ #sidebar-container ~ #content,
-  #sidebar-toggle:checked ~ #sidebar-container {
+  #sidebar-toggle:not(:checked) ~ #sidebar-container ~ #content,
+  #sidebar-toggle:not(:checked) ~ #sidebar-container {
     --sidebar-width: var(--collapsed-width);
   }
 
-  #sidebar-toggle:not(:checked) + nav > label:not(:hover) {
+  #sidebar-toggle:checked + nav > label:not(:hover) {
     @apply bg-zinc-400;
+  }
+
+  @media not all and (min-width: 768px) {
+    #sidebar-container {
+      --sidebar-width: 100vw;
+      @apply bg-transparent max-md:fixed
+        max-md:right-0
+        max-md:bottom-0
+        max-md:top-0;
+      z-index: 40;
+    }
+    #sidebar-toggle:checked ~ #content {
+      @apply h-screen;
+    }
+    #sidebar-toggle:checked ~ #sidebar-container {
+      @apply bg-zinc-200;
+    }
   }
 </style>
