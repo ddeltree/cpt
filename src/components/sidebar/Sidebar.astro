@@ -9,12 +9,12 @@ import { Icon } from 'astro-icon/components'
   class="relative flex-shrink-0
         overflow-y-auto overflow-x-hidden
         text-zinc-950 bg-zinc-300 transition-all"
+  transition:persist
 >
   <nav
     id="sidebar"
     class="text-sm font-medium
-  absolute bottom-0 top-0"
-    transition:persist
+  absolute top-0 h-[calc(100vh_-_var(--header-height))]"
   >
     <label
       id="sidebar-hamburger"
