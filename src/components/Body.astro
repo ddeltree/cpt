@@ -5,6 +5,7 @@ import Sidebar from '@/components/sidebar/Sidebar.astro'
 ---
 
 <Header />
+<input id="sidebar-toggle" type="checkbox" class="hidden" transition:persist />
 <div id="scroll-content" class="overflow-auto">
   <div class="flex bg-zinc-100">
     <Sidebar />

@@ -3,18 +3,18 @@ import Sitemap from './Sitemap.astro'
 import { Icon } from 'astro-icon/components'
 ---
 
-<input id="sidebar-toggle" type="checkbox" class="hidden" transition:persist />
 <div
   id="sidebar-container"
   class="relative flex-shrink-0
         overflow-y-auto overflow-x-hidden
+        pointer-events-none
         text-zinc-950 bg-zinc-300 transition-all"
   transition:persist
 >
   <nav
     id="sidebar"
     class="text-sm font-medium
-  absolute top-0 h-[calc(100vh_-_var(--header-height))]"
+  absolute top-0 pointer-events-auto"
   >
     <label
       id="sidebar-hamburger"
@@ -63,35 +63,27 @@ import { Icon } from 'astro-icon/components'
     width: var(--sidebar-width);
     display: block;
   }
-  #sidebar-toggle:not(:checked)
-    + #sidebar-container
-    > #sidebar
-    > #sidebar-content {
+  #sidebar-toggle:not(:checked) + #scroll-content #sidebar-content {
     display: none;
   }
 
-  #sidebar-toggle:not(:checked) ~ #sidebar-container ~ #content,
-  #sidebar-toggle:not(:checked) ~ #sidebar-container {
+  #sidebar-toggle:not(:checked) + #scroll-content #sidebar-container ~ #content,
+  #sidebar-toggle:not(:checked) + #scroll-content #sidebar-container {
     --sidebar-width: var(--collapsed-width);
-  }
-
-  #sidebar-toggle:checked + nav > label:not(:hover) {
-    @apply bg-zinc-400;
   }
 
   @media not all and (min-width: 768px) {
     #sidebar-container {
-      --sidebar-width: 100vw;
-      @apply bg-transparent max-md:fixed
-        max-md:right-0
-        max-md:bottom-0
-        max-md:top-0;
+      @apply bg-transparent fixed right-0 bottom-0;
+      top: var(--header-height);
       z-index: 40;
+      --sidebar-width: 100vw;
     }
-    #sidebar-toggle:checked ~ #content {
-      @apply h-screen;
+
+    #sidebar-toggle:checked + #scroll-content {
+      overflow: hidden;
     }
-    #sidebar-toggle:checked ~ #sidebar-container {
+    #sidebar-toggle:checked + #scroll-content #sidebar-container {
       @apply bg-zinc-200;
     }
   }
