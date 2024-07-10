@@ -1,12 +1,8 @@
 ---
-import ViewTransitions from 'astro/components/ViewTransitions.astro'
-import Header from '@/components/Header.astro'
-import Footer from '@/components/Footer.astro'
-import Sidebar from '@/components/sidebar/Sidebar.astro'
-
-// Supports weights 100-900
-import '@fontsource-variable/inter'
 import '@/style/main.css'
+import '@fontsource-variable/inter'
+import Body from '@/components/Body.astro'
+import ViewTransitions from 'astro/components/ViewTransitions.astro'
 
 interface Props {
   title: string
@@ -27,18 +23,8 @@ const { title } = Astro.props
     <ViewTransitions />
   </head>
   <body class="relative flex flex-col min-h-screen font-inter">
-    <Header />
-    <div class="flex bg-zinc-100">
-      <Sidebar />
+    <Body>
       <slot />
-    </div>
-    <Footer />
-    <style is:global>
-      #sidebar-container {
-        scrollbar-color: #a1a1aa transparent;
-        scrollbar-width: thin;
-        scrollbar-gutter: stable;
-      }
-    </style>
+    </Body>
   </body>
 </html>
