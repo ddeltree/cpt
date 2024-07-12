@@ -1,8 +1,39 @@
 import httpx
 from bs4 import BeautifulSoup
 from pathlib import Path
-import re
+from typing import Set
+from functools import wraps
+from httpx import AsyncClient
+import asyncio
 
+
+class RateLimitedClient(AsyncClient):
+    # https://github.com/encode/httpx/issues/815#issuecomment-1625374321
+    _bg_tasks: Set[asyncio.Task] = set()
+
+    def __init__(self, interval: float = 1, count=1, **kwargs):
+        self.interval = interval
+        self.semaphore = asyncio.Semaphore(count)
+        super().__init__(**kwargs)
+
+    def _schedule_semaphore_release(self):
+        wait = asyncio.create_task(asyncio.sleep(self.interval))
+        RateLimitedClient._bg_tasks.add(wait)
+
+        def wait_cb(task):
+            self.semaphore.release()
+            RateLimitedClient._bg_tasks.discard(task)
+
+        wait.add_done_callback(wait_cb)
+
+    async def send(self, *args, **kwargs):
+        await self.semaphore.acquire()
+        send = asyncio.create_task(super().send(*args, **kwargs))
+        self._schedule_semaphore_release()
+        return await send
+
+
+CLIENT = RateLimitedClient(interval=1, timeout=30, follow_redirects=True)
 ROOT_URL = "https://arapiraca.ufal.br/graduacao/ciencia-da-computacao"
 HTML_DIR = Path("html").absolute()
 
@@ -25,24 +56,28 @@ def write_html(url, html):
     file.write_text(html, "utf-8")
 
 
-next_urls = {ROOT_URL}
-done_urls = set()
+def is_html(r: httpx.Response):
+    return "text/html" in r.headers.get("content-type")
 
-while next_urls:
-    url = next_urls.pop()
+
+async def fetch_url(url: str):
+    r = await CLIENT.get(url)
+    return r.text if is_html(r) else None
+
+
+async def fetch_next_html(url: str):
     done_urls.add(url)
-    print(url)
+    next_urls.discard(url)
+    html = await fetch_url(url)
+    return url, html
 
-    req = httpx.get(
-        url,
-    )
-    html = req.text
-    if not get_filename_from_url(url).exists():
-        write_html(url, html)
-    soup = BeautifulSoup(
-        html,
-        "html.parser",
-    )
+
+async def fetch_html_batch():
+    return await asyncio.gather(*map(fetch_next_html, next_urls))
+
+
+def find_page_links(html: str):
+    soup = BeautifulSoup(html, "html.parser")
     for link in soup.find_all("a"):
         attrs = link.get_attribute_list("href")
         href: str = (attrs[:1] or [""])[0] or ""
@@ -51,3 +86,25 @@ while next_urls:
         href = href if href.startswith("http") else ROOT_URL + href
         if href not in done_urls and href.startswith(ROOT_URL):
             next_urls.add(href)
+
+
+async def process_next_batch():
+    for url, html in await fetch_html_batch():
+        print(url)
+        if not html:
+            continue
+        # if not get_filename_from_url(url).exists():
+        #     write_html(url, html)
+        # find_page_links(html)
+
+
+next_urls = {
+    ROOT_URL,
+    "https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/documentos/agenda-dos-leccs",
+    "https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/documentos/agenda-dos-leccs1",
+    "https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/documentos/agenda-dos-leccs2",
+}
+done_urls: Set[str] = set()
+
+while next_urls:
+    asyncio.run(process_next_batch())
