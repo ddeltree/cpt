@@ -1,10 +1,8 @@
-import httpx
+import httpx, asyncio
 from bs4 import BeautifulSoup
 from pathlib import Path
 from typing import Set
-from functools import wraps
 from httpx import AsyncClient
-import asyncio
 
 
 class RateLimitedClient(AsyncClient):
@@ -33,7 +31,7 @@ class RateLimitedClient(AsyncClient):
         return await send
 
 
-CLIENT = RateLimitedClient(interval=1, timeout=30, follow_redirects=True)
+CLIENT = RateLimitedClient(interval=1, count=2, timeout=60, follow_redirects=True)
 ROOT_URL = "https://arapiraca.ufal.br/graduacao/ciencia-da-computacao"
 HTML_DIR = Path("html").absolute()
 
@@ -61,14 +59,19 @@ def is_html(r: httpx.Response):
 
 
 async def fetch_url(url: str):
-    r = await CLIENT.get(url)
-    return r.text if is_html(r) else None
+    try:
+        r = await CLIENT.get(url)
+        return r.text if is_html(r) else None
+    except:
+        print("\033[31m" "[ERRO]" "\033[0m", url)
 
 
 async def fetch_next_html(url: str):
     done_urls.add(url)
     next_urls.discard(url)
     html = await fetch_url(url)
+    if html:
+        print(url)
     return url, html
 
 
@@ -90,21 +93,18 @@ def find_page_links(html: str):
 
 async def process_next_batch():
     for url, html in await fetch_html_batch():
-        print(url)
         if not html:
             continue
-        # if not get_filename_from_url(url).exists():
-        #     write_html(url, html)
-        # find_page_links(html)
+        if not get_filename_from_url(url).exists():
+            write_html(url, html)
+        find_page_links(html)
 
 
-next_urls = {
-    ROOT_URL,
-    "https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/documentos/agenda-dos-leccs",
-    "https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/documentos/agenda-dos-leccs1",
-    "https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/documentos/agenda-dos-leccs2",
-}
+async def main():
+    while next_urls:
+        await process_next_batch()
+
+
+next_urls = {ROOT_URL}
 done_urls: Set[str] = set()
-
-while next_urls:
-    asyncio.run(process_next_batch())
+asyncio.run(main())
