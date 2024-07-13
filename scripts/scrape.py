@@ -2,7 +2,12 @@ import httpx, asyncio
 from bs4 import BeautifulSoup
 from pathlib import Path
 from typing import Set
-from httpx import AsyncClient
+from httpx import AsyncClient, ConnectError
+from ssl import SSLCertVerificationError
+
+
+class HostRedirectError(Exception):
+    pass
 
 
 class RateLimitedClient(AsyncClient):
@@ -31,9 +36,10 @@ class RateLimitedClient(AsyncClient):
         return await send
 
 
-CLIENT = RateLimitedClient(interval=1, count=2, timeout=60, follow_redirects=True)
+CLIENT = RateLimitedClient(interval=0, count=7, timeout=60, follow_redirects=True)
 ROOT_URL = "https://arapiraca.ufal.br/graduacao/ciencia-da-computacao"
 HTML_DIR = Path("html").absolute()
+SKIP_URLS = Path("dead_links.txt").read_text().splitlines()
 
 
 def get_filename_from_url(url: str):
@@ -58,25 +64,58 @@ def is_html(r: httpx.Response):
     return "text/html" in r.headers.get("content-type")
 
 
+def err(msg):
+    return f"\033[31m{msg}\033[0m"
+
+
+def warn(msg):
+    return f"\033[33m{msg}\033[0m"
+
+
+def should_skip(url: str, e: Exception | None = None):
+    if e:
+        print(err("[ERRO]"), url)
+    return url in SKIP_URLS or any(map(lambda x: x in str(e), SKIP_URLS))
+
+
 async def fetch_url(url: str):
+    r = await CLIENT.get(url)
+    print(url)
+    if url != str(r.url):
+        url = str(r.url)
+        print(warn("[redirect]"), r.url)
+        if not str(r.url).startswith(ROOT_URL):
+            raise HostRedirectError()
+    r.raise_for_status()
+    return (url, r.text) if is_html(r) else None
+
+
+async def try_fetch_url(url: str):
+    result = None
     try:
-        r = await CLIENT.get(url)
-        return r.text if is_html(r) else None
-    except:
-        print("\033[31m" "[ERRO]" "\033[0m", url)
+        if not should_skip(url):
+            result = await fetch_url(url)
+    except SSLCertVerificationError:
+        pass
+    except HostRedirectError:
+        pass
+    except ConnectError:
+        pass
+    except Exception as e:
+        print(err("[ERRO]"), url)
+        print(err(e))
+        raise e
+    return result
 
 
 async def fetch_next_html(url: str):
     done_urls.add(url)
     next_urls.discard(url)
-    html = await fetch_url(url)
-    if html:
-        print(url)
-    return url, html
+    return await try_fetch_url(url)
 
 
 async def fetch_html_batch():
-    return await asyncio.gather(*map(fetch_next_html, next_urls))
+    return filter(bool, await asyncio.gather(*map(fetch_next_html, next_urls)))
 
 
 def find_page_links(html: str):
@@ -92,9 +131,8 @@ def find_page_links(html: str):
 
 
 async def process_next_batch():
-    for url, html in await fetch_html_batch():
-        if not html:
-            continue
+    docs = await fetch_html_batch()
+    for url, html in docs:
         if not get_filename_from_url(url).exists():
             write_html(url, html)
         find_page_links(html)
@@ -105,6 +143,8 @@ async def main():
         await process_next_batch()
 
 
-next_urls = {ROOT_URL}
+next_urls = {
+    "https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/documentos/tcc/modelos/modelo-tcc-tradicional-doc-sibi-ufal"
+}
 done_urls: Set[str] = set()
 asyncio.run(main())
