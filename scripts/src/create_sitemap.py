@@ -3,26 +3,6 @@ from pathlib import Path
 import yaml
 
 
-paths = map(
-    lambda p: p[3:-4] if p.endswith(".mdx") else p[3:],
-    sorted(
-        filter(
-            lambda x: "index.mdx" not in x and x != "md",
-            (str(x) for x in Path("md").rglob("*")),
-        )
-    ),
-)
-
-yml: dict[str, dict] = dict()
-for path in paths:
-    ref = yml
-    keys = path.split("/")
-    for key in keys:
-        value = ref.get(key, dict())
-        ref[key] = value
-        ref = ref[key]
-
-
 def iter_tree(
     root,
     to_iter=lambda child: iter(child),
@@ -54,11 +34,30 @@ def should_stack(child: Tuple[str, dict, dict]):
     return True
 
 
-iter_tree(
-    root=yml,
-    to_iter=make_iterator,
-    should_stack=should_stack,
-    on_pop=lambda x: ...,
-)
+def main():
+    paths = map(
+        lambda p: p[3:-4] if p.endswith(".mdx") else p[3:],
+        sorted(
+            filter(
+                lambda x: "index.mdx" not in x and x != "md",
+                (str(x) for x in Path("md").rglob("*")),
+            )
+        ),
+    )
 
-Path("sitemap.yaml").write_text(yaml.dump(yml))
+    yml = dict()
+    for path in paths:
+        ref = yml
+        keys = path.split("/")
+        for key in keys:
+            value = ref.get(key, dict())
+            ref[key] = value
+            ref = ref[key]
+
+    iter_tree(
+        root=yml,
+        to_iter=make_iterator,
+        should_stack=should_stack,
+        on_pop=lambda x: ...,
+    )
+    Path("data/sitemap.yaml").write_text(yaml.dump(yml))

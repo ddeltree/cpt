@@ -1,0 +1,2 @@
+class HostRedirectError(Exception):
+    pass

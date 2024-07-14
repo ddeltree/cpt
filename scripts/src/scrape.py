@@ -2,44 +2,13 @@ import httpx, asyncio
 from bs4 import BeautifulSoup
 from pathlib import Path
 from typing import Set
-from httpx import AsyncClient, ConnectError
+from httpx import ConnectError
 from ssl import SSLCertVerificationError
 
-
-class HostRedirectError(Exception):
-    pass
-
-
-class RateLimitedClient(AsyncClient):
-    # https://github.com/encode/httpx/issues/815#issuecomment-1625374321
-    _bg_tasks: Set[asyncio.Task] = set()
-
-    def __init__(self, interval: float = 1, count=1, **kwargs):
-        self.interval = interval
-        self.semaphore = asyncio.Semaphore(count)
-        super().__init__(**kwargs)
-
-    def _schedule_semaphore_release(self):
-        wait = asyncio.create_task(asyncio.sleep(self.interval))
-        RateLimitedClient._bg_tasks.add(wait)
-
-        def wait_cb(task):
-            self.semaphore.release()
-            RateLimitedClient._bg_tasks.discard(task)
-
-        wait.add_done_callback(wait_cb)
-
-    async def send(self, *args, **kwargs):
-        await self.semaphore.acquire()
-        send = asyncio.create_task(super().send(*args, **kwargs))
-        self._schedule_semaphore_release()
-        return await send
-
-
-CLIENT = RateLimitedClient(interval=0, count=7, timeout=60, follow_redirects=True)
-ROOT_URL = "https://arapiraca.ufal.br/graduacao/ciencia-da-computacao"
-HTML_DIR = Path("html").absolute()
-SKIP_URLS = Path("dead_links.txt").read_text().splitlines()
+from utils.RateLimitedClient import RateLimitedClient
+from utils.HostRedirectError import HostRedirectError
+from utils.globals import HTML_DIR, DEAD_LINKS_PATH, ROOT_URL
+from utils.fn import err, warn
 
 
 def get_filename_from_url(url: str):
@@ -62,14 +31,6 @@ def write_html(url, html):
 
 def is_html(r: httpx.Response):
     return "text/html" in r.headers.get("content-type")
-
-
-def err(msg):
-    return f"\033[31m{msg}\033[0m"
-
-
-def warn(msg):
-    return f"\033[33m{msg}\033[0m"
 
 
 def should_skip(url: str, e: Exception | None = None):
@@ -138,13 +99,16 @@ async def process_next_batch():
         find_page_links(html)
 
 
-async def main():
+async def async_main():
     while next_urls:
         await process_next_batch()
 
 
-next_urls = {
-    "https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/documentos/tcc/modelos/modelo-tcc-tradicional-doc-sibi-ufal"
-}
+def main():
+    asyncio.run(async_main())
+
+
+next_urls = {ROOT_URL}
 done_urls: Set[str] = set()
-asyncio.run(main())
+CLIENT = RateLimitedClient(interval=0, count=7, timeout=60, follow_redirects=True)
+SKIP_URLS = DEAD_LINKS_PATH.read_text().splitlines()
