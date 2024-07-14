@@ -1,6 +1,8 @@
+import json
 from typing import Tuple
 from pathlib import Path
-import yaml
+
+from utils.globals import MD_DIR
 
 
 def iter_tree(
@@ -40,7 +42,7 @@ def main():
         sorted(
             filter(
                 lambda x: "index.mdx" not in x and x != "md",
-                (str(x) for x in Path("md").rglob("*")),
+                (str(x) for x in MD_DIR.rglob("*")),
             )
         ),
     )
@@ -60,4 +62,4 @@ def main():
         should_stack=should_stack,
         on_pop=lambda x: ...,
     )
-    Path("data/sitemap.yaml").write_text(yaml.dump(yml))
+    Path("data/sitemap.json").write_text(json.dumps(yml))

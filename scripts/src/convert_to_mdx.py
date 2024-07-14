@@ -6,17 +6,7 @@ import re
 from re import Match
 from urllib.parse import urljoin
 
-
-MD_DIR = Path("data/md").absolute()
-if MD_DIR.exists():
-    shutil.rmtree(MD_DIR)
-
-
-SITE_URL = "https://arapiraca.ufal.br/graduacao/"
-PROJECT_DIR = Path.home() / "httrack-websites/ufal/"
-SITE_NAME = "arapiraca.ufal.br/graduacao"
-SITE_DIR = PROJECT_DIR / SITE_NAME
-shutil.copytree(SITE_DIR, MD_DIR)
+from utils.globals import SITE_URL, MD_DIR
 
 
 def pages_to_md():
