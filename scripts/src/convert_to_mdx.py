@@ -1,27 +1,25 @@
-from pathlib import Path
-from markdownify import markdownify as md
-from bs4 import BeautifulSoup
-import shutil
 import re
 from re import Match
+from pathlib import Path
+from bs4 import BeautifulSoup
 from urllib.parse import urljoin
+from markdownify import markdownify
+from utils.globals import HTML_DIR, MD_DIR, SITE_URL
 
-from utils.globals import SITE_URL, MD_DIR
+
+def main():
+    pages_to_mdx()
+    update_relative_links()
 
 
-def pages_to_md():
-    for page in MD_DIR.rglob("*"):
-        if page.is_dir():
-            continue
-        if page.suffix != ".html":
-            page.unlink()
-            continue
-        html = page.read_text("utf-8")
+def pages_to_mdx():
+    for path in HTML_DIR.rglob("*.html"):
+        html = path.read_text("utf-8")
         soup = BeautifulSoup(html, features="html.parser")
         title = soup.find("title").get_text()
         content = soup.select_one("#content")
         if not content:
-            page.unlink()
+            path.unlink()
             continue
         for header in content.select("header>div"):
             header.clear()
@@ -34,40 +32,12 @@ def pages_to_md():
                 "import { Image } from 'astro:assets';\n",
             ]
         )
-        markdown += md(str(content))
-        mdf = page.parent / (page.stem + ".mdx")
-        mdf.write_text(markdown, "utf-8")
-        page.unlink()
-
-
-def clean_directories():
-    for glob in [
-        "++plone++ufalprofile",
-        "@@download",
-        "@@images",
-    ]:
-        for directory in MD_DIR.rglob(glob):
-            shutil.rmtree(directory)
-
-
-def parse_relative_link(x: Match, md: Path):
-    d = x.groupdict()
-    desc, link, alt = d["desc"], d["link"], d["alt"]
-    url = str(link)
-    if not url.startswith("http"):
-        link2 = (md.parent / url).resolve().relative_to(MD_DIR)
-        url = urljoin(SITE_URL, str(link2))
-    elif re.search(r"https://arapiraca.ufal.br/(?:graduacao/)?resolveuid", url):
-        return ""  # url 404
-    elif url.startswith(
-        "https://drive.google.com/file/d/11hKWuL7r7y9A1U5ZtBH60BVZgJA0cb8W"
-    ):
-        return ""  # 404
-    return f'<Image src="{url}" alt="{alt}" inferSize />'
-
-
-def get_relative_link_parser(md: Path):
-    return lambda x: parse_relative_link(x, md)
+        markdown += markdownify(str(content))
+        mdx = path.parent / (path.stem + ".mdx")
+        parent = MD_DIR / mdx.parent.relative_to(HTML_DIR)
+        parent.mkdir(parents=True, exist_ok=True)
+        mdx = parent / mdx.name
+        mdx.write_text(markdown, "utf-8")
 
 
 def update_relative_links():
@@ -89,42 +59,17 @@ def update_relative_links():
         md.write_text(text, "utf-8")
 
 
-def create_index_mdx():
-    # cpt/         cpt/
-    # cpt.mdx  -->   |- index.mdx
-    (MD_DIR / "ciencia-da-computacao").rename(MD_DIR / "cpt")
-    (MD_DIR / "ciencia-da-computacao.mdx").rename(MD_DIR / "cpt.mdx")
-    RXP = r"\[(?P<desc>.*?)\]\((?P<link>.+?)\)"
-    for md in MD_DIR.rglob("*.mdx"):
-        parent = md.parent / md.stem
-        text = md.read_text("utf-8")
-        rmlen = len(md.stem) + 1
-        offset = 0
-        for m in re.finditer(RXP, text):
-            original_link = m.group("link")
-            if not original_link.startswith(md.stem):
-                continue
-            link = original_link[rmlen:]
-            full_link = "/" + str(parent.relative_to(MD_DIR) / link)
-            i, j = m.span("link")
-            text = text[: i - offset] + full_link + text[j - offset :]
-            offset += rmlen - (len(full_link) - len(link))
-        md.write_text(text, "utf-8")
-        if parent.exists():
-            md.rename(parent / "index.mdx")
+def get_relative_link_parser(md: Path):
+    return lambda x: parse_relative_link(x, md)
 
 
-def flatten_root():
-    # remover a raiz "ciencia-da-computacao"
-    cc_dir = MD_DIR / "cpt"
-    for path in cc_dir.iterdir():
-        shutil.move(path, MD_DIR)
-    cc_dir.rmdir()
-
-
-def main():
-    pages_to_md()
-    update_relative_links()
-    clean_directories()
-    create_index_mdx()
-    flatten_root()
+def parse_relative_link(x: Match, md: Path):
+    d = x.groupdict()
+    desc, link, alt = d["desc"], d["link"], d["alt"]
+    url = str(link)
+    if not url.startswith("http") and "../../resolveuid" not in url:
+        link2 = (md.parent / url).resolve().relative_to(MD_DIR.absolute())
+        url = urljoin(SITE_URL, str(link2))
+    elif re.search(r"https://arapiraca.ufal.br/(?:graduacao/)?resolveuid", url):
+        return ""  # url 404
+    return f'<Image src="{url}" alt="{alt}" inferSize />'

@@ -38,12 +38,13 @@ def should_stack(child: Tuple[str, dict, dict]):
 
 def main():
     paths = map(
-        lambda p: p[3:-4] if p.endswith(".mdx") else p[3:],
+        lambda p: str((p.parent / p.stem).relative_to(MD_DIR)),
         sorted(
             filter(
-                lambda x: "index.mdx" not in x and x != "md",
-                (str(x) for x in MD_DIR.rglob("*")),
-            )
+                lambda x: "index.mdx" not in str(x) and str(x) != "md",
+                MD_DIR.rglob("*"),
+            ),
+            key=lambda x: str(x),
         ),
     )
 

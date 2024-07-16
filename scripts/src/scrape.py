@@ -20,7 +20,7 @@ def get_filename_from_url(url: str):
 def touch_deep(path: Path):
     directory = path.parent if path.suffix == ".html" else path
     directory.mkdir(parents=True, exist_ok=True)
-    path.touch()
+    path.touch(exist_ok=True)
 
 
 def write_html(url, html):
@@ -91,9 +91,18 @@ def find_page_links(html: str):
             next_urls.add(href)
 
 
+def remove_dead_links(html: str | None):
+    if not html:
+        return html
+    for url in SKIP_URLS:
+        html = html.replace(url, "#")
+    return html
+
+
 async def process_next_batch():
     docs = await fetch_html_batch()
     for url, html in docs:
+        html = remove_dead_links(html)
         if not get_filename_from_url(url).exists():
             write_html(url, html)
         find_page_links(html)
