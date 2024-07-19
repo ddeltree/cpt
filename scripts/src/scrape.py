@@ -1,4 +1,4 @@
-import httpx, asyncio
+import httpx, asyncio, csv
 from bs4 import BeautifulSoup
 from pathlib import Path
 from typing import Set
@@ -6,8 +6,7 @@ from httpx import ConnectError
 from ssl import SSLCertVerificationError
 
 from utils.RateLimitedClient import RateLimitedClient
-from utils.HostRedirectError import HostRedirectError
-from utils.globals import HTML_DIR, DEAD_LINKS_PATH, ROOT_URL
+from utils.globals import HTML_DIR, DEAD_LINKS_PATH, ROOT_URL, DATA_DIR
 from utils.fn import err, warn
 
 
@@ -39,44 +38,47 @@ def should_skip(url: str, e: Exception | None = None):
     return url in SKIP_URLS or any(map(lambda x: x in str(e), SKIP_URLS))
 
 
-async def fetch_url(url: str):
-    r = await CLIENT.get(url)
-    print(url)
-    if url != str(r.url):
-        url = str(r.url)
+async def fetch_route(route: str):
+    print(route)
+    r = await CLIENT.get(route)
+    html: str | None = r.text
+    redirect: str | None = None
+    if route != str(r.url):
         print(warn("[redirect]"), r.url)
-        if not str(r.url).startswith(ROOT_URL):
-            raise HostRedirectError()
-    r.raise_for_status()
-    return (url, r.text) if is_html(r) else None
+        redirect = str(r.url)
+    if not str(r.url).startswith(ROOT_URL):
+        html = None
+    else:
+        r.raise_for_status()
+    return (route, redirect, html) if is_html(r) else None
 
 
-async def try_fetch_url(url: str):
+async def try_fetch_route(route: str):
     result = None
     try:
-        if not should_skip(url):
-            result = await fetch_url(url)
+        if not should_skip(route):
+            result = await fetch_route(route)
     except SSLCertVerificationError:
-        pass
-    except HostRedirectError:
         pass
     except ConnectError:
         pass
     except Exception as e:
-        print(err("[ERRO]"), url)
+        print(err("[ERRO]"), route)
         print(err(e))
         raise e
     return result
 
 
 async def fetch_next_html(url: str):
-    done_urls.add(url)
-    next_urls.discard(url)
-    return await try_fetch_url(url)
+    if not url.startswith(ROOT_URL):
+        raise Exception(f"{url} não é rota")
+    done_routes.add(url)
+    next_routes.discard(url)
+    return await try_fetch_route(url)
 
 
 async def fetch_html_batch():
-    return filter(bool, await asyncio.gather(*map(fetch_next_html, next_urls)))
+    return filter(bool, await asyncio.gather(*map(fetch_next_html, next_routes)))
 
 
 def find_page_links(html: str):
@@ -87,29 +89,38 @@ def find_page_links(html: str):
         if not href.startswith("/") and not href.startswith("http"):
             continue
         href = href if href.startswith("http") else ROOT_URL + href
-        if href not in done_urls and href.startswith(ROOT_URL):
-            next_urls.add(href)
+        if href not in done_routes and href.startswith(ROOT_URL):
+            next_routes.add(href)
 
 
-def remove_dead_links(html: str | None):
-    if not html:
-        return html
+def remove_dead_links(html: str):
     for url in SKIP_URLS:
         html = html.replace(url, "#")
     return html
 
 
+def redirects_writerow(route, redirect):
+    if not redirect:
+        raise Exception("Inesperado: sem html e sem redirect")
+    redirects = DATA_DIR / "redirects.csv"
+    with redirects.open("a") as f:
+        file = csv.writer(f)
+        file.writerow([route, redirect])
+
+
 async def process_next_batch():
-    docs = await fetch_html_batch()
-    for url, html in docs:
+    for route, redirect, html in await fetch_html_batch():
+        if not html:
+            redirects_writerow(route, redirect)
+            continue
         html = remove_dead_links(html)
-        if not get_filename_from_url(url).exists():
-            write_html(url, html)
+        if not get_filename_from_url(route).exists():
+            write_html(route, html)
         find_page_links(html)
 
 
 async def async_main():
-    while next_urls:
+    while next_routes:
         await process_next_batch()
 
 
@@ -117,7 +128,8 @@ def main():
     asyncio.run(async_main())
 
 
-next_urls = {ROOT_URL}
-done_urls: Set[str] = set()
+# rotas da url raiz do curso
+next_routes = {ROOT_URL}
+done_routes: Set[str] = set()
 CLIENT = RateLimitedClient(interval=0, count=7, timeout=60, follow_redirects=True)
 SKIP_URLS = DEAD_LINKS_PATH.read_text().splitlines()
