@@ -7,7 +7,7 @@ from ssl import SSLCertVerificationError
 
 from utils.RateLimitedClient import RateLimitedClient
 from utils.globals import HTML_DIR, DEAD_LINKS_PATH, ROOT_URL, REDIRECTS_CSV_PATH
-from utils.fn import err, warn
+from utils.fn import err, warn, ok
 
 
 def get_filename_from_url(url: str):
@@ -102,8 +102,6 @@ def remove_dead_links(html: str):
 
 
 def redirects_writerow(route, redirect):
-    if not redirect:
-        raise Exception(f"Inesperado: sem html e sem redirect\n{route}")
     with REDIRECTS_CSV_PATH.open("a") as f:
         file = csv.writer(f)
         file.writerow([route, redirect])
@@ -111,8 +109,11 @@ def redirects_writerow(route, redirect):
 
 async def process_next_batch():
     for route, redirect, html in await fetch_html_batch():
-        if not html:
+        if not html and redirect:
             redirects_writerow(route, redirect)
+            continue
+        elif not html:
+            print(ok("[RECURSO]"), route)
             continue
         html = remove_dead_links(html)
         if not get_filename_from_url(route).exists():
