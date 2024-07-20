@@ -28,29 +28,31 @@ def write_html(url, html):
     file.write_text(html, "utf-8")
 
 
-def is_html(r: httpx.Response):
-    return "text/html" in r.headers.get("content-type")
+async def get_head_info(route: str):
+    head = await CLIENT.head(route, follow_redirects=True)
+    is_html = "text/html" in head.headers.get("content-type")
+    redirect = str(head.url)
+    redirect = redirect if redirect != route else None
+    if redirect:
+        print(warn("[redirect]"), redirect)
+    return (is_html, redirect, head)
+
+
+async def fetch_route(route: str):
+    print(route)
+    is_html, redirect, response = await get_head_info(route)
+    html = (await CLIENT.get(route)).text if is_html else None
+    if redirect and not redirect.startswith(ROOT_URL):
+        html = None
+    else:
+        response.raise_for_status()
+    return route, redirect, html
 
 
 def should_skip(url: str, e: Exception | None = None):
     if e:
         print(err("[ERRO]"), url)
     return url in SKIP_URLS or any(map(lambda x: x in str(e), SKIP_URLS))
-
-
-async def fetch_route(route: str):
-    print(route)
-    r = await CLIENT.get(route)
-    html: str | None = r.text
-    redirect: str | None = None
-    if route != str(r.url):
-        print(warn("[redirect]"), r.url)
-        redirect = str(r.url)
-    if not str(r.url).startswith(ROOT_URL):
-        html = None
-    else:
-        r.raise_for_status()
-    return (route, redirect, html) if is_html(r) else None
 
 
 async def try_fetch_route(route: str):
@@ -101,7 +103,7 @@ def remove_dead_links(html: str):
 
 def redirects_writerow(route, redirect):
     if not redirect:
-        raise Exception("Inesperado: sem html e sem redirect")
+        raise Exception(f"Inesperado: sem html e sem redirect\n{route}")
     with REDIRECTS_CSV_PATH.open("a") as f:
         file = csv.writer(f)
         file.writerow([route, redirect])
