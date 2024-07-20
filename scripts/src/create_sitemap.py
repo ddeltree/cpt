@@ -1,8 +1,8 @@
-import json
+import json, csv
 from typing import Tuple
 from pathlib import Path
 
-from utils.globals import MD_DIR
+from utils.globals import MD_DIR, REDIRECTS_CSV_PATH, ROOT_URL
 
 
 def iter_tree(
@@ -15,7 +15,7 @@ def iter_tree(
     while stack:
         node = stack[-1]
         child = next(node, None)
-        if child != None and should_stack(child):
+        if child is not None and should_stack(child):
             stack.append(to_iter(child))
         elif not child:
             on_pop(stack)
@@ -32,8 +32,25 @@ def make_iterator(entry: Tuple[str, dict, dict] | dict):
 def should_stack(child: Tuple[str, dict, dict]):
     path, value, parent = child
     if len(value.keys()) == 0:
-        parent[path.split("/")[-1]] = path
+        last_key = path.split("/")[-1]
+        if path in REDIRECT_ROUTES:
+            path = REDIRECT_URLS[REDIRECT_ROUTES.index(path)]
+        parent[last_key] = path
     return True
+
+
+def read_redirects():
+    res: list[Tuple[str, str]] = []
+    with REDIRECTS_CSV_PATH.open() as f:
+        reader = csv.reader(f)
+        for route, redirect in reader:
+            route = route.replace(ROOT_URL, "")
+            route = route[1:] if route.startswith("/") else route
+            res.append((route, redirect))
+    return zip(*res)
+
+
+REDIRECT_ROUTES, REDIRECT_URLS = read_redirects()
 
 
 def main():
@@ -49,7 +66,7 @@ def main():
     )
 
     yml = dict()
-    for path in paths:
+    for path in [*paths, *REDIRECT_ROUTES]:
         ref = yml
         keys = path.split("/")
         for key in keys:

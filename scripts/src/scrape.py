@@ -6,7 +6,7 @@ from httpx import ConnectError
 from ssl import SSLCertVerificationError
 
 from utils.RateLimitedClient import RateLimitedClient
-from utils.globals import HTML_DIR, DEAD_LINKS_PATH, ROOT_URL, DATA_DIR
+from utils.globals import HTML_DIR, DEAD_LINKS_PATH, ROOT_URL, REDIRECTS_CSV_PATH
 from utils.fn import err, warn
 
 
@@ -102,8 +102,7 @@ def remove_dead_links(html: str):
 def redirects_writerow(route, redirect):
     if not redirect:
         raise Exception("Inesperado: sem html e sem redirect")
-    redirects = DATA_DIR / "redirects.csv"
-    with redirects.open("a") as f:
+    with REDIRECTS_CSV_PATH.open("a") as f:
         file = csv.writer(f)
         file.writerow([route, redirect])
 
