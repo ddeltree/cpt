@@ -5,7 +5,6 @@ from typing import Set
 from httpx import ConnectError
 from ssl import SSLCertVerificationError
 
-from utils.RateLimitedClient import RateLimitedClient
 from utils.globals import HTML_DIR, DEAD_LINKS_PATH, ROOT_URL, REDIRECTS_CSV_PATH
 from utils.fn import err, warn, ok
 
@@ -33,18 +32,15 @@ async def get_head_info(route: str):
     is_html = "text/html" in head.headers.get("content-type")
     redirect = str(head.url)
     redirect = redirect if redirect != route else None
-    if redirect:
-        print(warn("[redirect]"), redirect)
     return (is_html, redirect, head)
 
 
 async def fetch_route(route: str):
-    print(route)
     is_html, redirect, response = await get_head_info(route)
-    html = (await CLIENT.get(route)).text if is_html else None
-    if redirect and not redirect.startswith(ROOT_URL):
+    if not is_html or redirect and not redirect.startswith(ROOT_URL):
         html = None
     else:
+        html = (await CLIENT.get(route)).text
         response.raise_for_status()
     return route, redirect, html
 
@@ -101,24 +97,36 @@ def remove_dead_links(html: str):
     return html
 
 
-def redirects_writerow(route, redirect):
+def redirects_writerows(redirects):
     with REDIRECTS_CSV_PATH.open("a") as f:
-        file = csv.writer(f)
-        file.writerow([route, redirect])
+        for route, redirect, _ in redirects:
+            print(route)
+            print(warn("[redirect]"), redirect)
+            file = csv.writer(f)
+            file.writerow([route, redirect])
 
 
-async def process_next_batch():
-    for route, redirect, html in await fetch_html_batch():
-        if not html and redirect:
-            redirects_writerow(route, redirect)
-            continue
-        elif not html:
-            print(ok("[RECURSO]"), route)
-            continue
+def save_html_batch(documents):
+    for route, _, html in documents:
+        print(route)
         html = remove_dead_links(html)
         if not get_filename_from_url(route).exists():
             write_html(route, html)
         find_page_links(html)
+
+
+async def process_next_batch():
+    batch = list(await fetch_html_batch())
+
+    redirects = filter(lambda x: not x[2] and x[1], batch)
+    redirects_writerows(redirects)
+
+    resources = filter(lambda x: not x[2] and not x[1], batch)
+    for route, _, _ in resources:
+        print(ok("[RECURSO]"), route)
+
+    documents = filter(lambda x: x[2], batch)
+    save_html_batch(documents)
 
 
 async def async_main():
@@ -127,11 +135,12 @@ async def async_main():
 
 
 def main():
+    REDIRECTS_CSV_PATH.unlink(missing_ok=True)
     asyncio.run(async_main())
 
 
 # rotas da url raiz do curso
 next_routes = {ROOT_URL}
 done_routes: Set[str] = set()
-CLIENT = RateLimitedClient(interval=0, count=7, timeout=60, follow_redirects=True)
+CLIENT = httpx.AsyncClient(follow_redirects=True, timeout=60)
 SKIP_URLS = DEAD_LINKS_PATH.read_text().splitlines()

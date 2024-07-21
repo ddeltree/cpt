@@ -50,10 +50,11 @@ def read_redirects():
     return zip(*res)
 
 
-REDIRECT_ROUTES, REDIRECT_URLS = read_redirects()
+REDIRECT_ROUTES, REDIRECT_URLS = None, None
 
 
 def main():
+    REDIRECT_ROUTES, REDIRECT_URLS = read_redirects()
     paths = map(
         lambda p: str((p.parent / p.stem).relative_to(MD_DIR)),
         sorted(
