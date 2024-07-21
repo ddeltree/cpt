@@ -9,46 +9,40 @@ from utils.globals import HTML_DIR, DEAD_LINKS_PATH, ROOT_URL, REDIRECTS_CSV_PAT
 from utils.fn import err, warn, ok
 
 
-def get_filename_from_url(url: str):
-    name = url.replace(ROOT_URL, "")
-    name = name[1:] if name.startswith("/") else name
-    return HTML_DIR / name / "index.html"
+def main():
+    REDIRECTS_CSV_PATH.unlink(missing_ok=True)
+    asyncio.run(async_main())
 
 
-def touch_deep(path: Path):
-    directory = path.parent if path.suffix == ".html" else path
-    directory.mkdir(parents=True, exist_ok=True)
-    path.touch(exist_ok=True)
+async def async_main():
+    while next_routes:
+        await process_next_batch()
 
 
-def write_html(url, html):
-    file = get_filename_from_url(url)
-    touch_deep(file)
-    file.write_text(html, "utf-8")
+async def process_next_batch():
+    batch = list(await fetch_html_batch())
+
+    redirects = filter(lambda x: not x[2] and x[1], batch)
+    redirects_writerows(redirects)
+
+    resources = filter(lambda x: not x[2] and not x[1], batch)
+    for route, _, _ in resources:
+        print(ok("[RECURSO]"), route)
+
+    documents = filter(lambda x: x[2], batch)
+    save_html_batch(documents)
 
 
-async def get_head_info(route: str):
-    head = await CLIENT.head(route, follow_redirects=True)
-    is_html = "text/html" in head.headers.get("content-type")
-    redirect = str(head.url)
-    redirect = redirect if redirect != route else None
-    return (is_html, redirect, head)
+async def fetch_html_batch():
+    return filter(bool, await asyncio.gather(*map(fetch_next_html, next_routes)))
 
 
-async def fetch_route(route: str):
-    is_html, redirect, response = await get_head_info(route)
-    if not is_html or redirect and not redirect.startswith(ROOT_URL):
-        html = None
-    else:
-        html = (await CLIENT.get(route)).text
-        response.raise_for_status()
-    return route, redirect, html
-
-
-def should_skip(url: str, e: Exception | None = None):
-    if e:
-        print(err("[ERRO]"), url)
-    return url in SKIP_URLS or any(map(lambda x: x in str(e), SKIP_URLS))
+async def fetch_next_html(url: str):
+    if not url.startswith(ROOT_URL):
+        raise Exception(f"{url} não é rota")
+    done_routes.add(url)
+    next_routes.discard(url)
+    return await try_fetch_route(url)
 
 
 async def try_fetch_route(route: str):
@@ -67,34 +61,28 @@ async def try_fetch_route(route: str):
     return result
 
 
-async def fetch_next_html(url: str):
-    if not url.startswith(ROOT_URL):
-        raise Exception(f"{url} não é rota")
-    done_routes.add(url)
-    next_routes.discard(url)
-    return await try_fetch_route(url)
+def should_skip(url: str, e: Exception | None = None):
+    if e:
+        print(err("[ERRO]"), url)
+    return url in SKIP_URLS or any(map(lambda x: x in str(e), SKIP_URLS))
 
 
-async def fetch_html_batch():
-    return filter(bool, await asyncio.gather(*map(fetch_next_html, next_routes)))
+async def fetch_route(route: str):
+    is_html, redirect, response = await get_head_info(route)
+    if not is_html or redirect and not redirect.startswith(ROOT_URL):
+        html = None
+    else:
+        html = (await CLIENT.get(route)).text
+        response.raise_for_status()
+    return route, redirect, html
 
 
-def find_page_links(html: str):
-    soup = BeautifulSoup(html, "html.parser")
-    for link in soup.find_all("a"):
-        attrs = link.get_attribute_list("href")
-        href: str = (attrs[:1] or [""])[0] or ""
-        if not href.startswith("/") and not href.startswith("http"):
-            continue
-        href = href if href.startswith("http") else ROOT_URL + href
-        if href not in done_routes and href.startswith(ROOT_URL):
-            next_routes.add(href)
-
-
-def remove_dead_links(html: str):
-    for url in SKIP_URLS:
-        html = html.replace(url, "#")
-    return html
+async def get_head_info(route: str):
+    head = await CLIENT.head(route, follow_redirects=True)
+    is_html = "text/html" in head.headers.get("content-type")
+    redirect = str(head.url)
+    redirect = redirect if redirect != route else None
+    return (is_html, redirect, head)
 
 
 def redirects_writerows(redirects):
@@ -115,28 +103,40 @@ def save_html_batch(documents):
         find_page_links(html)
 
 
-async def process_next_batch():
-    batch = list(await fetch_html_batch())
-
-    redirects = filter(lambda x: not x[2] and x[1], batch)
-    redirects_writerows(redirects)
-
-    resources = filter(lambda x: not x[2] and not x[1], batch)
-    for route, _, _ in resources:
-        print(ok("[RECURSO]"), route)
-
-    documents = filter(lambda x: x[2], batch)
-    save_html_batch(documents)
+def remove_dead_links(html: str):
+    for url in SKIP_URLS:
+        html = html.replace(url, "#")
+    return html
 
 
-async def async_main():
-    while next_routes:
-        await process_next_batch()
+def write_html(url, html):
+    file = get_filename_from_url(url)
+    touch_deep(file)
+    file.write_text(html, "utf-8")
 
 
-def main():
-    REDIRECTS_CSV_PATH.unlink(missing_ok=True)
-    asyncio.run(async_main())
+def get_filename_from_url(url: str):
+    name = url.replace(ROOT_URL, "")
+    name = name[1:] if name.startswith("/") else name
+    return HTML_DIR / name / "index.html"
+
+
+def touch_deep(path: Path):
+    directory = path.parent if path.suffix == ".html" else path
+    directory.mkdir(parents=True, exist_ok=True)
+    path.touch(exist_ok=True)
+
+
+def find_page_links(html: str):
+    soup = BeautifulSoup(html, "html.parser")
+    for link in soup.find_all("a"):
+        attrs = link.get_attribute_list("href")
+        href: str = (attrs[:1] or [""])[0] or ""
+        if not href.startswith("/") and not href.startswith("http"):
+            continue
+        href = href if href.startswith("http") else ROOT_URL + href
+        if href not in done_routes and href.startswith(ROOT_URL):
+            next_routes.add(href)
 
 
 # rotas da url raiz do curso
