@@ -1,8 +1,7 @@
-import json, csv
+import json, csv, shutil
 from typing import Tuple
-from pathlib import Path
 
-from utils.globals import MD_DIR, REDIRECTS_CSV_PATH, ROOT_URL
+from utils.globals import MD_DIR, REDIRECTS_CSV_PATH, ROOT_URL, SITEMAP_PATH, PUBLIC_DIR
 
 
 def iter_tree(
@@ -40,6 +39,7 @@ def should_stack(child: Tuple[str, dict, dict]):
 
 
 def read_redirects():
+    global REDIRECT_ROUTES, REDIRECT_URLS
     res: list[Tuple[str, str]] = []
     with REDIRECTS_CSV_PATH.open() as f:
         reader = csv.reader(f)
@@ -47,14 +47,14 @@ def read_redirects():
             route = route.replace(ROOT_URL, "")
             route = route[1:] if route.startswith("/") else route
             res.append((route, redirect))
-    return zip(*res)
+    REDIRECT_ROUTES, REDIRECT_URLS = zip(*res)
 
 
 REDIRECT_ROUTES, REDIRECT_URLS = None, None
 
 
 def main():
-    REDIRECT_ROUTES, REDIRECT_URLS = read_redirects()
+    read_redirects()
     paths = map(
         lambda p: str((p.parent / p.stem).relative_to(MD_DIR)),
         sorted(
@@ -81,4 +81,5 @@ def main():
         should_stack=should_stack,
         on_pop=lambda x: ...,
     )
-    Path("data/sitemap.json").write_text(json.dumps(yml))
+    SITEMAP_PATH.write_text(json.dumps(yml))
+    shutil.copy(SITEMAP_PATH, PUBLIC_DIR)

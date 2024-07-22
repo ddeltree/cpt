@@ -1,15 +1,18 @@
-import re
+import re, shutil
 from re import Match
 from pathlib import Path
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 from markdownify import markdownify
-from utils.globals import HTML_DIR, MD_DIR, SITE_URL
+from utils.globals import HTML_DIR, MD_DIR, ROOT_URL, PAGES_DIR
 
 
 def main():
+    if MD_DIR.is_dir():
+        shutil.rmtree(MD_DIR)
     pages_to_mdx()
     update_relative_links()
+    shutil.copytree(MD_DIR, PAGES_DIR, dirs_exist_ok=True)
 
 
 def pages_to_mdx():
@@ -69,7 +72,7 @@ def parse_relative_link(x: Match, md: Path):
     url = str(link)
     if not url.startswith("http") and "../../resolveuid" not in url:
         link2 = (md.parent / url).resolve().relative_to(MD_DIR.absolute())
-        url = urljoin(SITE_URL, str(link2))
+        url = urljoin(ROOT_URL, str(link2))
     elif re.search(r"https://arapiraca.ufal.br/(?:graduacao/)?resolveuid", url):
         return ""  # url 404
     return f'<Image src="{url}" alt="{alt}" inferSize />'
