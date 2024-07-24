@@ -5,13 +5,20 @@ from typing import Set
 from httpx import ConnectError
 from ssl import SSLCertVerificationError
 
-from utils.globals import HTML_DIR, DEAD_LINKS_PATH, ROOT_URL, REDIRECTS_CSV_PATH
+from utils.globals import (
+    HTML_DIR,
+    DEAD_LINKS_PATH,
+    ROOT_URL,
+    REDIRECTS_CSV_PATH,
+    LINKS_PATH,
+)
 from utils.fn import err, warn, ok
 
 
 def main():
     REDIRECTS_CSV_PATH.unlink(missing_ok=True)
     asyncio.run(async_main())
+    LINKS_PATH.write_text("\n".join(all_links))
 
 
 async def async_main():
@@ -128,18 +135,27 @@ def touch_deep(path: Path):
 
 
 def find_page_links(html: str):
+    # TODO salvar todos os links para atualizar no markdown depois
     soup = BeautifulSoup(html, "html.parser")
     for link in soup.find_all("a"):
         attrs = link.get_attribute_list("href")
         href: str = (attrs[:1] or [""])[0] or ""
+        all_links.add(href)
         if not href.startswith("/") and not href.startswith("http"):
             continue
         href = href if href.startswith("http") else ROOT_URL + href
         if href not in done_routes and href.startswith(ROOT_URL):
             next_routes.add(href)
+    for img in soup.find_all("img"):
+        src = img.get("src")
+        if src:
+            if src not in all_links:
+                print(ok("[IMG]"), src)
+            all_links.add(src)
 
 
 # rotas da url raiz do curso
+all_links: Set[str] = set()
 next_routes = {ROOT_URL}
 done_routes: Set[str] = set()
 CLIENT = httpx.AsyncClient(follow_redirects=True, timeout=60)

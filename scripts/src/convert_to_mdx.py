@@ -11,7 +11,6 @@ def main():
     if MD_DIR.is_dir():
         shutil.rmtree(MD_DIR)
     pages_to_mdx()
-    update_relative_links()
     shutil.copytree(MD_DIR, PAGES_DIR, dirs_exist_ok=True)
 
 
@@ -41,38 +40,3 @@ def pages_to_mdx():
         parent.mkdir(parents=True, exist_ok=True)
         mdx = parent / mdx.name
         mdx.write_text(markdown, "utf-8")
-
-
-def update_relative_links():
-    IMG = r"!\[(?P<desc>.*?)\]\((?P<link>.+?)(?:[ ]\"(?P<alt>.+?)\")?\)"
-    LINK = r"<(?P<link>.+?)>"  # Dá erro no formato MDX
-    HTML_LINK = r"\[(?P<desc>.*?)\]\((?P<link>.+?)\.html(?:[ ]\"(?P<alt>.+?)\")?\)"
-    for md in MD_DIR.rglob("*.mdx"):
-        text = md.read_text("utf-8")
-        if re.search(LINK, text):
-            text = re.sub(LINK, lambda x: x.group("link"), text)
-        if re.search(IMG, text):
-            parser = get_relative_link_parser(md)
-            text = re.sub(IMG, parser, text)
-        if re.search(HTML_LINK, text):
-            text = re.sub(
-                HTML_LINK, lambda x: f'[{x.group("desc")}]({x.group("link")})', text
-            )
-        text = text.replace("](ciencia-da-computacao/", "](/cpt/")
-        md.write_text(text, "utf-8")
-
-
-def get_relative_link_parser(md: Path):
-    return lambda x: parse_relative_link(x, md)
-
-
-def parse_relative_link(x: Match, md: Path):
-    d = x.groupdict()
-    desc, link, alt = d["desc"], d["link"], d["alt"]
-    url = str(link)
-    if not url.startswith("http") and "../../resolveuid" not in url:
-        link2 = (md.parent / url).resolve().relative_to(MD_DIR.absolute())
-        url = urljoin(ROOT_URL, str(link2))
-    elif re.search(r"https://arapiraca.ufal.br/(?:graduacao/)?resolveuid", url):
-        return ""  # url 404
-    return f'<Image src="{url}" alt="{alt}" inferSize />'

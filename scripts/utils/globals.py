@@ -10,6 +10,7 @@ HTML_DIR = DATA_DIR / "html"
 MD_DIR = DATA_DIR / "md"
 REDIRECTS_CSV_PATH = DATA_DIR / "redirects.csv"
 SITEMAP_PATH = DATA_DIR / "sitemap.json"
+LINKS_PATH = DATA_DIR / "links.txt"
 
 ROOT_URL = "https://arapiraca.ufal.br/graduacao/ciencia-da-computacao"
 
