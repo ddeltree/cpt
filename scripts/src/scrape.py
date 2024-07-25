@@ -5,14 +5,8 @@ from typing import Set
 from httpx import ConnectError
 from ssl import SSLCertVerificationError
 
-from utils.globals import (
-    HTML_DIR,
-    DEAD_LINKS_PATH,
-    ROOT_URL,
-    REDIRECTS_CSV_PATH,
-    LINKS_PATH,
-)
-from utils.fn import err, warn, ok
+from utils.globals import HTML_DIR, ROOT_URL, REDIRECTS_CSV_PATH, LINKS_PATH, SKIP_URLS
+from utils.fn import err, warn, ok, extract_links
 
 
 def main():
@@ -86,7 +80,7 @@ async def fetch_route(route: str):
 
 async def get_head_info(route: str):
     head = await CLIENT.head(route, follow_redirects=True)
-    is_html = "text/html" in head.headers.get("content-type")
+    is_html = "text/html" in (head.headers.get("content-type") or [])
     redirect = str(head.url)
     redirect = redirect if redirect != route else None
     return (is_html, redirect, head)
@@ -111,9 +105,9 @@ def save_html_batch(documents):
 
 
 def remove_dead_links(html: str):
-    for url in SKIP_URLS:
-        html = html.replace(url, "#")
-    return html
+    # for url in SKIP_URLS:
+    #     html = html.replace(url, "#")
+    return extract_links(SKIP_URLS, html)
 
 
 def write_html(url, html):
@@ -135,7 +129,6 @@ def touch_deep(path: Path):
 
 
 def find_page_links(html: str):
-    # TODO salvar todos os links para atualizar no markdown depois
     soup = BeautifulSoup(html, "html.parser")
     for link in soup.find_all("a"):
         attrs = link.get_attribute_list("href")
@@ -159,4 +152,3 @@ all_links: Set[str] = set()
 next_routes = {ROOT_URL}
 done_routes: Set[str] = set()
 CLIENT = httpx.AsyncClient(follow_redirects=True, timeout=60)
-SKIP_URLS = DEAD_LINKS_PATH.read_text().splitlines()

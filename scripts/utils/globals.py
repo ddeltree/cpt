@@ -16,3 +16,4 @@ ROOT_URL = "https://arapiraca.ufal.br/graduacao/ciencia-da-computacao"
 
 PUBLIC_DIR = Path("../public").resolve()
 PAGES_DIR = Path("../src/pages").resolve()
+SKIP_URLS = DEAD_LINKS_PATH.read_text().splitlines()

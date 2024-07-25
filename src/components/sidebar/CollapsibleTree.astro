@@ -12,8 +12,13 @@ let { title, value, keys } = Astro.props
 const isTree = typeof value === 'object'
 keys ??= ['/cpt']
 keys.push(title)
-// TODO ler link nos valores folha
-const link = keys.join('/')
+
+const link =
+  typeof value === 'object'
+    ? keys.join('/')
+    : value.startsWith('/')
+      ? '/cpt' + value
+      : value
 
 title = title
   .replace(/-\d+$/, '')
