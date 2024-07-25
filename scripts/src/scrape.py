@@ -6,6 +6,7 @@ from httpx import ConnectError
 from ssl import SSLCertVerificationError
 
 from utils.globals import HTML_DIR, ROOT_URL, REDIRECTS_CSV_PATH, LINKS_PATH, SKIP_URLS
+from utils.exceptions import NotFoundError, LinkedinDeniedError
 from utils.fn import err, warn, ok, extract_links
 
 
@@ -55,6 +56,10 @@ async def try_fetch_route(route: str):
         pass
     except ConnectError:
         pass
+    except NotFoundError:
+        pass
+    except LinkedinDeniedError:
+        pass
     except Exception as e:
         print(err("[ERRO]"), route)
         print(err(e))
@@ -73,8 +78,12 @@ async def fetch_route(route: str):
     if not is_html or redirect and not redirect.startswith(ROOT_URL):
         html = None
     else:
-        html = (await CLIENT.get(route)).text
+        if response.status_code == 404:
+            raise NotFoundError()
+        elif response.status_code == 999 and "linkedin" in route:
+            raise LinkedinDeniedError()
         response.raise_for_status()
+        html = (await CLIENT.get(route)).text
     return route, redirect, html
 
 
