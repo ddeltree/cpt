@@ -1,4 +1,4 @@
-import shutil, asyncio
+import shutil, asyncio, re
 from bs4 import BeautifulSoup
 from pathlib import Path
 from markdownify import markdownify
@@ -54,7 +54,7 @@ def remove_relative_links(links: list[str], html: str):
 
 
 def remove_plone_links(links: list[str], html: str):
-    links = [x for x in links if x.startswith("/")]
+    links = [x for x in links if x.startswith("/") or x.startswith("+")]
     return extract_links(links, html) if links else html
 
 
@@ -94,8 +94,16 @@ def html_to_mdx(html: str, path: Path):
         ]
     )
     markdown += markdownify(str(content))
+    markdown = fix_invalid_mdx_syntax(markdown)
     mdx = path.parent / (path.stem + ".mdx")
     parent = MD_DIR / mdx.parent.relative_to(HTML_DIR)
     parent.mkdir(parents=True, exist_ok=True)
     mdx = parent / mdx.name
     mdx.write_text(markdown, "utf-8")
+
+
+def fix_invalid_mdx_syntax(text: str):
+    LINK = r"<(?P<link>.+?)>"  # Dá erro no formato MDX
+    if re.search(LINK, text):
+        text = re.sub(LINK, lambda x: x.group("link"), text)
+    return text

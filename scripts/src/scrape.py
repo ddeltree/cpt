@@ -80,7 +80,7 @@ async def fetch_route(route: str):
     else:
         if response.status_code == 404:
             raise NotFoundError()
-        elif response.status_code == 999 and "linkedin" in route:
+        elif response.status_code in (999, 429) and "linkedin" in route:
             raise LinkedinDeniedError()
         response.raise_for_status()
         html = (await CLIENT.get(route)).text
