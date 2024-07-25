@@ -15,6 +15,8 @@ def main():
     if MD_DIR.is_dir():
         shutil.rmtree(MD_DIR)
     pages_to_mdx()
+    if PAGES_DIR.exists():
+        shutil.rmtree(PAGES_DIR)
     shutil.copytree(MD_DIR, PAGES_DIR, dirs_exist_ok=True)
 
 
