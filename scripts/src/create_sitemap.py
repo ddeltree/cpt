@@ -10,7 +10,9 @@ REDIRECT_ROUTES, REDIRECT_URLS = None, None
 def main():
     read_redirects()
     paths = map(
-        lambda p: str((p.parent / p.stem).relative_to(MD_DIR)),
+        lambda p: str(
+            (p.parent / (p.stem if p.is_file() else p.name)).relative_to(MD_DIR)
+        ),
         sorted(
             filter(
                 lambda x: "index.mdx" not in str(x) and str(x) != "md",
