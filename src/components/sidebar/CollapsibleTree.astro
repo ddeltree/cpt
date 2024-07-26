@@ -9,22 +9,13 @@ interface Props {
 }
 let { title, value, keys } = Astro.props
 
-const isTree = typeof value === 'object'
 keys ??= ['/cpt']
 keys.push(title)
+const link = typeof value === 'object' ? keys.join('/') : value
 
-const link =
-  typeof value === 'object'
-    ? keys.join('/')
-    : value.startsWith('/')
-      ? '/cpt' + value
-      : value
+title = title.replace(/-\d+$/, '').replaceAll('-', ' ').replaceAll('_', ' ')
 
-title = title
-  .replace(/-\d+$/, '')
-  .replaceAll('-', ' ')
-  .replaceAll('_', ' ')
-  .replace(/\.\w{3}$/, '')
+const isTree = typeof value === 'object'
 value = isTree ? value : {}
 ---
 
