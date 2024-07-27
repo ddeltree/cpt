@@ -1,11 +1,18 @@
-import httpx, asyncio, csv
+import httpx, asyncio, csv, shutil
 from bs4 import BeautifulSoup
 from pathlib import Path
 from typing import Set
 from httpx import ConnectError
 from ssl import SSLCertVerificationError
 
-from utils.globals import HTML_DIR, ROOT_URL, REDIRECTS_CSV_PATH, LINKS_PATH, SKIP_URLS
+from utils.globals import (
+    HTML_DIR,
+    ROOT_URL,
+    REDIRECTS_CSV_PATH,
+    LINKS_PATH,
+    SKIP_URLS,
+    UTILS_DIR,
+)
 from utils.exceptions import NotFoundError, LinkedinDeniedError
 from utils.fn import err, warn, ok, extract_links
 
@@ -14,6 +21,7 @@ def main():
     REDIRECTS_CSV_PATH.unlink(missing_ok=True)
     asyncio.run(async_main())
     LINKS_PATH.write_text("\n".join(all_links))
+    shutil.copy(LINKS_PATH, UTILS_DIR)
 
 
 async def async_main():
