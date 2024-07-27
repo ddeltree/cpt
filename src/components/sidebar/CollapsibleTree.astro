@@ -1,6 +1,7 @@
 ---
 import Collapsible from './Collapsible.astro'
 import { Icon } from 'astro-icon/components'
+import links from '@/utils/readLinks'
 
 interface Props {
   title: string
@@ -11,7 +12,9 @@ let { title, value, keys } = Astro.props
 
 keys ??= ['/cpt']
 keys.push(title)
+
 const link = typeof value === 'object' ? keys.join('/') : value
+const doesLinkExist = links.includes(link) || typeof value !== 'object'
 
 title = title.replace(/-\d+$/, '').replaceAll('-', ' ').replaceAll('_', ' ')
 
@@ -24,9 +27,15 @@ value = isTree ? value : {}
 >
   <p slot="label" class="flex items-center py-2 pl-2 pr-1 hover:bg-blue-300">
     <span class="hover:text-blue-950">
-      <a href={link} class="cursor-pointer hover:underline">
-        {title}
-      </a>
+      {
+        doesLinkExist ? (
+          <a href={link} class="cursor-pointer hover:underline">
+            {title}
+          </a>
+        ) : (
+          <span class="cursor-pointer">{title}</span>
+        )
+      }
     </span>
     <span class="tree-icon hidden flex-1 justify-end text-2xl">
       <Icon
