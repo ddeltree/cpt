@@ -5,16 +5,26 @@ from markdownify import markdownify
 
 from src.scrape import try_fetch_route
 from src.create_sitemap import read_redirects
-from utils.globals import HTML_DIR, MD_DIR, ROOT_URL, PAGES_DIR, LINKS_PATH, SKIP_URLS
+from utils.globals import (
+    HTML_DIR,
+    MD_DIR,
+    ROOT_URL,
+    PAGES_DIR,
+    LINKS_PATH,
+    SKIP_URLS,
+    RESOURCES_PATH,
+)
 from utils.fn import extract_links
 
 LINKS: list[str] | None = None
 REDIRECT_ROUTES, REDIRECT_URLS = None, None
+RESORCES_ROUTES = None
 
 
 def main():
-    global REDIRECT_ROUTES, REDIRECT_URLS
+    global REDIRECT_ROUTES, REDIRECT_URLS, RESOURCE_ROUTES
     REDIRECT_ROUTES, REDIRECT_URLS = read_redirects()
+    RESOURCE_ROUTES = RESOURCES_PATH.read_text("utf-8").splitlines()
 
     asyncio.run(check_dead_links())
     if MD_DIR.is_dir():
@@ -66,14 +76,13 @@ def remove_plone_links(links: list[str], html: str):
 
 
 def update_relative_anchors(links: list[str], html: str):
-    links = [x for x in links if x.startswith(ROOT_URL) and x not in REDIRECT_URLS]
+    links = [x for x in links if x.startswith(ROOT_URL) and x not in RESOURCE_ROUTES]
     if not links:
         return html
     soup = BeautifulSoup(html, "html.parser")
     for link in links:
         for anchor in soup.find_all("a", href=link):
             anchor["href"] = link.replace(ROOT_URL, "/cpt")
-            anchor = soup.find_next("a", href=link)
     return soup.prettify()
 
 

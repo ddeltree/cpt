@@ -2,7 +2,7 @@ import httpx, asyncio, csv, shutil
 from bs4 import BeautifulSoup
 from pathlib import Path
 from typing import Set
-from httpx import ConnectError
+from httpx import ConnectError, ReadError
 from ssl import SSLCertVerificationError
 
 from utils.globals import (
@@ -12,6 +12,7 @@ from utils.globals import (
     LINKS_PATH,
     SKIP_URLS,
     UTILS_DIR,
+    RESOURCES_PATH,
 )
 from utils.exceptions import NotFoundError, LinkedinDeniedError
 from utils.fn import err, warn, ok, extract_links
@@ -21,6 +22,7 @@ def main():
     REDIRECTS_CSV_PATH.unlink(missing_ok=True)
     asyncio.run(async_main())
     LINKS_PATH.write_text("\n".join(all_links))
+    RESOURCES_PATH.write_text("\n".join(resource_links))
     shutil.copy(LINKS_PATH, UTILS_DIR)
     shutil.copy(REDIRECTS_CSV_PATH, UTILS_DIR)
 
@@ -39,6 +41,7 @@ async def process_next_batch():
     resources = filter(lambda x: not x[2] and not x[1], batch)
     for route, _, _ in resources:
         print(ok("[RECURSO]"), route)
+        resource_links.add(route)
 
     documents = filter(lambda x: x[2], batch)
     save_html_batch(documents)
@@ -61,6 +64,10 @@ async def try_fetch_route(route: str):
     try:
         if not should_skip(route):
             result = await fetch_route(route)
+    except ReadError as e:
+        # FIXME http://lattes.cnpq.br/.....
+        print(err("[httpx.ReadError]"), "http://lattes.cnpq.br/...")
+        pass
     except SSLCertVerificationError:
         pass
     except ConnectError:
@@ -160,11 +167,13 @@ def find_page_links(html: str):
         if src:
             if src not in all_links:
                 print(ok("[IMG]"), src)
+            resource_links.add(src)
             all_links.add(src)
 
 
 # rotas da url raiz do curso
 all_links: Set[str] = set()
+resource_links: Set[str] = set()
 next_routes = {ROOT_URL}
 done_routes: Set[str] = set()
 CLIENT = httpx.AsyncClient(follow_redirects=True, timeout=60)
