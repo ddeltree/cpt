@@ -22,6 +22,7 @@ def main():
     asyncio.run(async_main())
     LINKS_PATH.write_text("\n".join(all_links))
     shutil.copy(LINKS_PATH, UTILS_DIR)
+    shutil.copy(REDIRECTS_CSV_PATH, UTILS_DIR)
 
 
 async def async_main():
@@ -96,7 +97,7 @@ async def fetch_route(route: str):
 
 
 async def get_head_info(route: str):
-    head = await CLIENT.head(route, follow_redirects=True)
+    head = await CLIENT.head(route, follow_redirects=True, timeout=60)
     is_html = "text/html" in (head.headers.get("content-type") or [])
     redirect = str(head.url)
     redirect = redirect if redirect != route else None
@@ -122,8 +123,6 @@ def save_html_batch(documents):
 
 
 def remove_dead_links(html: str):
-    # for url in SKIP_URLS:
-    #     html = html.replace(url, "#")
     return extract_links(SKIP_URLS, html)
 
 

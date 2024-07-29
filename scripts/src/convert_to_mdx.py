@@ -4,13 +4,18 @@ from pathlib import Path
 from markdownify import markdownify
 
 from src.scrape import try_fetch_route
+from src.create_sitemap import read_redirects
 from utils.globals import HTML_DIR, MD_DIR, ROOT_URL, PAGES_DIR, LINKS_PATH, SKIP_URLS
 from utils.fn import extract_links
 
 LINKS: list[str] | None = None
+REDIRECT_ROUTES, REDIRECT_URLS = None, None
 
 
 def main():
+    global REDIRECT_ROUTES, REDIRECT_URLS
+    REDIRECT_ROUTES, REDIRECT_URLS = read_redirects()
+
     asyncio.run(check_dead_links())
     if MD_DIR.is_dir():
         shutil.rmtree(MD_DIR)
@@ -61,7 +66,7 @@ def remove_plone_links(links: list[str], html: str):
 
 
 def update_relative_anchors(links: list[str], html: str):
-    links = [x for x in links if x.startswith(ROOT_URL)]
+    links = [x for x in links if x.startswith(ROOT_URL) and x not in REDIRECT_URLS]
     if not links:
         return html
     soup = BeautifulSoup(html, "html.parser")

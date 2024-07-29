@@ -8,7 +8,8 @@ REDIRECT_ROUTES, REDIRECT_URLS = None, None
 
 
 def main():
-    read_redirects()
+    global REDIRECT_ROUTES, REDIRECT_URLS
+    REDIRECT_ROUTES, REDIRECT_URLS = read_redirects()
     paths = map(
         lambda p: str(
             (p.parent / (p.stem if p.is_file() else p.name)).relative_to(MD_DIR)
@@ -42,7 +43,7 @@ def main():
 
 
 def read_redirects():
-    global REDIRECT_ROUTES, REDIRECT_URLS
+
     res: list[Tuple[str, str]] = []
     with REDIRECTS_CSV_PATH.open() as f:
         reader = csv.reader(f)
@@ -50,7 +51,7 @@ def read_redirects():
             route = route.replace(ROOT_URL, "")
             route = route[1:] if route.startswith("/") else route
             res.append((route, redirect))
-    REDIRECT_ROUTES, REDIRECT_URLS = zip(*res)
+    return zip(*res)
 
 
 def iter_tree(
