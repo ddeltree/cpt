@@ -38,7 +38,9 @@ async def process_next_batch():
     redirects = filter(lambda x: not x[2] and x[1], batch)
     redirects_writerows(redirects)
 
-    resources = filter(lambda x: not x[2] and not x[1], batch)
+    resources = filter(
+        lambda x: not x[2] and (not x[1] or x[1].startswith(ROOT_URL)), batch
+    )
     for route, _, _ in resources:
         print(ok("[RECURSO]"), route)
         resource_links.add(route)
