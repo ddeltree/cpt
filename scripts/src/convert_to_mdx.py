@@ -1,4 +1,5 @@
 import shutil, asyncio, re
+from urllib.parse import quote
 from bs4 import BeautifulSoup
 from pathlib import Path
 from markdownify import markdownify
@@ -62,6 +63,7 @@ def filter_links(html: str):
     html = remove_plone_links(links, html)
     html = update_relative_anchors(links, html)
     html = remove_dead_links(html)
+    html = quote_links(links, html)
     return html
 
 
@@ -89,6 +91,17 @@ def update_relative_anchors(links: list[str], html: str):
 def remove_dead_links(html: str):
     links = [link for link, dead in LINKS.items() if dead]
     return extract_links(links, html) if links else html
+
+
+def quote_links(links: list[str], html: str):
+    links = [x for x in links if x.startswith("http") or x.startswith("/")]
+    if not links:
+        return html
+    soup = BeautifulSoup(html, "html.parser")
+    for link in links:
+        for anchor in soup.find_all("a", href=link):
+            anchor["href"] = quote(link, safe=":/?#&=")
+    return soup.prettify()
 
 
 def html_to_mdx(html: str, path: Path):
