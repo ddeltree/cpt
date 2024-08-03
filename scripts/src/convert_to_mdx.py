@@ -18,7 +18,8 @@ from utils.globals import (
 from utils.fn import extract_links
 
 LINKS: list[str] | None = None
-REDIRECT_ROUTES, REDIRECT_URLS = None, None
+REDIRECT_ROUTES: list[str] | None = None
+REDIRECT_URLS: list[str] | None = None
 RESORCES_ROUTES = None
 
 
@@ -84,7 +85,12 @@ def update_relative_anchors(links: list[str], html: str):
     soup = BeautifulSoup(html, "html.parser")
     for link in links:
         for anchor in soup.find_all("a", href=link):
-            anchor["href"] = link.replace(ROOT_URL, "/cpt")
+            route = link.replace(ROOT_URL + "/", "")
+            anchor["href"] = (
+                link.replace(ROOT_URL, "/cpt")
+                if route not in REDIRECT_ROUTES
+                else REDIRECT_URLS[REDIRECT_ROUTES.index(route)]
+            )
     return soup.prettify()
 
 
