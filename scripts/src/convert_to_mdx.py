@@ -1,8 +1,8 @@
 import shutil, asyncio, re
 from urllib.parse import quote
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 from pathlib import Path
-from markdownify import markdownify
+from markdownify import MarkdownConverter
 
 from src.scrape import try_fetch_route
 from src.create_sitemap import read_redirects
@@ -41,7 +41,8 @@ async def check_dead_links():
     global LINKS
     LINKS = {l: (l in SKIP_URLS) for l in LINKS_PATH.read_text().splitlines()}
     links = [l for l in LINKS if l.startswith("http") and not l.startswith(ROOT_URL)]
-    await asyncio.gather(*map(check_dead_link, links))
+    # TODO uncomment
+    # await asyncio.gather(*map(check_dead_link, links))
 
 
 async def check_dead_link(link: str):
@@ -125,20 +126,25 @@ def html_to_mdx(html: str, path: Path):
             "layout: '@/layouts/MdLayout.astro'",
             f"title: '{title}'",
             "---",
-            "import { Image } from 'astro:assets';\n",
+            "import { Image } from 'astro:assets';\n\n",
         ]
     )
-    markdown += markdownify(str(content))
-    markdown = fix_invalid_mdx_syntax(markdown)
+    asdf = "&lt;" in content.prettify()
+    markdown += soup_to_mdx(content.prettify())
+    if asdf and not ("&lt;" in markdown):
+        # FIXME <LINK> is invalid mdx; convert to &lt;LINK&gt;
+        raise Exception()
     mdx = path.parent / (path.stem + ".mdx")
     parent = MD_DIR / mdx.parent.relative_to(HTML_DIR)
     parent.mkdir(parents=True, exist_ok=True)
     mdx = parent / mdx.name
-    mdx.write_text(markdown, "utf-8")
+    mdx.write_text(markdown)
 
 
-def fix_invalid_mdx_syntax(text: str):
-    LINK = r"<(?P<link>.+?)>"  # Dá erro no formato MDX
-    if re.search(LINK, text):
-        text = re.sub(LINK, lambda x: x.group("link"), text)
-    return text
+def soup_to_mdx(html: str, **options):
+    return AnchorMdxConverter(**options, escape_misc=False).convert(html)
+
+
+class AnchorMdxConverter(MarkdownConverter):
+    def convert_a(self, el: Tag, text: str, convert_as_inline: bool):
+        return el.prettify(formatter="minimal")
