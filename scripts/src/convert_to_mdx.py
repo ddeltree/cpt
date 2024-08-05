@@ -129,11 +129,8 @@ def html_to_mdx(html: str, path: Path):
             "import { Image } from 'astro:assets';\n\n",
         ]
     )
-    asdf = "&lt;" in content.prettify()
-    markdown += soup_to_mdx(content.prettify())
-    if asdf and not ("&lt;" in markdown):
-        # FIXME <LINK> is invalid mdx; convert to &lt;LINK&gt;
-        raise Exception()
+
+    markdown += soup_to_mdx(content)
     mdx = path.parent / (path.stem + ".mdx")
     parent = MD_DIR / mdx.parent.relative_to(HTML_DIR)
     parent.mkdir(parents=True, exist_ok=True)
@@ -141,10 +138,13 @@ def html_to_mdx(html: str, path: Path):
     mdx.write_text(markdown)
 
 
-def soup_to_mdx(html: str, **options):
-    return AnchorMdxConverter(**options, escape_misc=False).convert(html)
+def soup_to_mdx(tag: Tag, **options):
+    html = tag.prettify().replace("&lt;", "\&lt;").replace("&gt;", " \&gt;")
+    converter = AnchorMdxConverter(**options)
+    markdown = converter.convert(html)
+    return markdown
 
 
 class AnchorMdxConverter(MarkdownConverter):
-    def convert_a(self, el: Tag, text: str, convert_as_inline: bool):
-        return el.prettify(formatter="minimal")
+    def convert_a(self, el: Tag, text: str, _):
+        return el.prettify()
