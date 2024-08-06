@@ -92,6 +92,8 @@ def should_skip(url: str, e: Exception | None = None):
 
 
 async def fetch_route(route: str):
+    if "image_view_fullscreen" in route:
+        return route, route, None
     is_html, redirect, response = await get_head_info(route)
     if not is_html or redirect and not redirect.startswith(ROOT_URL):
         html = None

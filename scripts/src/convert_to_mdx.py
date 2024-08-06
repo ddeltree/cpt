@@ -41,8 +41,7 @@ async def check_dead_links():
     global LINKS
     LINKS = {l: (l in SKIP_URLS) for l in LINKS_PATH.read_text().splitlines()}
     links = [l for l in LINKS if l.startswith("http") and not l.startswith(ROOT_URL)]
-    # TODO uncomment
-    # await asyncio.gather(*map(check_dead_link, links))
+    await asyncio.gather(*map(check_dead_link, links))
 
 
 async def check_dead_link(link: str):
