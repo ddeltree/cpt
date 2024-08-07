@@ -2,7 +2,7 @@ import httpx, asyncio, csv, shutil
 from bs4 import BeautifulSoup
 from pathlib import Path
 from typing import Set
-from httpx import ConnectError, ReadError
+from httpx import ConnectError
 from ssl import SSLCertVerificationError
 
 from utils.globals import (
@@ -13,6 +13,7 @@ from utils.globals import (
     SKIP_URLS,
     UTILS_DIR,
     RESOURCES_PATH,
+    HEADERS,
 )
 from utils.exceptions import NotFoundError, LinkedinDeniedError
 from utils.fn import err, warn, ok, extract_links
@@ -66,10 +67,6 @@ async def try_fetch_route(route: str):
     try:
         if not should_skip(route):
             result = await fetch_route(route)
-    except ReadError as e:
-        # FIXME http://lattes.cnpq.br/.....
-        print(err("[httpx.ReadError]"), "http://lattes.cnpq.br/...")
-        pass
     except SSLCertVerificationError:
         pass
     except ConnectError:
@@ -108,7 +105,7 @@ async def fetch_route(route: str):
 
 
 async def get_head_info(route: str):
-    head = await CLIENT.head(route, follow_redirects=True, timeout=60)
+    head = await CLIENT.head(route)
     is_html = "text/html" in (head.headers.get("content-type") or [])
     redirect = str(head.url)
     redirect = redirect if redirect != route else None
@@ -180,4 +177,4 @@ all_links: Set[str] = set()
 resource_links: Set[str] = set()
 next_routes = {ROOT_URL}
 done_routes: Set[str] = set()
-CLIENT = httpx.AsyncClient(follow_redirects=True, timeout=60)
+CLIENT = httpx.AsyncClient(follow_redirects=True, timeout=60, headers=HEADERS)
