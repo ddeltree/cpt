@@ -2,6 +2,7 @@
 import Header from '@/components/Header.astro'
 import Footer from '@/components/Footer.astro'
 import Sidebar from '@/components/sidebar/Sidebar.astro'
+import Toggle from '@/components/sidebar/Toggle.tsx'
 ---
 
 <Header />
@@ -9,6 +10,7 @@ import Sidebar from '@/components/sidebar/Sidebar.astro'
 <div id="scroll-content" class="overflow-auto">
   <div class="flex bg-zinc-100">
     <Sidebar />
+    <Toggle client:media="(max-width: 768px)" />
     <slot />
   </div>
   <Footer />
