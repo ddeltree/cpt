@@ -10,7 +10,7 @@ import Toggle from '@/components/sidebar/Toggle.tsx'
 <div id="scroll-content" class="overflow-auto">
   <div class="flex bg-zinc-100">
     <Sidebar />
-    <Toggle client:media="(max-width: 768px)" />
+    <Toggle transition:persist client:only="react" />
     <slot />
   </div>
   <Footer />
