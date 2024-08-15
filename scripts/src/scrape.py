@@ -24,8 +24,6 @@ def main():
     asyncio.run(async_main())
     LINKS_PATH.write_text("\n".join(all_links))
     RESOURCES_PATH.write_text("\n".join(resource_links))
-    shutil.copy(LINKS_PATH, UTILS_DIR)
-    shutil.copy(REDIRECTS_CSV_PATH, UTILS_DIR)
 
 
 async def async_main():
