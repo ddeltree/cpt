@@ -39,7 +39,6 @@ def main():
         on_pop=lambda x: ...,
     )
     SITEMAP_PATH.write_text(json.dumps(yml))
-    shutil.copy(SITEMAP_PATH, PUBLIC_DIR)
 
 
 def read_redirects():
