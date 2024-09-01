@@ -1,4 +1,4 @@
-import shutil, asyncio, re
+import shutil, asyncio
 from urllib.parse import quote
 from bs4 import BeautifulSoup, Tag
 from pathlib import Path
@@ -112,7 +112,7 @@ def quote_links(links: list[str], html: str):
 
 def html_to_mdx(html: str, path: Path):
     soup = BeautifulSoup(html, features="html.parser")
-    title = soup.find("title").get_text()
+    title = soup.find("title").get_text().strip()
     content = soup.select_one("#content")
     if not content:
         path.unlink()

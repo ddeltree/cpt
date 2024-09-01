@@ -2,7 +2,7 @@ import httpx, asyncio, csv, shutil
 from bs4 import BeautifulSoup
 from pathlib import Path
 from typing import Set
-from httpx import ConnectError
+from httpx import ConnectError, ConnectTimeout
 from ssl import SSLCertVerificationError
 
 from utils.globals import (
@@ -11,7 +11,6 @@ from utils.globals import (
     REDIRECTS_CSV_PATH,
     LINKS_PATH,
     SKIP_URLS,
-    UTILS_DIR,
     RESOURCES_PATH,
     HEADERS,
 )
@@ -21,6 +20,7 @@ from utils.fn import err, warn, ok, extract_links
 
 def main():
     REDIRECTS_CSV_PATH.unlink(missing_ok=True)
+    shutil.rmtree(HTML_DIR)
     asyncio.run(async_main())
     LINKS_PATH.write_text("\n".join(all_links))
     RESOURCES_PATH.write_text("\n".join(resource_links))
@@ -68,6 +68,8 @@ async def try_fetch_route(route: str):
     except SSLCertVerificationError:
         pass
     except ConnectError:
+        pass
+    except ConnectTimeout:
         pass
     except NotFoundError:
         pass
