@@ -1,86 +1,84 @@
 ---
 layout: '@/layouts/MdLayout.astro'
-title: '
-   Orientação normativa — Campus Arapiraca
-  '
+title: 'Orientação normativa — Campus Arapiraca'
 ---
-import { Image } from 'astro:assets';
 
-
-
-
-
-Orientação normativa
-====================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- TCC\_Orientação\_Normativa\_2016.pdf
-   
-
- Documento PDF
- (2.2MB)
- 
-
-<a class="btn btn-secondary download" href="https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/documentos/tcc/tcc_orientacao_normativa_2016.pdf/@@download/file/TCC_Orientação_Normativa_2016.pdf">
- Baixar
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- de
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import { Image } from 'astro:assets'
+
+<span></span>
+<article id="content">
+<header>
+
+<h1>
+         Orientação normativa
+        </h1>
+
+<p class="lead">
+         Estabelece orientações quanto a entrega de TCCs dos cursos de graduação na biblioteca do Campus Arapiraca
+        </p>
+
+</header>
+<div id="viewlet-above-content-body">
+</div>
+<div id="content-core">
+<div id="fileview">
+<div class="head">
+<div class="name">
+<div class="details" style="display:inline-block; padding:0">
+            TCC_Orientação_Normativa_2016.pdf
+            <br/>
+            Documento PDF
+                            (2.2MB)
+           </div>
+</div>
+<a class="btn btn-more-blue float-end" href="https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/documentos/tcc/tcc_orientacao_normativa_2016.pdf/%40%40download/file/TCC_Orientac%25CC%25A7a%25CC%2583o_Normativa_2016.pdf">
+           Baixar
+          </a>
+</div>
+<div id="canvas-container">
+<i class="fa-solid fa-rotate fa-spin">
+</i>
+<canvas data-src="https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/documentos/tcc/tcc_orientacao_normativa_2016.pdf/@@download/file/TCC_Orientação_Normativa_2016.pdf" id="pdf-viewer">
+</canvas>
+<div class="controle">
+<button class="btn" id="prev" title="Página anterior" type="button">
+<i aria-hidden="true" class="fa fa-chevron-left">
+</i>
+</button>
+<button class="btn" id="next" title="Pŕoxima página" type="button">
+<i aria-hidden="true" class="fa fa-chevron-right">
+</i>
+</button>
+</div>
+</div>
+<div class="foot">
+<div class="zoom">
+<button id="zoom_out" title="Reduzir">
+<i aria-hidden="true" class="fa fa-minus">
+</i>
+</button>
+<button id="zoom_in" title="Ampliar">
+<i aria-hidden="true" class="fa fa-plus">
+</i>
+</button>
+</div>
+<span id="scale">
+</span>
+<form action="." id="form-page">
+<input id="page_num"/>
+<span>
+            de
+           </span>
+<span id="page_count">
+</span>
+</form>
+<button id="toggle-screen" title="Alternar tela cheia">
+<span aria-hidden="true" class="fa fa-expand">
+</span>
+</button>
+</div>
+</div>
+</div>
+<div id="viewlet-below-content-body">
+</div>
+</article>

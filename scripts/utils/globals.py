@@ -14,6 +14,7 @@ MD_DIR = DATA_DIR / "md"
 REDIRECTS_CSV_PATH = UTILS_DIR / "redirects.csv"
 LINKS_PATH = UTILS_DIR / "links.txt"
 RESOURCES_PATH = UTILS_DIR / "resources.txt"
+FRONTMATTER_PATH = UTILS_DIR / "frontmatter.mdx"
 SITEMAP_PATH = PUBLIC_DIR / "sitemap.json"
 
 ROOT_URL = "https://arapiraca.ufal.br/graduacao/ciencia-da-computacao"

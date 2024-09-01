@@ -1,8 +1,7 @@
 import shutil, asyncio
 from urllib.parse import quote
-from bs4 import BeautifulSoup, Tag
+from bs4 import BeautifulSoup, Comment
 from pathlib import Path
-from markdownify import MarkdownConverter
 
 from src.scrape import try_fetch_route
 from src.create_sitemap import read_redirects
@@ -13,6 +12,7 @@ from utils.globals import (
     PAGES_DIR,
     LINKS_PATH,
     SKIP_URLS,
+    FRONTMATTER_PATH,
     RESOURCES_PATH,
 )
 from utils.fn import extract_links
@@ -41,7 +41,8 @@ async def check_dead_links():
     global LINKS
     LINKS = {l: (l in SKIP_URLS) for l in LINKS_PATH.read_text().splitlines()}
     links = [l for l in LINKS if l.startswith("http") and not l.startswith(ROOT_URL)]
-    await asyncio.gather(*map(check_dead_link, links))
+    # TODO uncomment
+    # await asyncio.gather(*map(check_dead_link, links))
 
 
 async def check_dead_link(link: str):
@@ -112,38 +113,23 @@ def quote_links(links: list[str], html: str):
 
 def html_to_mdx(html: str, path: Path):
     soup = BeautifulSoup(html, features="html.parser")
+    remove_invalid_mdx(soup)
     title = soup.find("title").get_text().strip()
-    content = soup.select_one("#content")
-    if not content:
+    html_content = soup.select_one("#content")
+    if not html_content:
         path.unlink()
         return
-    for header in content.select("header>div"):
-        header.clear()
-    markdown = "\n".join(
-        [
-            "---",
-            "layout: '@/layouts/MdLayout.astro'",
-            f"title: '{title}'",
-            "---",
-            "import { Image } from 'astro:assets';\n\n",
-        ]
-    )
-
-    markdown += soup_to_mdx(content)
-    mdx = path.parent / (path.stem + ".mdx")
-    parent = MD_DIR / mdx.parent.relative_to(HTML_DIR)
+    for h in html_content.select("header > div"):
+        h.extract()
+    mdx = FRONTMATTER_PATH.read_text().replace("${title}", title)
+    mdx += str(html_content)
+    mdx_file = path.parent / (path.stem + ".mdx")
+    parent = MD_DIR / mdx_file.parent.relative_to(HTML_DIR)
     parent.mkdir(parents=True, exist_ok=True)
-    mdx = parent / mdx.name
-    mdx.write_text(markdown)
+    mdx_file = parent / mdx_file.name
+    mdx_file.write_text(mdx)
 
 
-def soup_to_mdx(tag: Tag, **options):
-    html = tag.prettify().replace("&lt;", "\&lt;").replace("&gt;", " \&gt;")
-    converter = AnchorMdxConverter(**options)
-    markdown = converter.convert(html)
-    return markdown
-
-
-class AnchorMdxConverter(MarkdownConverter):
-    def convert_a(self, el: Tag, text: str, _):
-        return el.prettify()
+def remove_invalid_mdx(soup: BeautifulSoup):
+    for comment in soup.find_all(string=lambda text: isinstance(text, Comment)):
+        comment.extract()

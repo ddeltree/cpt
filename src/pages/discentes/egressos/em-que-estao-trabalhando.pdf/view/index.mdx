@@ -1,84 +1,81 @@
 ---
 layout: '@/layouts/MdLayout.astro'
-title: '
-   Onde estão nossos egressos? — Campus Arapiraca
-  '
+title: 'Onde estão nossos egressos? — Campus Arapiraca'
 ---
-import { Image } from 'astro:assets';
 
-
-
-
-
-Onde estão nossos egressos?
-===========================
-
-
-
-
-
-
-
-
-
-
-
-
- EGRESSOS-POST-PAGINA.pdf
-   
-
- Documento PDF
- (324.2KB)
- 
-
-<a class="btn btn-secondary download" href="https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/discentes/egressos/em-que-estao-trabalhando.pdf/%40%40download/file/EGRESSOS-POST-PAGINA.pdf">
- Baixar
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- de
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import { Image } from 'astro:assets'
+
+<span></span>
+<article id="content">
+<header>
+
+<h1>
+         Onde estão nossos egressos?
+        </h1>
+
+
+</header>
+<div id="viewlet-above-content-body">
+</div>
+<div id="content-core">
+<div id="fileview">
+<div class="head">
+<div class="name">
+<div class="details" style="display:inline-block; padding:0">
+            EGRESSOS-POST-PAGINA.pdf
+            <br/>
+            Documento PDF
+                            (324.2KB)
+           </div>
+</div>
+<a class="btn btn-more-blue float-end" href="https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/discentes/egressos/em-que-estao-trabalhando.pdf/%40%40download/file/EGRESSOS-POST-PAGINA.pdf">
+           Baixar
+          </a>
+</div>
+<div id="canvas-container">
+<i class="fa-solid fa-rotate fa-spin">
+</i>
+<canvas data-src="https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/discentes/egressos/em-que-estao-trabalhando.pdf/@@download/file/EGRESSOS-POST-PAGINA.pdf" id="pdf-viewer">
+</canvas>
+<div class="controle">
+<button class="btn" id="prev" title="Página anterior" type="button">
+<i aria-hidden="true" class="fa fa-chevron-left">
+</i>
+</button>
+<button class="btn" id="next" title="Pŕoxima página" type="button">
+<i aria-hidden="true" class="fa fa-chevron-right">
+</i>
+</button>
+</div>
+</div>
+<div class="foot">
+<div class="zoom">
+<button id="zoom_out" title="Reduzir">
+<i aria-hidden="true" class="fa fa-minus">
+</i>
+</button>
+<button id="zoom_in" title="Ampliar">
+<i aria-hidden="true" class="fa fa-plus">
+</i>
+</button>
+</div>
+<span id="scale">
+</span>
+<form action="." id="form-page">
+<input id="page_num"/>
+<span>
+            de
+           </span>
+<span id="page_count">
+</span>
+</form>
+<button id="toggle-screen" title="Alternar tela cheia">
+<span aria-hidden="true" class="fa fa-expand">
+</span>
+</button>
+</div>
+</div>
+</div>
+<div id="viewlet-below-content-body">
+</div>
+</article>

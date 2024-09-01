@@ -1,84 +1,81 @@
 ---
 layout: '@/layouts/MdLayout.astro'
-title: '
-   Portaria Colegiado do Curso — Campus Arapiraca
-  '
+title: 'Portaria Colegiado do Curso — Campus Arapiraca'
 ---
-import { Image } from 'astro:assets';
 
-
-
-
-
-Portaria Colegiado do Curso
-===========================
-
-
-
-
-
-
-
-
-
-
-
-
- 2021\_PORTARIA\_COORDENACAO.pdf
-   
-
- Documento PDF
- (247.6KB)
- 
-
-<a class="btn btn-secondary download" href="https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/documentos/portarias/colegiado-do-curso-de-ciencia-da-computacao/%40%40download/file/2021_PORTARIA_COORDENACAO.pdf">
- Baixar
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- de
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import { Image } from 'astro:assets'
+
+<span></span>
+<article id="content">
+<header>
+
+<h1>
+         Portaria Colegiado do Curso
+        </h1>
+
+
+</header>
+<div id="viewlet-above-content-body">
+</div>
+<div id="content-core">
+<div id="fileview">
+<div class="head">
+<div class="name">
+<div class="details" style="display:inline-block; padding:0">
+            2021_PORTARIA_COORDENACAO.pdf
+            <br/>
+            Documento PDF
+                            (247.6KB)
+           </div>
+</div>
+<a class="btn btn-more-blue float-end" href="https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/documentos/portarias/colegiado-do-curso-de-ciencia-da-computacao/%40%40download/file/2021_PORTARIA_COORDENACAO.pdf">
+           Baixar
+          </a>
+</div>
+<div id="canvas-container">
+<i class="fa-solid fa-rotate fa-spin">
+</i>
+<canvas data-src="https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/documentos/portarias/colegiado-do-curso-de-ciencia-da-computacao/@@download/file/2021_PORTARIA_COORDENACAO.pdf" id="pdf-viewer">
+</canvas>
+<div class="controle">
+<button class="btn" id="prev" title="Página anterior" type="button">
+<i aria-hidden="true" class="fa fa-chevron-left">
+</i>
+</button>
+<button class="btn" id="next" title="Pŕoxima página" type="button">
+<i aria-hidden="true" class="fa fa-chevron-right">
+</i>
+</button>
+</div>
+</div>
+<div class="foot">
+<div class="zoom">
+<button id="zoom_out" title="Reduzir">
+<i aria-hidden="true" class="fa fa-minus">
+</i>
+</button>
+<button id="zoom_in" title="Ampliar">
+<i aria-hidden="true" class="fa fa-plus">
+</i>
+</button>
+</div>
+<span id="scale">
+</span>
+<form action="." id="form-page">
+<input id="page_num"/>
+<span>
+            de
+           </span>
+<span id="page_count">
+</span>
+</form>
+<button id="toggle-screen" title="Alternar tela cheia">
+<span aria-hidden="true" class="fa fa-expand">
+</span>
+</button>
+</div>
+</div>
+</div>
+<div id="viewlet-below-content-body">
+</div>
+</article>

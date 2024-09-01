@@ -2,12 +2,11 @@
 name = "cpt"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Davi Alexandre <deltreertl@gmail.com>"]
 package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.11"
-markdownify = "^0.12.1"
 bs4 = "^0.0.2"
 httpx = "^0.27.0"
 

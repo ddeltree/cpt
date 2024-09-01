@@ -1,84 +1,81 @@
 ---
 layout: '@/layouts/MdLayout.astro'
-title: '
-   2020.1 — Campus Arapiraca
-  '
+title: '2020.1 — Campus Arapiraca'
 ---
-import { Image } from 'astro:assets';
 
-
-
-
-
-2020.1
-======
-
-
-
-
-
-
-
-
-
-
-
-
- apresentação\_avaliacao\_2020.1.pdf
-   
-
- Documento PDF
- (11.0MB)
- 
-
-<a class="btn btn-secondary download" href="https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/institucional/avaliacao-do-curso/apresentacao_avaliacao_2020-1.pdf/@@download/file/apresentação_avaliacao_2020.1.pdf">
- Baixar
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- de
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import { Image } from 'astro:assets'
+
+<span></span>
+<article id="content">
+<header>
+
+<h1>
+         2020.1
+        </h1>
+
+
+</header>
+<div id="viewlet-above-content-body">
+</div>
+<div id="content-core">
+<div id="fileview">
+<div class="head">
+<div class="name">
+<div class="details" style="display:inline-block; padding:0">
+            apresentação_avaliacao_2020.1.pdf
+            <br/>
+            Documento PDF
+                            (11.0MB)
+           </div>
+</div>
+<a class="btn btn-more-blue float-end" href="https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/institucional/avaliacao-do-curso/apresentacao_avaliacao_2020-1.pdf/%40%40download/file/apresentac%25CC%25A7a%25CC%2583o_avaliacao_2020.1.pdf">
+           Baixar
+          </a>
+</div>
+<div id="canvas-container">
+<i class="fa-solid fa-rotate fa-spin">
+</i>
+<canvas data-src="https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/institucional/avaliacao-do-curso/apresentacao_avaliacao_2020-1.pdf/@@download/file/apresentação_avaliacao_2020.1.pdf" id="pdf-viewer">
+</canvas>
+<div class="controle">
+<button class="btn" id="prev" title="Página anterior" type="button">
+<i aria-hidden="true" class="fa fa-chevron-left">
+</i>
+</button>
+<button class="btn" id="next" title="Pŕoxima página" type="button">
+<i aria-hidden="true" class="fa fa-chevron-right">
+</i>
+</button>
+</div>
+</div>
+<div class="foot">
+<div class="zoom">
+<button id="zoom_out" title="Reduzir">
+<i aria-hidden="true" class="fa fa-minus">
+</i>
+</button>
+<button id="zoom_in" title="Ampliar">
+<i aria-hidden="true" class="fa fa-plus">
+</i>
+</button>
+</div>
+<span id="scale">
+</span>
+<form action="." id="form-page">
+<input id="page_num"/>
+<span>
+            de
+           </span>
+<span id="page_count">
+</span>
+</form>
+<button id="toggle-screen" title="Alternar tela cheia">
+<span aria-hidden="true" class="fa fa-expand">
+</span>
+</button>
+</div>
+</div>
+</div>
+<div id="viewlet-below-content-body">
+</div>
+</article>

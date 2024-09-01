@@ -1,86 +1,84 @@
 ---
 layout: '@/layouts/MdLayout.astro'
-title: '
-   ATA03-2021 — Campus Arapiraca
-  '
+title: 'ATA03-2021 — Campus Arapiraca'
 ---
-import { Image } from 'astro:assets';
 
-
-
-
-
-ATA03-2021
-==========
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- ata-assinada.pdf
-   
-
- Documento PDF
- (765.5KB)
- 
-
-<a class="btn btn-secondary download" href="https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/documentos/atas-do-colegiado-e-nde/colegiado/2021/ata-assinada.pdf/%40%40download/file/ata-assinada.pdf">
- Baixar
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- de
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import { Image } from 'astro:assets'
+
+<span></span>
+<article id="content">
+<header>
+
+<h1>
+         ATA03-2021
+        </h1>
+
+<p class="lead">
+         Pontos de Pauta: (i) Definição do novo ranking para escolha dos horários; (ii) Ajustes na oferta acadêmica 2021.1 (resultado da consulta aos alunos); (iii)Calendário do TCC para o semestre letivo 2021.1; (iv) Solicitação de portaria do NDE.
+        </p>
+
+</header>
+<div id="viewlet-above-content-body">
+</div>
+<div id="content-core">
+<div id="fileview">
+<div class="head">
+<div class="name">
+<div class="details" style="display:inline-block; padding:0">
+            ata-assinada.pdf
+            <br/>
+            Documento PDF
+                            (765.5KB)
+           </div>
+</div>
+<a class="btn btn-more-blue float-end" href="https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/documentos/atas-do-colegiado-e-nde/colegiado/2021/ata-assinada.pdf/%40%40download/file/ata-assinada.pdf">
+           Baixar
+          </a>
+</div>
+<div id="canvas-container">
+<i class="fa-solid fa-rotate fa-spin">
+</i>
+<canvas data-src="https://arapiraca.ufal.br/graduacao/ciencia-da-computacao/documentos/atas-do-colegiado-e-nde/colegiado/2021/ata-assinada.pdf/@@download/file/ata-assinada.pdf" id="pdf-viewer">
+</canvas>
+<div class="controle">
+<button class="btn" id="prev" title="Página anterior" type="button">
+<i aria-hidden="true" class="fa fa-chevron-left">
+</i>
+</button>
+<button class="btn" id="next" title="Pŕoxima página" type="button">
+<i aria-hidden="true" class="fa fa-chevron-right">
+</i>
+</button>
+</div>
+</div>
+<div class="foot">
+<div class="zoom">
+<button id="zoom_out" title="Reduzir">
+<i aria-hidden="true" class="fa fa-minus">
+</i>
+</button>
+<button id="zoom_in" title="Ampliar">
+<i aria-hidden="true" class="fa fa-plus">
+</i>
+</button>
+</div>
+<span id="scale">
+</span>
+<form action="." id="form-page">
+<input id="page_num"/>
+<span>
+            de
+           </span>
+<span id="page_count">
+</span>
+</form>
+<button id="toggle-screen" title="Alternar tela cheia">
+<span aria-hidden="true" class="fa fa-expand">
+</span>
+</button>
+</div>
+</div>
+</div>
+<div id="viewlet-below-content-body">
+</div>
+</article>
