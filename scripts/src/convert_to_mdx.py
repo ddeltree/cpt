@@ -1,4 +1,4 @@
-import shutil, asyncio
+import shutil, asyncio, json
 from urllib.parse import quote
 from bs4 import BeautifulSoup, Comment
 from pathlib import Path
@@ -14,6 +14,7 @@ from utils.globals import (
     SKIP_URLS,
     FRONTMATTER_PATH,
     RESOURCES_PATH,
+    LINK_TAGS_PATH,
 )
 from utils.fn import extract_links
 
@@ -31,7 +32,8 @@ def main():
     asyncio.run(check_dead_links())
     if MD_DIR.is_dir():
         shutil.rmtree(MD_DIR)
-    pages_to_mdx()
+    convert_pages_to_mdx()
+    collect_scripts_and_css()
     if PAGES_DIR.exists():
         shutil.rmtree(PAGES_DIR)
     shutil.copytree(MD_DIR, PAGES_DIR, dirs_exist_ok=True)
@@ -50,12 +52,12 @@ async def check_dead_link(link: str):
     LINKS[link] = result is None
 
 
-def pages_to_mdx():
-    paths = [path for path in HTML_DIR.rglob("*.html")]
+def convert_pages_to_mdx():
+    paths = [path for path in HTML_DIR.rglob("index.html")]
     docs = [p.read_text("utf-8") for p in paths]
     docs = [filter_links(html) for html in docs]
     for path, html in zip(paths, docs):
-        html_to_mdx(html, path)
+        save_html_as_mdx(html, path)
 
 
 def filter_links(html: str):
@@ -64,7 +66,7 @@ def filter_links(html: str):
     html = remove_relative_links(links, html)
     html = remove_plone_links(links, html)
     html = update_relative_anchors(links, html)
-    html = remove_dead_links(html)
+    # html = remove_dead_links(html)
     html = quote_links(links, html)
     return html
 
@@ -111,7 +113,7 @@ def quote_links(links: list[str], html: str):
     return soup.prettify()
 
 
-def html_to_mdx(html: str, path: Path):
+def save_html_as_mdx(html: str, path: Path):
     soup = BeautifulSoup(html, features="html.parser")
     remove_invalid_mdx(soup)
     title = soup.find("title").get_text().strip()
@@ -133,3 +135,21 @@ def html_to_mdx(html: str, path: Path):
 def remove_invalid_mdx(soup: BeautifulSoup):
     for comment in soup.find_all(string=lambda text: isinstance(text, Comment)):
         comment.extract()
+
+
+def collect_scripts_and_css():
+    paths = [path for path in HTML_DIR.rglob("index.html")]
+    docs = [p.read_text("utf-8") for p in paths]
+    docs = [filter_links(html) for html in docs]
+    result = dict()
+    for path, html in zip(paths, docs):
+        soup = BeautifulSoup(html, features="html.parser")
+        css_links = [
+            link.get("href") for link in soup.find_all("link", rel="stylesheet")
+        ]
+        script_links = [
+            script.get("src") for script in soup.find_all("script") if script.get("src")
+        ]
+        key = str(path.parent.relative_to(HTML_DIR))
+        result[key] = {"js": script_links, "css": css_links}
+    LINK_TAGS_PATH.write_text(json.dumps(result, indent=2), "utf-8")

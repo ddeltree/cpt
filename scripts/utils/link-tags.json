@@ -1,0 +1,2129 @@
+{
+  ".": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "institucional": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "institucional/infraestrutura": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "institucional/enade": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "institucional/enade/enade-2021": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "institucional/enade/enade-2021/enade-2021-relatorio-de-regularidade-concluintes.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "institucional/enade/enade-2021/concluintes-enade-2021.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "institucional/enade/enade-2021/cronograma_resumido.png/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "institucional/informes": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "institucional/informes/curso-de-ciencia-da-computacao-em-arapiraca-recebe-4-estrela-no-guia-estadao": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "institucional/informes/aracomp-2023": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "institucional/informes/katie-na-bienal": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "institucional/informes/recepcao-dos-calouros-2023-1-ciencia-da-computacao": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "institucional/avaliacao-do-curso": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "institucional/avaliacao-do-curso/apresentacao_avaliacao_2020-1.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "institucional/administracao": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "institucional/nucleo-docente-estruturante-nde": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "institucional/eventos": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "institucional/monitoria": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/logo-do-curso": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/logo-do-curso/logo-cc-arapiraca.png/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/logo-do-curso/logo-cc-arapiraca-2.png/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/logo-do-curso/logo-cc-arapiraca-1.png/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/logo-do-curso/logo-cc-simbolo-branco-fundo-azul.png/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/logo-do-curso/logo-cc-simbolo-branco.png/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/logo-do-curso/logo-cc-branca.png/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/logo-do-curso/logo-cc-simbolo.png/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/manual_estagio.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/procedimentos-e-tramites-do-tcc-pibic-pibiti-artigo": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/fluxograma_tcc.png/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/modelos": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/modelos/modelo-30-termo-de-aceite-orientacao-de-tcc.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/modelos/ufal_cc_tcc_tradicional-2022-modelo.zip/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/modelos/modelo-projeto-de-tcc-para-cadastro-atualizado.odt/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/tcc_orientacao_normativa_2016.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/temas-para-o-seu-tcc": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/documentos-para-o-orientador": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/documentos-para-o-orientador/ata_e_parecer_de_defesa-modelo_tcc_tradicional.odt/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/documentos-para-o-orientador/ata_e_parecer_de_defesa-modelo_artigo_aceito.odt/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/documentos-para-o-orientador/certidao-de-banca-de-tcc-odt.odt/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/documentos-para-o-orientador/modelo-ata_e_parecer_de_defesa-pibic-new.odt/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/documentos-para-o-orientador/certidao-orientacaotcc-doc.docx/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/documentos-para-o-orientador/certidao-de-banca-de-tcc-doc.docx/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/documentos-para-o-orientador/ata_e_parecer_de_defesa-modelo_artigo_apresentado.odt/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/documentos-para-o-orientador/certidao-orientacaotcc-odt.odt/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/regimento.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/cronogramas": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/cronogramas/cronogramas-anteriores": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/cronogramas/cronogramas-anteriores/copy2_of_cronograma": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/cronogramas/cronogramas-anteriores/cronograma": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/cronogramas/cronogramas-anteriores/2023.2": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/cronogramas/cronogramas-anteriores/2023.2/calendario-tcc-2023.2": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/cronogramas/cronogramas-anteriores/copy_of_cronograma": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/tcc/cronogramas/calendario-tcc-2023.2": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/nde": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/nde/ata03.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/nde/ata04-alunos.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/nde/ata01.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/nde/ata-nde-05-ok.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/nde/ata02.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/colegiado": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/colegiado/2023": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/colegiado/2023/ata_01_2023.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/colegiado/2021": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/colegiado/2021/ata_05_2021_assinada.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/colegiado/2021/ata-assinada.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/colegiado/2021/ata_colegiado_04_com_plano_assinada.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/colegiado/2021/ata_06_2021.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/colegiado/2021/ata-02-colegiado-170821-assinada.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/colegiado/2022": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/colegiado/2022/copy4_of_ata_01_2022.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/colegiado/2022/ata_01_2022.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/colegiado/2022/copy_of_ata_01_2022.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/colegiado/2022/copy3_of_ata_01_2022.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/colegiado/2022/copy5_of_ata_01_2022.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/colegiado/2022/copy6_of_ata_01_2022.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/atas-do-colegiado-e-nde/colegiado/2022/copy2_of_ata_01_2022.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/agenda-dos-leccs": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/projeto-pedagogico": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/projeto-pedagogico/projeto-pedagogico-2011": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/projeto-pedagogico/projeto-pedagogico-2011/ppc-computacao-2011.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/projeto-pedagogico/projeto-pedagogico-2018": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/projeto-pedagogico/projeto-pedagogico-2018/ppc-2018.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/portarias": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/portarias/colegiado-do-curso-de-ciencia-da-computacao/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "documentos/portarias/portaria-nucleo-docente-estruturante-nde/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "docentes-1": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "horarios": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "horarios/2023": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "horarios/2023/horario_2023.1": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "horarios/2023/copy_of_horario_2023.1": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "horarios/copy_of_2023": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "horarios/copy_of_2023/copy_of_horario_2023.1": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "horarios/2017": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "horarios/2017/oferta-2017.1/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "horarios/2017/oferta-academica-2017.2/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "horarios/2018": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "horarios/2018/oferta-academica-2018.1/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "horarios/2018/oferta-academica-2018.2/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "horarios/2021": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "horarios/2021/2021.1": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "horarios/2021/horario_2021.2": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "horarios/copy_of_2018": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "horarios/copy_of_2018/grade-de-horarios": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "horarios/2022": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "horarios/2022/horario_2022.2": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "horarios/2022/horario_2021.2": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "extensao": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "extensao/atividades-curriculares-de-extensao": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "discentes": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "discentes/representantes-de-turma": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "discentes/egressos": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "discentes/egressos/em-que-estao-trabalhando.pdf/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.js",
+      "++plone++ufalprofile/assets/pdfjs/pdf.worker.js",
+      "https://arapiraca.ufal.br/++plone++ufalprofile/js/preview.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "discentes/formularios-alunos": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "discentes/formularios-alunos/formularios-para-ajuste-de-matricula": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "discentes/cadastro-de-atividades-complementares": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "discentes/dicas-cartaz.png/view": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "discentes/centro-academico": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "discentes/matricula": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "discentes/matricula/instrucoes-para-sua-matricula": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "discentes/matricula/copy_of_instrucoes-para-sua-matricula": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "discentes/consulta-oferta-academica-resultados": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "discentes/copy_of_solicitacao-de-documentos": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "discentes/faq": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "discentes/solicitacao-de-documentos": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "discentes/colacao-de-grau-diploma": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "@@todas-noticias": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "projetos-de-pesquisa": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "projetos-de-pesquisa/grupos-de-pesquisa": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  },
+  "projetos-de-pesquisa/alunos-pibic-e-pibiti": {
+    "js": [
+      "https://arapiraca.ufal.br/++webresource++6aa4c841-faf5-51e8-8109-90bd97e7aa07/++plone++static/plone-fullscreen/fullscreen.js",
+      "https://arapiraca.ufal.br/++webresource++8528090d-5bd4-5b0f-bca4-a8d85714dded/++plone++static/bundle-plone/bundle.min.js",
+      "https://arapiraca.ufal.br/++webresource++72adfca0-0629-585c-9fa3-1c327ffe2faf/++plone++ufalprofile/build/profile.js",
+      "https://arapiraca.ufal.br/++webresource++34f3f90c-bd1d-539c-8574-82fadd7740a1/++theme++ufal.tema.unidade/js/unidade.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-23TEFR2FCG"
+    ],
+    "css": [
+      "https://arapiraca.ufal.br/++webresource++ac83a459-aa2c-5a45-80a9-9d3e95ae0847/++plone++static/plone-fullscreen/fullscreen.css",
+      "https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css",
+      "https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css",
+      "https://arapiraca.ufal.br/++webresource++00c0bf2e-5a86-5306-bc8f-3175bd9964a2/@@custom.css"
+    ]
+  }
+}

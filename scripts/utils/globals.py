@@ -16,6 +16,7 @@ LINKS_PATH = UTILS_DIR / "links.txt"
 RESOURCES_PATH = UTILS_DIR / "resources.txt"
 FRONTMATTER_PATH = UTILS_DIR / "frontmatter.mdx"
 SITEMAP_PATH = PUBLIC_DIR / "sitemap.json"
+LINK_TAGS_PATH = UTILS_DIR / "link-tags.json"
 
 ROOT_URL = "https://arapiraca.ufal.br/graduacao/ciencia-da-computacao"
 

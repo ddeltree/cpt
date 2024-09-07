@@ -1,20 +1,31 @@
-<script>
-  const injectStyle = () => {
-    const root = document.querySelector('main')
-    if (root) {
-      const shadow = root.attachShadow({ mode: 'open' })
-      shadow.innerHTML = `
-      ${root.innerHTML}
-        <style>
-          @import url(https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css);
-          @import url(https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css);
-          *[width] {
-            max-width: 100%;
-          }
-        </style>
-        `
+---
+import linkTags from '../../scripts/utils/link-tags.json'
+const currentPath = Astro.url.pathname
+const k = currentPath.replace('/cpt/', '')
+const key = (k === '' ? '.' : k) as keyof typeof linkTags
+const links = linkTags[key] === undefined ? linkTags['.'] : linkTags[key]
+---
+
+{links.css.map((href) => <link rel="stylesheet" {href} />)}
+{links.js.map((src) => <script is:inline {src} />)}
+
+<!-- FIXME -->
+<!-- <script define:vars={{ links }}>
+  function injectStyles() {
+    const main = document.querySelector('main')
+    if (main) {
+      main.attachShadow({ mode: 'open' }).innerHTML = `
+      ${main.innerHTML}
+      <style>
+        ${links.css.map(url => `@import url(${url});`)}
+        @import url(https://arapiraca.ufal.br/++webresource++7cce3f5a-bf30-5dc8-aa39-80a2c85fb95a/++plone++ufalprofile/css/profile.min.css);
+        @import url(https://arapiraca.ufal.br/++webresource++c8bb5b40-3f1a-5c87-b6c5-a5b53939be2d/++theme++ufal.tema.unidade/css/unidade.min.css);
+        *[width] {
+          max-width: 100%;
+        }
+      </style>`
     }
+    document.removeEventListener('astro:page-load', injectStyles)
   }
-  injectStyle()
-  document.addEventListener('astro:after-swap', injectStyle)
-</script>
+  document.addEventListener('astro:page-load', injectStyles)
+</script> -->
